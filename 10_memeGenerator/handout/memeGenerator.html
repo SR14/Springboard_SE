@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)https://curric.springboard.com/software-engineering-career-track/default/assessments/meme-gen-8d96/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Assessment: Meme Generator</title>
+
+    <link rel="stylesheet" href="./memeGenerator_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./memeGenerator_files/handouts-sphinx.css">
+
+    
+    <link href="./memeGenerator_files/css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="page-sidebar">
+        <header>
+            <p class="project">Springboard</p>
+
+            <p class="title">Assessment: Meme Generator</p>
+
+            <p class="backlink"><a href="https://curric.springboard.com/software-engineering-career-track/default/assessments/meme-gen-8d96/index.html"> « Back to Homepage</a></p>
+
+        </header>
+        <div id="toc">
+            <ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/assessments/meme-gen-8d96/index.html#">Assessment: Meme Generator</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/assessments/meme-gen-8d96/index.html#meme-generator">Meme Generator</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div id="page-content">
+        
+  <div class="section" id="assessment-meme-generator">
+<h1>Assessment: Meme Generator</h1>
+<div class="admonition warning">
+<p>Assessments</p>
+<p>Remember, assessments are meant to be completed <strong>by you</strong>,
+not as a shared exercise with friends or other members of your
+cohort.</p>
+<p>All code submitted should be <strong>written by you</strong>. If you incorporate
+code from elsewhere, it must be properly attributed.</p>
+<p class="last"><strong>Use a private GitHub repo to submit this assignment. Add your mentor as a collaborator. Please do not</strong> put your assessment on public GitHub repo.</p>
+</div>
+<div class="section" id="meme-generator">
+<h2>Meme Generator</h2>
+<p>For this assignment, you’ll be building a meme generator in the browser using
+HTML, CSS, and JavaScript.</p>
+<p>Your generator should consist of a form that accepts a link to an image, text
+for the top of the meme, and text for the bottom of the meme. When the user
+submits the form, use JavaScript to append to the DOM a div which contains the
+meme, including the image and its text.</p>
+<p><strong>Requirements</strong></p>
+<ul class="simple">
+<li>User should be able to submit a form on the page to generate a new meme on
+the page, and should be able to add multiple memes to the page by submitting
+the form multiple times.</li>
+<li>Users should be able to click on a button to remove a meme from the page.</li>
+<li>When the meme form is submitted, values in the form inputs should be cleared.</li>
+</ul>
+<p>Be sure to style your meme generator! It should be functional but also look nice.</p>
+<p><strong>Only use vanilla JavaScript only: no frameworks/third-party libraries.</strong></p>
+<p>You can find a 30 second video demo of a possible solution
+<a class="reference external" href="https://drive.google.com/file/d/1QfeF85FwMzyoowpR1imqfMmYWbMsInhO/view">here</a></p>
+<p>Want a hint on how to get the meme text over the image?</p>
+<div class="hover-reveal topic">
+<p class="topic-title">Approach</p>
+<p>You could do this by:</p>
+<ul class="simple">
+<li>Add a <cite>div</cite> around your img and text and give it a <code class="docutils literal notranslate"><span class="pre">position:</span> <span class="pre">relative</span></code>.</li>
+<li>To position text divs, give them each a <code class="docutils literal notranslate"><span class="pre">position:</span> <span class="pre">absolute</span></code> and set their
+positioning by using the properties of <cite>top</cite>, <cite>right</cite>, <cite>bottom</cite> and <cite>left</cite>.</li>
+<li>If you need help on positioning, check out our <a class="reference external" href="https://www.rithmschool.com/courses/html-css-fundamentals/positioning">free resources</a>.</li>
+</ul>
+</div>
+<p>Want a hint on handling the form submit to add a meme?</p>
+<div class="hover-reveal topic">
+<p class="topic-title">Approach</p>
+<p>The standard way to handle a form submit is to include an input in the form
+with a <cite>type</cite> attribute of “submit”. In JavaScript, you should then listen
+for “submit” events on the form element rather than click events on the
+button (form submits are triggered not only by clickong on the submit
+button, but also by hitting “enter” when you’re inside the form).</p>
+<p>After submission, if you see the page refresh, it’s because this is the
+default behavior of HTML forms! To stop the page from refreshing, you need
+to call <code class="docutils literal notranslate"><span class="pre">e.preventDefault()</span></code> on the event object <code class="docutils literal notranslate"><span class="pre">e</span></code>. To learn more
+about the event object, check out our free resources: <a class="reference external" href="https://www.rithmschool.com/courses/intermediate-javascript/javascript-dom-events-introduction">Introduction to
+Events</a>
+and <a class="reference external" href="https://www.rithmschool.com/courses/intermediate-javascript/javascript-dom-events-continued">Events Continued</a>.</p>
+</div>
+<p>Want a hint on deleting a meme?</p>
+<div class="hover-reveal topic">
+<p class="topic-title">Approach</p>
+<p>Just like with submitting a new meme, to delete a meme you may need access
+to the event object. When you click on delete, take a look at what the
+<code class="docutils literal notranslate"><span class="pre">e.target</span></code> is. Using JavaScript, can you navigate from the target to the
+meme, and then remove the meme from the DOM?</p>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./memeGenerator_files/jquery.js.download"></script>
+<script type="text/javascript" src="./memeGenerator_files/underscore.js.download"></script>
+<script type="text/javascript" src="./memeGenerator_files/doctools.js.download"></script>
+<script type="text/javascript" src="./memeGenerator_files/language_data.js.download"></script> 
+
+</body></html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>CSS Introduction</title>
+
+    <link rel="stylesheet" href="./css_fundamentals_handout_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./css_fundamentals_handout_files/handouts-sphinx.css">
+
+    
+    <link href="./css_fundamentals_handout_files/css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="page-sidebar">
+        <header>
+            <p class="project">Springboard</p>
+
+            <p class="title">CSS Introduction</p>
+
+            <p class="backlink"><a href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html"> « Back to Homepage</a></p>
+
+        </header>
+        <div id="toc">
+            <ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#">CSS Introduction</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#goals">Goals</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#id1">Goals</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#getting-started">Getting started</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#introducing-css">Introducing CSS!</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#what-can-you-do-with-css">What Can You Do With Css?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#where-do-we-write-our-css">Where do we write our CSS?</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#including-css">Including CSS</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#linking-to-a-stylesheet">Linking to a stylesheet</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#css-syntax">CSS Syntax</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#what-does-it-look-like">What does it look like?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#let-s-examine-that-in-detail">Let’s examine that in detail</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#our-first-style">Our first style</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#starting-with-the-basics">Starting with the basics</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#including-multiple-properties">Including multiple properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#color-in-css">Color in CSS</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#id2">Color in CSS</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#text-properties">Text Properties</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#id3">Text Properties</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#font-sizes">font sizes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#don-t-panic">Don’t panic!</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#id4">Don’t panic!</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro/index.html#recap">Recap</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div id="page-content">
+        
+  <div class="section" id="css-introduction">
+<h1>CSS Introduction</h1>
+<p><a class="reference external" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-intro-demo.zip">Download Demo Code</a></p>
+<div class="section" id="goals">
+<h2>Goals</h2>
+<div class="section" id="id1">
+<div class="docutils container">
+<ul class="simple">
+<li>Explain what CSS is</li>
+<li>Write basic CSS rules</li>
+<li>Style some content (even if doesn’t look pretty)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="getting-started">
+<h3>Getting started</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Our web pages don’t look all that great…</li>
+<li>If we want to change the appearance of our webpages, it’s time to learn CSS!</li>
+</ul>
+</div>
+<div class="docutils container">
+<p>If HTML is the structure of the page and content,</p>
+<p>CSS is the style of that content.</p>
+</div>
+<div class="docutils container">
+<p>HTML - the nouns
+CSS - the adjectives</p>
+</div>
+</div>
+<div class="section" id="introducing-css">
+<h3>Introducing CSS!</h3>
+<div class="docutils container">
+<ul class="simple">
+<li><strong>Cascading</strong></li>
+<li><strong>Style</strong></li>
+<li><strong>Sheets</strong></li>
+</ul>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>Let’s ignore the “cascading” part for now and just focus on “style sheets”</li>
+</ul>
+</div>
+</div>
+<div class="section" id="what-can-you-do-with-css">
+<h3>What Can You Do With Css?</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>fonts</li>
+<li>colors</li>
+<li>web / print / mobile layout</li>
+<li>animations</li>
+<li>so much more!</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="where-do-we-write-our-css">
+<h2>Where do we write our CSS?</h2>
+<div class="section" id="including-css">
+<h3>Including CSS</h3>
+<div class="docutils container">
+<p>We can do this three ways!</p>
+</div>
+<div class="docutils container">
+<ol class="arabic simple">
+<li>In our HTML using a <cite>&lt;style&gt;</cite> element</li>
+<li>External stylesheet using a <cite>&lt;link&gt;</cite> element</li>
+<li>(Inline) - DON’T DO THIS!</li>
+</ol>
+</div>
+<div class="docutils container">
+<p>We will be using an external stylesheet as it is far more common</p>
+</div>
+</div>
+<div class="section" id="linking-to-a-stylesheet">
+<h3>Linking to a stylesheet</h3>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">href</span><span class="o">=</span><span class="s">"homepage.css"</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>Make sure to put this inside of the <cite>&lt;head&gt;</cite> element</li>
+<li>This assumes that we have a file in the same folder called homepage.css</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="css-syntax">
+<h2>CSS Syntax</h2>
+<div class="section" id="what-does-it-look-like">
+<h3>What does it look like?</h3>
+<div class="docutils container">
+<p>Here is the idea:</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">select-some-html</span> <span class="p">{</span>
+  <span class="n">property</span><span class="p">:</span> <span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>Here is an example:</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">body</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="kc">purple</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="let-s-examine-that-in-detail">
+<h3>Let’s examine that in detail</h3>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">body</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="kc">purple</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li><strong>Selector</strong> - what we would like to style</li>
+<li><strong>Declaration</strong> - Everything in the curly braces</li>
+<li><strong>Property</strong> - left of the colon</li>
+<li><strong>Value</strong> - right of the colon followed by a semicolon</li>
+</ul>
+</div>
+<div class="docutils container">
+<p>We tell css <strong>what</strong> we want to select, and <strong>how</strong> we want it to be styled</p>
+</div>
+</div>
+</div>
+<div class="section" id="our-first-style">
+<h2>Our first style</h2>
+<div class="section" id="starting-with-the-basics">
+<h3>Starting with the basics</h3>
+<p>There are tons and tons of different properties in css, let’s start with a simple one - <cite>color</cite></p>
+<div class="docutils container">
+<p>To make <strong>all</strong> paragraphs purple:</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">p</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">purple</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="including-multiple-properties">
+<h3>Including multiple properties</h3>
+<p>In CSS we place each property and value on one line, but we can include multiple rules in one declaration.</p>
+<div class="docutils container">
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">p</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">purple</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="color-in-css">
+<h2>Color in CSS</h2>
+<div class="section" id="id2">
+<p>Lots of options!</p>
+<div class="docutils container">
+<ul class="simple">
+<li>Named colors (red, green, blue, papayawhip)</li>
+<li>RGB - rgb(121, 12, 41)</li>
+<li>RBGA - rgba(121, 12, 41, .4)</li>
+<li>Hex - #00bfff</li>
+<li>HSL - hsl(195, 100%, 50%)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="text-properties">
+<h2>Text Properties</h2>
+<div class="section" id="id3">
+<div class="docutils container">
+<ul class="simple">
+<li>font-size - how big should the font be?</li>
+<li>font-family - what type of font?</li>
+<li>text-align - left? center?</li>
+<li>line-height - how much space between lines?</li>
+</ul>
+</div>
+</div>
+<div class="section" id="font-sizes">
+<h3>font sizes</h3>
+<p>So far we’ve seen values for colors, but how do we measure font-size?</p>
+<div class="docutils container">
+<p>Many ways!</p>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>px (pixels)</li>
+<li>% (percentages)</li>
+<li>And many more!</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="don-t-panic">
+<h2>Don’t panic!</h2>
+<div class="section" id="id4">
+<div class="docutils container">
+<ul class="simple">
+<li>Don’t get overwhelmed by the hundreds of CSS properties</li>
+<li>You do not need to spend much of your time studying or memorizing the vast majority of them.</li>
+<li>Google or turn to MDN whenever you’re not sure how to accomplish something in CSS<ul>
+<li>“add a border to the bottom of an element”</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="recap">
+<h3>Recap</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>CSS is used to style HTML elements and layout web pages</li>
+<li>CSS syntax consists of selectors, declarations, properties and values</li>
+<li>CSS can also be used for animations, responsive design and much more!</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./css_fundamentals_handout_files/jquery.js.download"></script>
+<script type="text/javascript" src="./css_fundamentals_handout_files/underscore.js.download"></script>
+<script type="text/javascript" src="./css_fundamentals_handout_files/doctools.js.download"></script>
+<script type="text/javascript" src="./css_fundamentals_handout_files/language_data.js.download"></script> 
+
+</body></html>

@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>HTML</title>
+
+    <link rel="stylesheet" href="./fundamentals_handout_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./fundamentals_handout_files/handouts-sphinx.css">
+
+    
+    <link href="./fundamentals_handout_files/css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="page-sidebar">
+        <header>
+            <p class="project">Springboard</p>
+
+            <p class="title">HTML</p>
+
+            <p class="backlink"><a href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html"> « Back to Homepage</a></p>
+
+        </header>
+        <div id="toc">
+            <ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#">HTML</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#goals">Goals</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#id1">Goals</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#intro-to-html">Intro to HTML</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#id2">Intro to HTML</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#what-does-html-look-like">What Does HTML Look Like?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#viewing-our-html">Viewing Our HTML</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#common-html-elements">Common HTML Elements</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#nesting-html-elements">Nesting HTML Elements</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#html-has-hierarchy">HTML Has Hierarchy</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#some-elements-are-required">Some Elements Are Required</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#html-mostly-ignores-spaces-linebreaks">HTML Mostly Ignores Spaces/Linebreaks</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#paragraphs-headings-and-breaks">Paragraphs, Headings, and Breaks</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#paragraphs">Paragraphs</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#headers">Headers</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#breaks">Breaks</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#lists-in-html">Lists in HTML</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#id3">Lists in HTML</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#unordered-lists">Unordered Lists</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#ordered-lists">Ordered Lists</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#text-modifications">Text Modifications</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#id4">Text Modifications</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#bold-and-italics">Bold and Italics</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#smaller-text">Smaller Text</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#superscript-subscript">Superscript / Subscript</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#blockquotes">Blockquotes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#links">Links</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#id5">Links</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#link-tag">Link Tag</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#attributes">Attributes</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#where-to-link">Where To Link</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#images">Images</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#id6">Images</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#sizing-images">Sizing Images</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#image-types">Image Types</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#entities">Entities</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#id7">Entities</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#less-than-greater-than">Less Than / Greater Than</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#copyright-symbol">Copyright Symbol</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#curly-quotes">Curly Quotes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#emmet">Emmet</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#id8">Emmet</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#try-it-out">Try it out</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#creating-elements-with-emmet">Creating elements with Emmet</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#nested-elements">Nested elements</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#creating-multiple-elements">Creating multiple elements</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#adding-text-inside-of-elements">Adding text inside of elements</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#creating-sibling-elements">Creating sibling elements</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#creating-elements-with-attributes">Creating elements with attributes</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro/index.html#resources">Resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div id="page-content">
+        
+  <div class="section" id="html">
+<h1>HTML</h1>
+<p><a class="reference external" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/html-intro-demo.zip">Download Demo Code</a></p>
+<div class="section" id="goals">
+<h2>Goals</h2>
+<div class="section" id="id1">
+<div class="docutils container">
+<ul class="simple">
+<li>Define what HTML is and its role in webdev</li>
+<li>Use common HTML elements to build webpages</li>
+<li>Write valid HTML boilerplate</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="intro-to-html">
+<h2>Intro to HTML</h2>
+<div class="section" id="id2">
+<p><strong>Hyper Text Markup Language</strong></p>
+<div class="docutils container">
+<ul class="simple">
+<li>It’s the language that forms the text or content on a web page</li>
+<li>It consists of predefined <em>elements</em> that add meaning or appearance</li>
+</ul>
+</div>
+</div>
+<div class="section" id="what-does-html-look-like">
+<h3>What Does HTML Look Like?</h3>
+<div class="compare compare23 docutils container">
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hi World!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li><cite>html</cite>, <cite>body</cite>, and <cite>h1</cite> are <em>elements</em><ul>
+<li>They are made up of <em>start tags</em> and <em>end tags</em></li>
+</ul>
+</li>
+<li><cite>&lt;html&gt;…&lt;/html&gt;</cite> goes around entire page</li>
+<li><cite>&lt;body&gt;…&lt;/body&gt;</cite> goes around <em>visual body</em><ul>
+<li>Which, in this example, is the entire page</li>
+</ul>
+</li>
+<li><cite>&lt;h1&gt;…&lt;/h1&gt;</cite> contains a “heading”<ul>
+<li>That makes text inside it larger and bold</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="viewing-our-html">
+<h3>Viewing Our HTML</h3>
+<div class="compare compare23 docutils container">
+<div class="docutils container">
+<div class="literal-block-wrapper docutils container" id="id9">
+<div class="code-block-caption"><span class="caption-text">first.html</span></div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hi World!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="docutils container">
+<ol class="arabic">
+<li><p class="first">In VSCode, create new file, <cite>first.html</cite></p>
+<p>HTML pages use extension of <code class="docutils literal notranslate"><span class="pre">.html</span></code></p>
+</li>
+<li><p class="first">Save somewhere convenient, like Desktop</p>
+</li>
+<li><p class="first">Double-click on <cite>first.html</cite></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="common-html-elements">
+<h3>Common HTML Elements</h3>
+<div class="compare compare23 docutils container">
+<div class="docutils container">
+<div class="literal-block-wrapper docutils container" id="id10">
+<div class="code-block-caption"><span class="caption-text">first.html</span></div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hi World!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+      This is
+      <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>bold<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span> and
+      <span class="p">&lt;</span><span class="nt">i</span><span class="p">&gt;</span>italic<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li><cite>p</cite> goes around a paragraph</li>
+<li><cite>b</cite> goes around bold text</li>
+<li><cite>i</cite> goes around italic text</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="nesting-html-elements">
+<h3>Nesting HTML Elements</h3>
+<div class="compare compare23 docutils container">
+<div class="docutils container">
+<div class="literal-block-wrapper docutils container" id="id11">
+<div class="code-block-caption"><span class="caption-text">first.html</span></div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hi World!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+      This is
+      <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>bold<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span> and
+      <span class="p">&lt;</span><span class="nt">i</span><span class="p">&gt;</span>italic<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>Elements are often nested inside other elements<ul>
+<li><cite>html</cite> is the <em>parent</em> of <cite>body</cite></li>
+<li><cite>body</cite> is a <em>child</em> of <cite>html</cite></li>
+<li><cite>b</cite> and <cite>i</cite> are both children of <cite>p</cite></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="html-has-hierarchy">
+<h3>HTML Has Hierarchy</h3>
+<div class="graphviz">
+<img src="./fundamentals_handout_files/graphviz-73878351a26bae513f65cd2036b3a7264bd867d4.svg">
+</div>
+</div>
+<div class="section" id="some-elements-are-required">
+<h3>Some Elements Are Required</h3>
+<p>To be valid in browsers, there are some tags that are always required:</p>
+<div class="docutils container">
+<ul class="simple">
+<li><cite>html</cite> (wraps around entire page)</li>
+<li><cite>head</cite> (info about page, but isn’t part of visual content)<ul>
+<li><cite>title</cite> (title of page; goes inside of <cite>head</cite>)</li>
+</ul>
+</li>
+<li><cite>body</cite> (wraps around visual content of page)</li>
+</ul>
+</div>
+<div class="docutils container">
+<p>Plus, at very top, you need a <em>declaration</em> of <code class="docutils literal notranslate"><span class="pre">&lt;!doctype</span> <span class="pre">html&gt;</span></code></p>
+</div>
+<p>Complete Example:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My Second Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>My Second Example<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<p>(Note that <cite>doctype</cite> starts with <code class="docutils literal notranslate"><span class="pre">!</span></code> and has no closing tag)</p>
+</div>
+</div>
+<div class="section" id="html-mostly-ignores-spaces-linebreaks">
+<h3>HTML Mostly Ignores Spaces/Linebreaks</h3>
+<p>HTML mostly ignores spaces and linebreaks <span class="raw-reveal"><br></span>
+(we’ll clarify this later)</p>
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="literal-block-wrapper docutils container" id="id12">
+<div class="code-block-caption"><span class="caption-text">Tidy, with indentation:</span></div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My Second Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>My Second Example<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="docutils container">
+<div class="literal-block-wrapper docutils container" id="id13">
+<div class="code-block-caption"><span class="caption-text">Messy, all jammed together</span></div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;&lt;</span><span class="nt">head</span><span class="p">&gt;&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My Second Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>My
+Second Example<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="paragraphs-headings-and-breaks">
+<h2>Paragraphs, Headings, and Breaks</h2>
+<div class="section" id="paragraphs">
+<h3>Paragraphs</h3>
+<p>HTML is often used to present largely-textual information.</p>
+<p>It’s common for text to appear inside a paragraph:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>It was a dark and stormy night.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<p>It’s possible for other tags to go inside a <cite>p</cite> tag, <span class="raw-reveal"><br></span>
+but a paragraph cannot contain another paragraph.</p>
+</div>
+</div>
+<div class="section" id="headers">
+<h3>Headers</h3>
+<p>There are different heading elements you can use, <span class="raw-reveal"><br></span>
+from largest/most-important, to smallest/least-important:</p>
+<ul>
+<li><p class="first"><cite>h1</cite> (largest) to <cite>h6</cite> (smallest)</p>
+</li>
+<li><p class="first">You’ll often use several of these, in order</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Main Title<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Section Title<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Section text here...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Sub-section header<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Sub-section text here...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Another sub-section<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+...
+
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Another Section<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="breaks">
+<h3>Breaks</h3>
+<p>There are two common kinds of breaks</p>
+<div class="docutils container">
+<dl class="docutils">
+<dt><cite>&lt;br&gt;</cite></dt><dd><p>Breaks a line in the middle of the line</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;p&gt;Hi&lt;br&gt;World&lt;/p&gt;</span></code> breaks this into two Linebreaks</p>
+</dd>
+<dt><cite>&lt;hr&gt;</cite></dt><dd><p>Draws a line across the screen</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;p&gt;Hi&lt;hr&gt;World&lt;/p&gt;</span></code> breaks this into two lines, with line drawn between</p>
+</dd>
+</dl>
+</div>
+<div class="docutils container">
+<p>Note that both of these elements only have a start tag — <span class="raw-reveal"><br></span>
+they don’t have an end tag after them.</p>
+</div>
+</div>
+</div>
+<div class="section" id="lists-in-html">
+<h2>Lists in HTML</h2>
+<div class="section" id="id3">
+<p>HTML can make two kinds of lists:</p>
+<ul class="simple">
+<li>unordered (bulleted, typically)</li>
+<li>ordered (numbered, typically)</li>
+</ul>
+</div>
+<div class="section" id="unordered-lists">
+<h3>Unordered Lists</h3>
+<p>A sequence of <em>list items</em> surrounded by an <em>unordered list</em> element:</p>
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>apple<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>berry<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>cherry<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>apple</li>
+<li>berry</li>
+<li>cherry</li>
+</ul>
+</div>
+</div>
+<div class="docutils container">
+<p>The list should only directly contain list items — <span class="raw-reveal"><br></span>
+but list items can contain text and other elements.</p>
+</div>
+</div>
+<div class="section" id="ordered-lists">
+<h3>Ordered Lists</h3>
+<p>A sequence of <em>list items</em> surrounded by an <em>ordered list</em> element:</p>
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>first<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>second<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>third<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ol class="arabic simple">
+<li>first</li>
+<li>second</li>
+<li>third</li>
+</ol>
+</div>
+</div>
+<div class="docutils container">
+<p>The list should only directly contain list items — <span class="raw-reveal"><br></span>
+but list items can contain text and other elements.</p>
+</div>
+</div>
+</div>
+<div class="section" id="text-modifications">
+<h2>Text Modifications</h2>
+<div class="section" id="id4">
+<p>HTML intentionally doesn’t have many elements to change appearance — <span class="raw-reveal"><br></span>
+that is more the domain of CSS</p>
+<p>We’ll cover some basic parts of HTML that do focus on appearance</p>
+</div>
+<div class="section" id="bold-and-italics">
+<h3>Bold and Italics</h3>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;b&gt;...&lt;/b&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">&lt;strong&gt;...&lt;/strong&gt;</span></code></dt><dd>This is <strong>bold</strong></dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;i&gt;...&lt;/i&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">&lt;em&gt;...&lt;/em&gt;</span></code></dt><dd>This is <em>italics</em></dd>
+</dl>
+</div>
+<div class="section" id="smaller-text">
+<h3>Smaller Text</h3>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;small&gt;...&lt;/small&gt;</span></code></dt><dd>Smaller than normal text</dd>
+</dl>
+</div>
+<div class="section" id="superscript-subscript">
+<h3>Superscript / Subscript</h3>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;sup&gt;...&lt;/sup&gt;</span></code></dt><dd>This is most useful for math or footnotes: x<sup>2</sup></dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;sub&gt;...&lt;/sub&gt;</span></code></dt><dd>This is most useful for math or chemistry: H<sub>2</sub>O</dd>
+</dl>
+</div>
+<div class="section" id="blockquotes">
+<h3>Blockquotes</h3>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;blockquote&gt;...&lt;/blockquote&gt;</span></code></dt><dd><p>Quoted text that can stand on its own:</p>
+<blockquote>
+<div>To be or not to be <span class="raw-reveal"><br></span>
+That is the question</div></blockquote>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="links">
+<h2>Links</h2>
+<div class="section" id="id5">
+<p>HTML pages are often linked together:</p>
+<ul class="simple">
+<li>a page of yours can point to another page of yours</li>
+<li>a page of yours can point to any other site on the Internet</li>
+</ul>
+</div>
+<div class="section" id="link-tag">
+<h3>Link Tag</h3>
+<p>To link to a page of yours:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"another.html"</span><span class="p">&gt;</span>Visit here!<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<p>That shows the text “Visit here!” and makes it a link to
+“another.html”, which is a file in the same folder as this page.</p>
+</div>
+</div>
+<div class="section" id="attributes">
+<h3>Attributes</h3>
+<p>That’s our first example of an <cite>attribute</cite>, which can be a part of a tag.</p>
+<p>Attributes provide other info to a tag, such as:</p>
+<ul class="simple">
+<li>Changing the appearance of the element</li>
+<li>Showing links what they link to</li>
+<li>Telling image tags where the image file can be found</li>
+</ul>
+<div class="docutils container">
+<p>Attributes are always a word, followed by an equal sign, and a value
+(typically in quotes, like our example)</p>
+</div>
+</div>
+<div class="section" id="where-to-link">
+<h3>Where To Link</h3>
+<p>You can also link to pages deeper down at your site:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"employees/elmo.html"</span><span class="p">&gt;</span>About Elmo<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>This links to the page “elmo.html” in the “employees” directory in this folder</p>
+<div class="docutils container">
+<p>You can also link to pages higher up at your site:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"../another.html"</span><span class="p">&gt;</span>Another Page<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>This links to a page one folder up than the current folder.</p>
+</div>
+<p>You can also link to other sites:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://en.wikipedia.org/wiki/Slow_loris"</span><span class="p">&gt;</span>Adorable!<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<p>This links directly to a page on Wikipedia.</p>
+<p>To link to another site, your <cite>href</cite> attribute needs to have a complete URL — <span class="raw-reveal"><br></span>
+typically starting with “<a class="reference external" href="http:">http://</a>” or “<a class="reference external" href="https:">https://</a>”</p>
+</div>
+</div>
+</div>
+<div class="section" id="images">
+<h2>Images</h2>
+<div class="section" id="id6">
+<p>HTML can show images, either from your site or another site:</p>
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://photo.jpg"</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<a class="reference internal image-reference" href="./fundamentals_handout_files/y39p455z"><img alt="https://tinyurl.com/y39p455z" src="./fundamentals_handout_files/y39p455z" style="width: 20em;"></a>
+</div>
+</div>
+<div class="docutils container">
+<p>This is another tag with an “attribute” — <span class="raw-reveal"><br></span>
+<cite>src</cite> is the location of the actual image file.</p>
+</div>
+<p>You can link to images on your site or other sites:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"photo.jpg"</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"../photo.jpg"</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"employees/elmo.jpg"</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://tinyurl.com/y39p455z"</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sizing-images">
+<h3>Sizing Images</h3>
+<p>Until told otherwise, browsers show images at their real size.</p>
+<p>You can use <cite>height</cite> and <cite>width</cite> attributes to set the size of an image:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"photo.jpg"</span> <span class="na">width</span><span class="o">=</span><span class="s">"200"</span> <span class="na">height</span><span class="o">=</span><span class="s">"100"</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<p>That makes the image 200 pixels wide and 100 pixel high, <span class="raw-reveal"><br></span>
+regardless of normal size</p>
+</div>
+<div class="docutils container">
+<p>It’s often better to do this in an editing program, or use CSS for this.</p>
+</div>
+</div>
+<div class="section" id="image-types">
+<h3>Image Types</h3>
+<p>Web browsers can show every type of image, but common types:</p>
+<ul class="simple">
+<li>GIF</li>
+<li>JPG</li>
+<li>PNG</li>
+</ul>
+<div class="docutils container">
+<p>You can export into one of these types in most image-designing programs</p>
+</div>
+</div>
+</div>
+<div class="section" id="entities">
+<h2>Entities</h2>
+<div class="section" id="id7">
+<p>HTML is meant to be text, and it can be tricky to get special symbols, <span class="raw-reveal"><br></span>
+like copyright symbols or curly quotes, into HTML</p>
+<p>HTML can have <cite>entities</cite> which are text spellings for common symbols.</p>
+<div class="docutils container">
+<p>Entities are always an ampersand, a single word, and a semicolon:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="ni">&amp;example;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="less-than-greater-than">
+<h3>Less Than / Greater Than</h3>
+<p>Since HTML tags use angle brackets, if you try to use these symbols in your
+HTML, it will often confuse browsers.</p>
+<p>Instead use:</p>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">&amp;lt;</span></code></dt><dd>Turns into a “less-than” symbol: <code class="docutils literal notranslate"><span class="pre">&lt;</span></code></dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&amp;gt;</span></code></dt><dd>Turns into a “greater-than” symbol: <code class="docutils literal notranslate"><span class="pre">&gt;</span></code></dd>
+</dl>
+</div>
+<div class="section" id="copyright-symbol">
+<h3>Copyright Symbol</h3>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">&amp;copy;</span></code></dt><dd>Turns into a “copyright” symbol: ©</dd>
+</dl>
+</div>
+<div class="section" id="curly-quotes">
+<h3>Curly Quotes</h3>
+<p>You can put “straight quotes” directly into HTML: <code class="docutils literal notranslate"><span class="pre">She</span> <span class="pre">said</span> <span class="pre">"Hello"</span></code></p>
+<p>Curly quotes can be trickier, and are often done with entities:</p>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">&amp;ldquo;</span></code></dt><dd>Turns into a “left-double-quote”: “</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&amp;rdquo;</span></code></dt><dd>Turns into a “right-double-quote”: ”</dd>
+</dl>
+<div class="docutils container">
+<p>To write a pretty quote:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>She said: <span class="ni">&amp;ldquo;</span>Hello!<span class="ni">&amp;rdquo;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="emmet">
+<h2>Emmet</h2>
+<div class="section" id="id8">
+<p>Emmet is a library for writing html with fewer keystrokes <span class="raw-reveal"><br></span></p>
+<p>We will be covering how to generate html quickly with Emmet shortcuts</p>
+</div>
+<div class="section" id="try-it-out">
+<h3>Try it out</h3>
+<p>Emmet comes pre-installed with VScode <span class="raw-reveal"><br></span>
+Create a new file with a <code class="docutils literal notranslate"><span class="pre">.html</span></code> extension</p>
+<p>Type <code class="docutils literal notranslate"><span class="pre">!</span></code> and pres tab <span class="raw-reveal"><br></span>
+You should see some automatically generated html like the following:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>// index.html
+
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"UTF-8"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-elements-with-emmet">
+<h3>Creating elements with Emmet</h3>
+<p>A pain point when writing html tags is typing the opening and closing brackets <span class="raw-reveal"><br></span>
+With Emmet we just need to specify the tag type and press tab</p>
+<div class="docutils container">
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><cite>h1</cite> <em>tab</em></li>
+</ul>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="docutils container">
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><cite>div</cite> <em>tab</em></li>
+</ul>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="nested-elements">
+<h3>Nested elements</h3>
+<p>It is also possible to create elements inside of elements</p>
+<div class="docutils container">
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><cite>div&gt;p</cite> <em>tab</em></li>
+</ul>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="docutils container">
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><cite>div&gt;ul&gt;li</cite> <em>tab</em></li>
+</ul>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="creating-multiple-elements">
+<h3>Creating multiple elements</h3>
+<div class="docutils container">
+<p>To create multiple elements use <code class="docutils literal notranslate"><span class="pre">*</span></code> and the number of elements you want</p>
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><cite>div*3</cite> <em>tab</em></li>
+</ul>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="docutils container">
+<p>This is especially useful for list items</p>
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><cite>ul&gt;li*4</cite> <em>tab</em></li>
+</ul>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="adding-text-inside-of-elements">
+<h3>Adding text inside of elements</h3>
+<p>Place the text inside of curly braces following the tag type</p>
+<div class="docutils container">
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><cite>div{hi}</cite> <em>tab</em></li>
+</ul>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>hi<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="docutils container">
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><cite>p&gt;div{inner}*2</cite> <em>tab</em></li>
+</ul>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>inner<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>inner<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="creating-sibling-elements">
+<h3>Creating sibling elements</h3>
+<p>Sibling elements are separated by <code class="docutils literal notranslate"><span class="pre">+</span></code></p>
+<div class="docutils container">
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><cite>div+p</cite> <em>tab</em></li>
+</ul>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="docutils container">
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><cite>div+ul&gt;li+li+li</cite> <em>tab</em></li>
+</ul>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="docutils container">
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><cite>div+ul&gt;li*3</cite> <em>tab</em></li>
+<li><em>(a better way)</em></li>
+</ul>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="creating-elements-with-attributes">
+<h3>Creating elements with attributes</h3>
+<p>You can specify any attribute type inside square brackets</p>
+<div class="docutils container">
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><cite>div[class=’class1’]*2</cite> <em>tab</em></li>
+</ul>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"class1"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"class1"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="docutils container">
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><cite>div&gt;p[class=’style1’]{text}*3</cite> <em>tab</em></li>
+</ul>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"style1"</span><span class="p">&gt;</span>text<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"style1"</span><span class="p">&gt;</span>text<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"style1"</span><span class="p">&gt;</span>text<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="resources">
+<h3>Resources</h3>
+<p>This should be enough to get you started <span class="raw-reveal"><br></span>
+When you are ready checkout the Emmet cheat sheet</p>
+<p><a class="reference external" href="https://docs.emmet.io/cheat-sheet/">https://docs.emmet.io/cheat-sheet/</a></p>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./fundamentals_handout_files/jquery.js.download"></script>
+<script type="text/javascript" src="./fundamentals_handout_files/underscore.js.download"></script>
+<script type="text/javascript" src="./fundamentals_handout_files/doctools.js.download"></script>
+<script type="text/javascript" src="./fundamentals_handout_files/language_data.js.download"></script> 
+
+</body></html>

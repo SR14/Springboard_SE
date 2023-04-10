@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!-- saved from url=(0113)https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>CSS Selectors and Specificity</title>
+
+    <link rel="stylesheet" href="./selectors_specificity_handout_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./selectors_specificity_handout_files/handouts-sphinx.css">
+
+    
+    <link href="./selectors_specificity_handout_files/css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="page-sidebar">
+        <header>
+            <p class="project">Springboard</p>
+
+            <p class="title">CSS Selectors and Specificity</p>
+
+            <p class="backlink"><a href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html"> « Back to Homepage</a></p>
+
+        </header>
+        <div id="toc">
+            <ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#">CSS Selectors and Specificity</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#goals">Goals</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#id1">Goals</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#css-selectors">CSS Selectors</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#id2">CSS Selectors</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#select-by-the-name-of-the-element">Select by the name of the element</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#select-by-an-id">Select by an ID</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#why-would-you-use-an-id">Why would you use an id?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#select-by-a-class">Select by a class</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#why-would-you-use-a-class">Why would you use a class?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#a-few-more-selectors">A few more selectors</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#id3">A few more selectors</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#descendant-selector">descendant selector</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#adjacent-sibling-selector">adjacent sibling selector</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#direct-children-selector">direct children selector</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#multiple-selectors">Multiple selectors</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#pseudo-class">Pseudo class</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#css-specificity">CSS Specificity</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#specificity">Specificity</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#inline-styling">Inline styling</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#important">!important</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#what-happens-if-they-have-the-same-specificity">What happens if they have the same specificity?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity/index.html#recap">Recap</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div id="page-content">
+        
+  <div class="section" id="css-selectors-and-specificity">
+<h1>CSS Selectors and Specificity</h1>
+<p><a class="reference external" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-selectors-specificity-demo.zip">Download demo code</a></p>
+<div class="section" id="goals">
+<h2>Goals</h2>
+<div class="section" id="id1">
+<div class="docutils container">
+<ul class="simple">
+<li>Compare and contrast element, id and class selectors</li>
+<li>Review more complex selectors</li>
+<li>Understand how specificity works</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="css-selectors">
+<h2>CSS Selectors</h2>
+<div class="section" id="id2">
+<p>In CSS we have tons of options for selecting specific elements or groups of elements</p>
+<div class="docutils container">
+<p>We’ll see some more differences between these selectors soon, for now let’s get used to the syntax.</p>
+</div>
+</div>
+<div class="section" id="select-by-the-name-of-the-element">
+<h3>Select by the name of the element</h3>
+<p>The simplest selector we can use is the <strong>element</strong> selector.</p>
+<div class="docutils container">
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">body</span> <span class="p">{</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">300</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="select-by-an-id">
+<h3>Select by an ID</h3>
+<p>Another way we can select elements is by using the <strong>id</strong> attribute.</p>
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">section</span> <span class="na">id</span><span class="o">=</span><span class="s">"main-heading"</span><span class="p">&gt;</span>
+  Only one main heading here!
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">#</span><span class="nn">main-heading</span> <span class="p">{</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">500</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>Remember, id attributes should be unique!</p>
+</div>
+</div>
+<div class="section" id="why-would-you-use-an-id">
+<h3>Why would you use an id?</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>To uniquely identify an element</li>
+<li>To be very specific - we’ll see more about that later!</li>
+</ul>
+</div>
+</div>
+<div class="section" id="select-by-a-class">
+<h3>Select by a class</h3>
+<p>A more common way we can select multiple elements is by using the <strong>class</strong> attribute, which allows us to select multiple elements.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">"post-description"</span><span class="p">&gt;</span>
+  Our first post!
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">"post-description"</span><span class="p">&gt;</span>
+  Our second post!
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">"post-description"</span><span class="p">&gt;</span>
+  Our third post!
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">post-description</span> <span class="p">{</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">300</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="why-would-you-use-a-class">
+<h3>Why would you use a class?</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Select many different kinds of elements</li>
+<li>Be a little more specific than just an element selector</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="a-few-more-selectors">
+<h2>A few more selectors</h2>
+<div class="section" id="id3">
+<div class="docutils container">
+<ul class="simple">
+<li>descendant</li>
+<li>adjacent sibling</li>
+<li>direct children</li>
+</ul>
+</div>
+</div>
+<div class="section" id="descendant-selector">
+<h3>descendant selector</h3>
+<p>Target all paragraph tags inside of the body, regardless of how much nesting exists</p>
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paragraph 1<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paragraph 2<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paragraph 3<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">body</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>Read this from right to left</p>
+</div>
+<div class="docutils container">
+<p>“All paragraphs <strong>inside</strong> of body elements”</p>
+</div>
+</div>
+<div class="section" id="adjacent-sibling-selector">
+<h3>adjacent sibling selector</h3>
+<p>Target only the paragraph tags that come after h2 tags.</p>
+<p>They must have the same parent element as well.</p>
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Welcome back!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Hi there!<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paragraph 2<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paragraph 3<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">h2</span> <span class="o">+</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="direct-children-selector">
+<h3>direct children selector</h3>
+<p>Target only the h2 tags that are direct children of section tags</p>
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span> Yes me!! <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Not me!<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">section</span> <span class="o">&gt;</span> <span class="nt">h2</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="multiple-selectors">
+<h3>Multiple selectors</h3>
+<div class="docutils container">
+<p>We avoid code like this:</p>
+</div>
+<div class="docutils container">
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">h2</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">main-section</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">top-heading</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>By doing this:</p>
+</div>
+<div class="docutils container">
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">h2</span><span class="o">,</span> <span class="p">.</span><span class="nc">main-section</span><span class="o">,</span> <span class="p">#</span><span class="nn">top-heading</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pseudo-class">
+<h3>Pseudo class</h3>
+<p>A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s).</p>
+<div class="docutils container">
+<p>For example, :hover can be used to change a button’s color when the user’s mouse hovers over it.</p>
+</div>
+<div class="docutils container">
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/* Any button over which the user's mouse is hovering */</span>
+<span class="nt">button</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>You can find more of them at <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="css-specificity">
+<h2>CSS Specificity</h2>
+<div class="section" id="specificity">
+<h3>Specificity</h3>
+<p>Some selectors are far more specific than others!</p>
+<div class="docutils container">
+<p>Always remember the following order from least to most specific</p>
+</div>
+<div class="docutils container">
+<ol class="arabic simple">
+<li>element</li>
+<li>class</li>
+<li>id</li>
+<li>inline style</li>
+<li>!important</li>
+</ol>
+</div>
+</div>
+<div class="section" id="inline-styling">
+<h3>Inline styling</h3>
+<p>We can also just write our CSS directly in HTML elements using the <cite>style</cite> attribute</p>
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"color:red;"</span><span class="p">&gt;</span>It's nice to see you!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>While this may seem convenient, it’s very dangerous. Inline styling will always override IDs, classes and element selectors!</p>
+</div>
+</div>
+<div class="section" id="important">
+<h3>!important</h3>
+<p>Think of it as the <strong>nuclear</strong> option. You should almost never use it!</p>
+<p>It will override everything and anything.</p>
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"color:red;"</span><span class="p">&gt;</span>It's nice to see you!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">p</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">green</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>Even our inline style doesn’t stand a chance.</p>
+</div>
+</div>
+<div class="section" id="what-happens-if-they-have-the-same-specificity">
+<h3>What happens if they have the same specificity?</h3>
+<div class="docutils container">
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">h1</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>That’s what the <strong>Cascading</strong> in CSS helps us with!</p>
+</div>
+<div class="docutils container">
+<p>Whichever declaration comes <strong>last</strong> will be the selected on.</p>
+</div>
+</div>
+<div class="section" id="recap">
+<h3>Recap</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Common CSS selectors include element, class, and id</li>
+<li>Be careful with inline styling because it is so specific</li>
+<li>Don’t use !important</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./selectors_specificity_handout_files/jquery.js.download"></script>
+<script type="text/javascript" src="./selectors_specificity_handout_files/underscore.js.download"></script>
+<script type="text/javascript" src="./selectors_specificity_handout_files/doctools.js.download"></script>
+<script type="text/javascript" src="./selectors_specificity_handout_files/language_data.js.download"></script> 
+
+</body></html>

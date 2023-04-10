@@ -1,0 +1,26 @@
+/* Write the necessary CSS here! */ 
+
+body{
+    background-color: #d0cfcf;
+    font-size: 16px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    text-transform: capitalize;
+}
+
+section{
+    font-size: 1.5em;
+}
+
+h1{
+    text-shadow: 5px 5px 2px red;
+}

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Arrays</title>
+
+    <link rel="stylesheet" href="./arrays_handout_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./arrays_handout_files/handouts-sphinx.css">
+
+    
+    <link href="./arrays_handout_files/css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="page-sidebar">
+        <header>
+            <p class="project">Springboard</p>
+
+            <p class="title">Arrays</p>
+
+            <p class="backlink"><a href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html"> « Back to Homepage</a></p>
+
+        </header>
+        <div id="toc">
+            <ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#">Arrays</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#goals">Goals</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#id1">Goals</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#what-is-an-array">What Is An Array?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#why-should-i-care">Why Should I Care?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#a-world-without-arrays">A World Without Arrays</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#a-world-with-arrays">A World With Arrays</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#accessing-values-in-an-array">Accessing Values In An Array</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#updating-array-elements">Updating Array Elements</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#storing-values-from-an-array">Storing Values From An Array</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#common-array-methods">Common Array Methods</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#id2">Common Array Methods</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#push">push</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#pop">pop</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#unshift">unshift</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#shift">shift</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#more-array-methods">More array methods</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#concat">concat</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#join">join</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#indexof">indexOf</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#includes">includes</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#which-one-should-i-use">Which One Should I Use???</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#reverse">reverse</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#splice">splice</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#splice-structure">splice structure</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#id3">splice</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#sort">sort</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#id4">sort</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#slice">slice</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#id5">slice</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#using-const-with-arrays">Using <cite>const</cite> with arrays</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-arrays/index.html#nested-arrays">Nested Arrays</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div id="page-content">
+        
+  <div class="section" id="arrays">
+<h1>Arrays</h1>
+<div class="section" id="goals">
+<h2>Goals</h2>
+<div class="section" id="id1">
+<div class="docutils container">
+<ul class="simple">
+<li>Describe what arrays are, and why they’re useful</li>
+<li>Create new arrays</li>
+<li>Access elements inside of an array</li>
+<li>Store array elements in variables</li>
+<li>Use common array methods</li>
+</ul>
+</div>
+</div>
+<div class="section" id="what-is-an-array">
+<h3>What Is An Array?</h3>
+<p>An array is an ordered collection of values.</p>
+<p>Put another way, it’s a list of stuff!</p>
+</div>
+<div class="section" id="why-should-i-care">
+<h3>Why Should I Care?</h3>
+<p>Arrays are one of the most commonly-used data structures in JS</p>
+<p>Arrays are found in most other programming languages, too</p>
+<p>We very often want to store our data in an orderly way</p>
+</div>
+<div class="section" id="a-world-without-arrays">
+<h3>A World Without Arrays</h3>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">evenNum</span> <span class="o">=</span> <span class="mf">2</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">anotherEvenNum</span> <span class="o">=</span> <span class="mf">4</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">yetAnotherEvenNum</span> <span class="o">=</span> <span class="mf">6</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">okayIGetItYouLikeEvenNums</span> <span class="o">=</span> <span class="mf">8</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>Lots of code</li>
+<li>No clear ordering</li>
+<li>Hard to modify the collection without adding more variables</li>
+</ul>
+</div>
+</div>
+<div class="section" id="a-world-with-arrays">
+<h3>A World With Arrays</h3>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">evenNums</span> <span class="o">=</span> <span class="p">[</span><span class="mf">2</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">6</span><span class="p">,</span> <span class="mf">8</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>Alternatively, an array of values:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">evenNum</span> <span class="o">=</span> <span class="mf">2</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">anotherEvenNum</span> <span class="o">=</span> <span class="mf">4</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">yetAnotherEvenNum</span> <span class="o">=</span> <span class="mf">6</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">okayIGetItYouLikeEvenNums</span> <span class="o">=</span> <span class="mf">8</span><span class="p">;</span>
+</pre></div>
+</div>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">evenNums</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="nx">evenNum</span><span class="p">,</span>
+  <span class="nx">anotherEvenNum</span><span class="p">,</span>
+  <span class="nx">yetAnotherEvenNum</span><span class="p">,</span>
+  <span class="nx">okayIGetItYouLikeEvenNums</span>
+<span class="p">];</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="accessing-values-in-an-array">
+<h3>Accessing Values In An Array</h3>
+<p>You can access elements in an array using brackets.
+The first element in the array is at index 0, the second element is at index 1, and so on.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">children</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Blue"</span><span class="p">,</span> <span class="s2">"Rumi"</span><span class="p">,</span> <span class="s2">"Sir"</span><span class="p">];</span>
+
+<span class="nx">children</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span> <span class="c1">// "Blue"</span>
+<span class="nx">children</span><span class="p">[</span><span class="mf">1</span><span class="p">];</span> <span class="c1">// "Rumi"</span>
+<span class="nx">children</span><span class="p">[</span><span class="mf">2</span><span class="p">];</span> <span class="c1">// "Sir"</span>
+<span class="nx">children</span><span class="p">[</span><span class="mf">3</span><span class="p">];</span> <span class="c1">// undefined</span>
+<span class="nx">children</span><span class="p">[</span><span class="o">-</span><span class="mf">1</span><span class="p">];</span> <span class="c1">// undefined</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="updating-array-elements">
+<h3>Updating Array Elements</h3>
+<p>Elements in an array can be changed with a simple assignment.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">catToys</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"ball"</span><span class="p">,</span> <span class="s2">"string"</span><span class="p">,</span> <span class="s2">"xbox"</span><span class="p">,</span> <span class="s2">"catnip"</span><span class="p">];</span>
+
+<span class="nx">catToys</span><span class="p">[</span><span class="mf">2</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"laser pointer"</span><span class="p">;</span>
+
+<span class="nx">catToys</span><span class="p">;</span> <span class="c1">// ["ball", "string", "laser pointer", "catnip"]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="storing-values-from-an-array">
+<h3>Storing Values From An Array</h3>
+<p>Storing values by accessing them</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">patterns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"stripes"</span><span class="p">,</span> <span class="s2">"polka dots"</span><span class="p">,</span> <span class="s2">"plaid"</span><span class="p">,</span> <span class="s2">"leopard print"</span><span class="p">];</span>
+
+<span class="kd">const</span> <span class="nx">stripes</span> <span class="o">=</span> <span class="nx">patterns</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>
+<span class="kd">const</span> <span class="nx">polkaDots</span> <span class="o">=</span> <span class="nx">patterns</span><span class="p">[</span><span class="mf">1</span><span class="p">];</span>
+<span class="kd">const</span> <span class="nx">plaid</span> <span class="o">=</span> <span class="nx">patterns</span><span class="p">[</span><span class="mf">2</span><span class="p">];</span>
+<span class="kd">const</span> <span class="nx">leopardPrint</span> <span class="o">=</span> <span class="nx">patterns</span><span class="p">[</span><span class="mf">3</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="common-array-methods">
+<h2>Common Array Methods</h2>
+<div class="section" id="id2">
+</div>
+<div class="section" id="push">
+<h3>push</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Adds values to the end of the array</li>
+<li>Returns the new array length</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">planets</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Venus"</span><span class="p">,</span> <span class="s2">"Earth"</span><span class="p">,</span> <span class="s2">"Mars"</span><span class="p">];</span>
+
+<span class="nx">planets</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">"Jupiter"</span><span class="p">);</span> <span class="c1">// 4</span>
+
+<span class="nx">planets</span><span class="p">;</span> <span class="c1">// ["Venus", "Earth", "Mars", "Jupiter"]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pop">
+<h3>pop</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Removes values from the end of the array</li>
+<li>Returns the removed value</li>
+<li>If the array is empty, it returns undefined</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">planets</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Venus"</span><span class="p">,</span> <span class="s2">"Earth"</span><span class="p">,</span> <span class="s2">"Mars"</span><span class="p">];</span>
+
+<span class="nx">planets</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span> <span class="c1">// "Mars"</span>
+<span class="nx">planets</span><span class="p">;</span> <span class="c1">// ["Venus", "Earth"]</span>
+
+<span class="nx">planets</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span> <span class="c1">// "Earth"</span>
+<span class="nx">planets</span><span class="p">;</span> <span class="c1">// ["Venus"]</span>
+
+<span class="nx">planets</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span> <span class="c1">// "Venus"</span>
+<span class="nx">planets</span><span class="p">;</span> <span class="c1">// []</span>
+
+<span class="nx">planets</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span> <span class="c1">// undefined</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="unshift">
+<h3>unshift</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Adds values to the start of the array</li>
+<li>Returns the new array length</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">planets</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Venus"</span><span class="p">,</span> <span class="s2">"Earth"</span><span class="p">,</span> <span class="s2">"Mars"</span><span class="p">];</span>
+
+<span class="nx">planets</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="s2">"Mercury"</span><span class="p">);</span> <span class="c1">// 4</span>
+
+<span class="nx">planets</span><span class="p">;</span> <span class="c1">// ["Mercury", "Venus", "Earth", "Mars"]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="shift">
+<h3>shift</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Removes values from the start of the array</li>
+<li>Returns the removed value</li>
+<li>If the array is empty, it returns undefined</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">planets</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Venus"</span><span class="p">,</span> <span class="s2">"Earth"</span><span class="p">,</span> <span class="s2">"Mars"</span><span class="p">];</span>
+
+<span class="nx">planets</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span> <span class="c1">// "Venus"</span>
+<span class="nx">planets</span><span class="p">;</span> <span class="c1">// ["Earth", "Mars"]</span>
+
+<span class="nx">planets</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span> <span class="c1">// "Earth"</span>
+<span class="nx">planets</span><span class="p">;</span> <span class="c1">// ["Mars"]</span>
+
+<span class="nx">planets</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span> <span class="c1">// "Mars"</span>
+<span class="nx">planets</span><span class="p">;</span> <span class="c1">// []</span>
+
+<span class="nx">planets</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span> <span class="c1">// undefined</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="more-array-methods">
+<h2>More array methods</h2>
+<div class="section" id="concat">
+<h3>concat</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Combines two arrays together</li>
+<li>Accepts arrays or comma separated values</li>
+<li>Creates a new array and returns it</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">].</span><span class="nx">concat</span><span class="p">([</span><span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">6</span><span class="p">]);</span> <span class="c1">// [1, 2, 3, 4, 5, 6]</span>
+<span class="p">[</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">].</span><span class="nx">concat</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">6</span><span class="p">);</span> <span class="c1">// [1, 2, 3, 4, 5, 6]</span>
+<span class="p">[</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">].</span><span class="nx">concat</span><span class="p">([</span><span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">],</span> <span class="mf">6</span><span class="p">);</span> <span class="c1">// [1, 2, 3, 4, 5, 6]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="join">
+<h3>join</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Combines all array elements into a string</li>
+<li>Accepts a separator to put in between values</li>
+<li>Returns the created string</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">commands</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"eat"</span><span class="p">,</span> <span class="s2">"drink"</span><span class="p">,</span> <span class="s2">"be merry"</span><span class="p">];</span>
+
+<span class="kd">const</span> <span class="nx">doEverything</span> <span class="o">=</span> <span class="nx">commands</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">" and "</span><span class="p">);</span>
+<span class="c1">// "eat and drink and be merry"</span>
+
+<span class="kd">const</span> <span class="nx">doSomething</span> <span class="o">=</span> <span class="nx">commands</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">" or "</span><span class="p">);</span>
+<span class="c1">// "eat or drink or be merry"</span>
+
+<span class="kd">const</span> <span class="nx">excited</span> <span class="o">=</span> <span class="nx">commands</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">"! "</span><span class="p">)</span>
+<span class="c1">// "eat! drink! be merry"</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="indexof">
+<h3>indexOf</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Searches for values in an array</li>
+<li>Returns the index position of the first matching value</li>
+<li>If the value is not found, returns -1</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">words</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s2">"it"</span><span class="p">,</span> <span class="s2">"was"</span><span class="p">,</span> <span class="s2">"the"</span><span class="p">,</span>
+  <span class="s2">"best"</span><span class="p">,</span> <span class="s2">"of"</span><span class="p">,</span> <span class="s2">"times"</span><span class="p">,</span>
+  <span class="s2">"it"</span><span class="p">,</span> <span class="s2">"was"</span><span class="p">,</span> <span class="s2">"the"</span><span class="p">,</span>
+  <span class="s2">"worst"</span><span class="p">,</span> <span class="s2">"of"</span><span class="p">,</span> <span class="s2">"times"</span>
+<span class="p">];</span>
+
+<span class="nx">words</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">"best"</span><span class="p">);</span> <span class="c1">// 3</span>
+<span class="nx">words</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">"times"</span><span class="p">);</span> <span class="c1">// 5</span>
+<span class="nx">words</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">"hamburger"</span><span class="p">);</span> <span class="c1">// -1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="includes">
+<h3>includes</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Searches for values in an array</li>
+<li>If the value is found, returns true</li>
+<li>If the value is not found, returns false</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">words</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s2">"it"</span><span class="p">,</span> <span class="s2">"was"</span><span class="p">,</span> <span class="s2">"the"</span><span class="p">,</span>
+  <span class="s2">"best"</span><span class="p">,</span> <span class="s2">"of"</span><span class="p">,</span> <span class="s2">"times"</span><span class="p">,</span>
+  <span class="s2">"it"</span><span class="p">,</span> <span class="s2">"was"</span><span class="p">,</span> <span class="s2">"the"</span><span class="p">,</span>
+  <span class="s2">"worst"</span><span class="p">,</span> <span class="s2">"of"</span><span class="p">,</span> <span class="s2">"times"</span>
+<span class="p">];</span>
+
+<span class="nx">words</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s2">"best"</span><span class="p">);</span> <span class="c1">// true</span>
+<span class="nx">words</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s2">"times"</span><span class="p">);</span> <span class="c1">// true</span>
+<span class="nx">words</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s2">"hamburger"</span><span class="p">);</span> <span class="c1">// false</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="which-one-should-i-use">
+<h3>Which One Should I Use???</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Don’t care about the position of the element you’re looking for?
+- Use includes!</li>
+<li>Need the index of the left-most match?
+- Use indexOf!</li>
+</ul>
+</div>
+</div>
+<div class="section" id="reverse">
+<h3>reverse</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Reverses an array</li>
+<li>Returns the reversed array</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">];</span>
+<span class="nx">letters</span><span class="p">.</span><span class="nx">reverse</span><span class="p">();</span> <span class="c1">// ["d", "c", "b", "a"]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="splice">
+<h3>splice</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Super powerful method for adding and removing from an array</li>
+<li>Can add elements anywhere in the array</li>
+<li>Can remove elements from anywhere in the array</li>
+<li>Returns an array of the deleted elements</li>
+</ul>
+</div>
+</div>
+<div class="section" id="splice-structure">
+<h3>splice structure</h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">array</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">start</span><span class="p">,</span> <span class="nx">deleteCount</span><span class="p">,</span> <span class="nx">item1</span><span class="p">,</span> <span class="nx">item2</span><span class="p">,</span> <span class="p">...)</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>Where to start removing items</li>
+<li>Number of items to remove</li>
+<li>First item to add at start index</li>
+<li>Second item to add and on…</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>splice</h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">instruments</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"guitar"</span><span class="p">,</span> <span class="s2">"piano"</span><span class="p">,</span> <span class="s2">"bass"</span><span class="p">,</span> <span class="s2">"tuba"</span><span class="p">,</span> <span class="s2">"triangle"</span><span class="p">,</span> <span class="s2">"drums"</span><span class="p">];</span>
+
+<span class="nx">instruments</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">);</span> <span class="c1">// ["piano", "bass"]</span>
+
+<span class="nx">instruments</span><span class="p">;</span> <span class="c1">// ["guitar", "tuba", "triangle", "drums"]</span>
+
+<span class="nx">instruments</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="s2">"trombone"</span><span class="p">,</span> <span class="s2">"didgeridoo"</span><span class="p">);</span> <span class="c1">// []</span>
+
+<span class="nx">instruments</span><span class="p">;</span> <span class="c1">// ["guitar", "tuba", "trombone", "didgeridoo", "triangle", "drums"]</span>
+
+<span class="nx">instruments</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="s2">"saxophone"</span><span class="p">);</span> <span class="c1">// ["didgeridoo", "triangle", "drums"]</span>
+
+<span class="nx">instruments</span><span class="p">;</span> <span class="c1">// ["guitar", "tuba", "trombone", "saxophone"]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sort">
+<h3>sort</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Sorts elements in an array</li>
+<li>By default, sorts values alphabetically</li>
+<li>Returns the sorted array</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">junkFoods</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"pizza"</span><span class="p">,</span> <span class="s2">"ice cream"</span><span class="p">,</span> <span class="s2">"potato chips"</span><span class="p">,</span> <span class="s2">"cookies"</span><span class="p">];</span>
+
+<span class="nx">junkFoods</span><span class="p">.</span><span class="nx">sort</span><span class="p">();</span> <span class="c1">// ["cookies", "ice cream", "pizza", "potato chips"]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id4">
+<p>Beware the default sort behavior!</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">smallNums</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5</span><span class="p">,</span> <span class="mf">8</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">1</span><span class="p">,</span> <span class="mf">6</span><span class="p">,</span> <span class="mf">3</span><span class="p">];</span>
+
+<span class="nx">smallNums</span><span class="p">.</span><span class="nx">sort</span><span class="p">();</span> <span class="c1">// [1, 2, 3, 5, 6, 8]</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<p>This doesn’t work…</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">biggerNums</span> <span class="o">=</span> <span class="p">[</span><span class="mf">9</span><span class="p">,</span> <span class="mf">57</span><span class="p">,</span> <span class="mf">3100</span><span class="p">,</span> <span class="mf">84</span><span class="p">,</span> <span class="mf">101</span><span class="p">,</span> <span class="mf">12</span><span class="p">];</span>
+
+<span class="nx">biggerNums</span><span class="p">.</span><span class="nx">sort</span><span class="p">();</span> <span class="c1">// [101, 12, 3100, 57, 84, 9]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="slice">
+<h3>slice</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Creates copies of subsets of an array</li>
+<li>Accepts an optional starting index (to begin the slice)</li>
+<li>Accepts an optional ending index (to end the slice)</li>
+<li>Returns the copied (sub)array</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id5">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">days</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Monday"</span><span class="p">,</span> <span class="s2">"Tuesday"</span><span class="p">,</span> <span class="s2">"Wednesday"</span><span class="p">,</span> <span class="s2">"Thursday"</span><span class="p">,</span> <span class="s2">"Friday"</span><span class="p">,</span> <span class="s2">"Saturday"</span><span class="p">,</span> <span class="s2">"Sunday"</span><span class="p">];</span>
+
+<span class="kd">const</span> <span class="nx">weekend</span> <span class="o">=</span> <span class="nx">days</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">5</span><span class="p">);</span>
+<span class="c1">// ["Saturday", "Sunday"]</span>
+
+<span class="kd">const</span> <span class="nx">week</span> <span class="o">=</span> <span class="nx">days</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="mf">5</span><span class="p">);</span>
+<span class="c1">// ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]</span>
+
+<span class="kd">const</span> <span class="nx">midWeek</span> <span class="o">=</span> <span class="nx">days</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="mf">4</span><span class="p">);</span>
+<span class="c1">// ["Tuesday", "Wednesday", "Thursday"]</span>
+
+<span class="kd">const</span> <span class="nx">weekCopy</span> <span class="o">=</span> <span class="nx">days</span><span class="p">.</span><span class="nx">slice</span><span class="p">();</span>
+<span class="c1">// ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="using-const-with-arrays">
+<h3>Using <cite>const</cite> with arrays</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>values can change as long as the reference remains the same</li>
+<li><cite>const</cite> ensures that the variable <strong>can not</strong> be re-assigned or redeclared</li>
+</ul>
+</div>
+</div>
+<div class="section" id="nested-arrays">
+<h3>Nested Arrays</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Arrays can be nested inside other arrays</li>
+<li>Access values using another set of <cite>[]</cite></li>
+</ul>
+</div>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">gameBoard</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">[</span><span class="s2">"O"</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">],</span>
+  <span class="p">[</span><span class="s2">"O"</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">],</span>
+  <span class="p">[</span><span class="s2">"X"</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="s2">"O"</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="nx">gameBoard</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="c1">// "O"</span>
+<span class="nx">gameBoard</span><span class="p">[</span><span class="mf">1</span><span class="p">][</span><span class="mf">1</span><span class="p">]</span> <span class="c1">// null</span>
+<span class="nx">gameBoard</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="c1">// "X"</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./arrays_handout_files/jquery.js.download"></script>
+<script type="text/javascript" src="./arrays_handout_files/underscore.js.download"></script>
+<script type="text/javascript" src="./arrays_handout_files/doctools.js.download"></script>
+<script type="text/javascript" src="./arrays_handout_files/language_data.js.download"></script> 
+
+</body></html>

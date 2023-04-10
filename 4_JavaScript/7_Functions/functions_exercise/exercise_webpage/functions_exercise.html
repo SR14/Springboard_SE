@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Functions Exercise</title>
+
+    <link rel="stylesheet" href="./functions_exercise_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./functions_exercise_files/handouts-sphinx.css">
+
+    
+    <link href="./functions_exercise_files/css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="page-sidebar">
+        <header>
+            <p class="project">Springboard</p>
+
+            <p class="title">Functions Exercise</p>
+
+            <p class="backlink"><a href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html"> « Back to Homepage</a></p>
+
+        </header>
+        <div id="toc">
+            <ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html#">Functions Exercise</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html#difference">difference</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html#product">product</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html#printday">printDay</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html#lastelement">lastElement</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html#numbercompare">numberCompare</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html#singlelettercount">singleLetterCount</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html#multiplelettercount">multipleLetterCount</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html#arraymanipulation">arrayManipulation</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html#ispalindrome">isPalindrome</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html#bonus">Bonus</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html#rock-paper-scissor">Rock / Paper / Scissor</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/index.html#solution">Solution</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div id="page-content">
+        
+  <div class="section" id="functions-exercise">
+<h1>Functions Exercise</h1>
+<p>Your assignment is to write the following functions in the descriptions below - good luck!</p>
+<div class="section" id="difference">
+<h2>difference</h2>
+<ul class="simple">
+<li>this function takes in two parameters and returns the difference of the two;</li>
+</ul>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">difference</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="mf">2</span><span class="p">);</span> <span class="c1">// 0</span>
+<span class="nx">difference</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">2</span><span class="p">);</span> <span class="c1">// -2</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="product">
+<h2>product</h2>
+<ul class="simple">
+<li>this function takes in two parameters and returns the product of the two;</li>
+</ul>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">product</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="mf">2</span><span class="p">);</span> <span class="c1">// 4</span>
+<span class="nx">product</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">2</span><span class="p">);</span> <span class="c1">// 0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="printday">
+<h2>printDay</h2>
+<ul class="simple">
+<li>this function takes in one parameter (a number from 1-7) and returns the day of the week (1 is Sunday, 2 is Monday, 3 is Tuesday etc.). If the number is less than 1 or greater than 7, the function should return undefined;</li>
+</ul>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">printDay</span><span class="p">(</span><span class="mf">4</span><span class="p">);</span> <span class="c1">// "Wednesday"</span>
+<span class="nx">printDay</span><span class="p">(</span><span class="mf">41</span><span class="p">);</span> <span class="c1">// undefined</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="lastelement">
+<h2>lastElement</h2>
+<ul class="simple">
+<li>this function takes in one parameter (an array) and returns the last value in the array. It should return <cite>undefined</cite> if the array is empty.</li>
+</ul>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">lastElement</span><span class="p">([</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">,</span><span class="mf">4</span><span class="p">]);</span> <span class="c1">// 4</span>
+<span class="nx">lastElement</span><span class="p">([]);</span> <span class="c1">// undefined</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="numbercompare">
+<h2>numberCompare</h2>
+<ul class="simple">
+<li>this function takes in two parameters (both numbers). If the first is greater than the second, this function returns “First is greater”. If the second number is greater than the first, the function returns “Second is greater”. Otherwise the function returns “Numbers are equal”</li>
+</ul>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">numberCompare</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="mf">1</span><span class="p">);</span> <span class="c1">// "Numbers are equal"</span>
+
+<span class="nx">numberCompare</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="mf">1</span><span class="p">);</span> <span class="c1">// "First is greater"</span>
+
+<span class="nx">numberCompare</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">);</span> <span class="c1">// "Second is greater"</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="singlelettercount">
+<h2>singleLetterCount</h2>
+<ul class="simple">
+<li>this function takes in two parameters (two strings). The first parameter should be a word and the second should be a letter. The function returns the number of times that letter appears in the word. The function should be case insensitive (does not matter if the input is lowercase or uppercase). If the letter is not found in the word, the function should return 0.</li>
+</ul>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">singleLetterCount</span><span class="p">(</span><span class="s1">'amazing'</span><span class="p">,</span><span class="s1">'A'</span><span class="p">);</span> <span class="c1">// 2</span>
+<span class="nx">singleLetterCount</span><span class="p">(</span><span class="s1">'Rithm School'</span><span class="p">,</span><span class="s1">'o'</span><span class="p">);</span> <span class="c1">// 2</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="multiplelettercount">
+<h2>multipleLetterCount</h2>
+<ul class="simple">
+<li>this function takes in one parameter (a string) and returns an object with the keys being the letters and the values being the count of the letter.</li>
+</ul>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">multipleLetterCount</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">);</span> <span class="c1">// {h:1, e: 1, l: 2, o:1}</span>
+<span class="nx">multipleLetterCount</span><span class="p">(</span><span class="s2">"person"</span><span class="p">);</span> <span class="c1">// {p:1, e: 1, r: 1, s:1, o:1, n:1}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="arraymanipulation">
+<h2>arrayManipulation</h2>
+<ul class="simple">
+<li>this function should take in at most four parameters (an array, command, location, and value).<ul>
+<li>If the command is “remove” and the location is “end”, the function should remove the last value in the array and return the value removed. (In this case, the function only needs three arguments.)</li>
+<li>If the command is “remove” and the location is “beginning”, the function should remove the first value in the array and return the value removed. (In this case, the function only needs three arguments.)</li>
+<li>If the command is “add” and the location is “beginning”, the function should add the value (fourth parameter) to the beginning of the array and return the array.</li>
+<li>If the command is “add” and the location is “end”, the function should add the value (fourth parameter) to the end of the array and return the array.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">arrayManipulation</span><span class="p">([</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">],</span> <span class="s2">"remove"</span><span class="p">,</span> <span class="s2">"end"</span><span class="p">);</span> <span class="c1">// 3</span>
+
+<span class="nx">arrayManipulation</span><span class="p">([</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">],</span> <span class="s2">"remove"</span><span class="p">,</span> <span class="s2">"beginning"</span><span class="p">);</span> <span class="c1">// 1</span>
+
+<span class="nx">arrayManipulation</span><span class="p">([</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">],</span> <span class="s2">"add"</span><span class="p">,</span> <span class="s2">"beginning"</span><span class="p">,</span> <span class="mf">20</span><span class="p">);</span> <span class="c1">// [20,1,2,3]</span>
+
+<span class="nx">arrayManipulation</span><span class="p">([</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">],</span> <span class="s2">"add"</span><span class="p">,</span> <span class="s2">"end"</span><span class="p">,</span> <span class="mf">30</span><span class="p">);</span> <span class="c1">// [1,2,3,30]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ispalindrome">
+<h2>isPalindrome</h2>
+<ul class="simple">
+<li>A Palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. This function should take in one parameter and returns <cite>true</cite> or <cite>false</cite> if it is a palindrome. As a bonus, allow your function to ignore whitespace and capitalization so that <cite>isPalindrome(‘a man a plan a canal Panama’);</cite> returns <cite>true</cite></li>
+</ul>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">isPalindrome</span><span class="p">(</span><span class="s1">'testing'</span><span class="p">);</span> <span class="c1">// false</span>
+
+<span class="nx">isPalindrome</span><span class="p">(</span><span class="s1">'tacocat'</span><span class="p">);</span> <span class="c1">// true</span>
+
+<span class="nx">isPalindrome</span><span class="p">(</span><span class="s1">'hannah'</span><span class="p">);</span> <span class="c1">// true</span>
+
+<span class="nx">isPalindrome</span><span class="p">(</span><span class="s1">'robert'</span><span class="p">);</span> <span class="c1">// false</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h1>Bonus</h1>
+<div class="section" id="rock-paper-scissor">
+<h2>Rock / Paper / Scissor</h2>
+<ul class="simple">
+<li>using your knowledge so far, build a game of Rock/Paper/Scissor where through the use of the <cite>prompt</cite> function, a user can enter their choice and based on a random selection - they can either tie/win or lose against a computer.</li>
+</ul>
+</div>
+<div class="section" id="solution">
+<h2>Solution</h2>
+<p><a class="reference external" href="https://curric.springboard.com/software-engineering-career-track-prep/default/exercises/js-functions/solution.html">View our solution</a></p>
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./functions_exercise_files/jquery.js.download"></script>
+<script type="text/javascript" src="./functions_exercise_files/underscore.js.download"></script>
+<script type="text/javascript" src="./functions_exercise_files/doctools.js.download"></script>
+<script type="text/javascript" src="./functions_exercise_files/language_data.js.download"></script> 
+
+</body></html>

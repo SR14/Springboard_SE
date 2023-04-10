@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>JS Fundamentals</title>
+
+    <link rel="stylesheet" href="./primitive_data_handout_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./primitive_data_handout_files/handouts-sphinx.css">
+
+    
+    <link href="./primitive_data_handout_files/css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="page-sidebar">
+        <header>
+            <p class="project">Springboard</p>
+
+            <p class="title">JS Fundamentals</p>
+
+            <p class="backlink"><a href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html"> « Back to Homepage</a></p>
+
+        </header>
+        <div id="toc">
+            <ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html#">JS Fundamentals</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html#booleans">Booleans</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html#strings">Strings</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html#id1">Strings</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html#string-properties">String Properties</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html#string-methods-slice">String Methods - Slice</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html#string-methods-includes-and-indexof">String Methods - Includes And Indexof</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html#string-methods-split">String Methods - Split</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html#string-methods-replace">String Methods - Replace</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html#string-concatenation">String Concatenation</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html#template-literals">Template Literals</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html#long-strings">Long Strings</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals/index.html#checking-variable-types">Checking Variable Types</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div id="page-content">
+        
+  <div class="section" id="js-fundamentals">
+<h1>JS Fundamentals</h1>
+<p><a class="reference external" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-fundamentals-demo.zip">Download slides</a></p>
+<div class="section" id="booleans">
+<h2>Booleans</h2>
+<div class="docutils container">
+<ul class="simple">
+<li><cite>true</cite> or <cite>false</cite></li>
+</ul>
+</div>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">isLoggedIn</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">isGameOver</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="c1">// this one should never change!</span>
+<span class="kd">const</span> <span class="nx">isWaterWet</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="strings">
+<h2>Strings</h2>
+</div>
+<div class="section" id="id1">
+<p>A string is a sequence of Unicode characters. Unlike variable naming, strings support all Unicode including emojis!</p>
+<p>As you can see, string literals are defined with either double or single quotes (no difference, up to you!)</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">internationalStr</span> <span class="o">=</span> <span class="s2">"中文 español देवनागरी العربية"</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">smileyFace</span> <span class="o">=</span> <span class="s1">'😀'</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="string-properties">
+<h2>String Properties</h2>
+<p>Strings are immutable: you cannot change them after they are created.</p>
+<p>Strings are sequences of characters that have indices, starting from zero.</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">myName</span> <span class="o">=</span> <span class="s1">'Colt Steele'</span><span class="p">;</span>
+
+<span class="nx">myName</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>  <span class="c1">// 'C'</span>
+<span class="nx">myName</span><span class="p">[</span><span class="mf">3</span><span class="p">];</span>  <span class="c1">// 't'</span>
+<span class="kd">let</span> <span class="nx">myName</span> <span class="o">=</span> <span class="s1">'Colt Steele'</span><span class="p">;</span>
+
+<span class="nx">myName</span><span class="p">[</span><span class="mf">3</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'d'</span><span class="p">;</span> <span class="c1">// THIS DOESN'T WORK!</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myName</span><span class="p">);</span> <span class="c1">// 'Colt Steele';</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nx">length</span> <span class="nx">tells</span> <span class="nx">you</span> <span class="nx">the</span> <span class="nx">number</span> <span class="k">of</span> <span class="nx">characters</span> <span class="nx">make</span> <span class="nx">up</span> <span class="nx">the</span> <span class="nx">string</span>
+
+<span class="kd">let</span> <span class="nx">alphabet</span> <span class="o">=</span> <span class="s1">'abcdefghijklmnopqrstuvwxyz'</span><span class="p">;</span>
+<span class="nx">alphabet</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="c1">// 26</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="string-methods-slice">
+<h2>String Methods - Slice</h2>
+<p>There are a few very important string methods. Note that unlike some of the number methods earlier, these do not have to be on the String() constructor. You can call them directly from a string literal.</p>
+<div class="docutils container">
+<p>.slice(start, end) - return  a new string based on slicing the string from the start index up until the end index</p>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span>let idk = 'I have no idea what I'm doing';
+idk.slice(0, 13); // 'I have no idea';
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>end is optional, if not specified it will be set to string.length.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">fun</span> <span class="o">=</span> <span class="s1">'Are you having fun yet?'</span><span class="p">;</span>
+<span class="nx">fun</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">15</span><span class="p">);</span> <span class="c1">// 'fun yet?'</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>You can specify negative numbers to count backwards from the end.</p>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">cool</span> <span class="o">=</span> <span class="s1">'I am cool'</span><span class="p">;</span>
+<span class="nx">cool</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="o">-</span><span class="mf">6</span><span class="p">,</span> <span class="o">-</span><span class="mf">3</span><span class="p">);</span>  <span class="c1">// m c</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="string-methods-includes-and-indexof">
+<h2>String Methods - Includes And Indexof</h2>
+<p>.includes(substr) - return true if the substring is found within the string</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">funFact</span> <span class="o">=</span> <span class="s1">'An axolotl is a tiny salamander in Mexico'</span><span class="p">;</span>
+<span class="nx">funFact</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">'axolotl'</span><span class="p">);</span> <span class="c1">// true</span>
+<span class="nx">funFact</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">'lizard'</span><span class="p">);</span> <span class="c1">// false</span>
+</pre></div>
+</div>
+</div>
+<p>.indexOf(substr) - return the string index where the substring exists, or negative 1 if it can’t find it within the string</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">waldo</span> <span class="o">=</span> <span class="s1">'Where\'s Waldo?'</span><span class="p">;</span>
+<span class="nx">waldo</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'Waldo'</span><span class="p">);</span>  <span class="c1">// 8</span>
+<span class="nx">waldo</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'Blue'</span><span class="p">);</span>  <span class="c1">// -1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="string-methods-split">
+<h2>String Methods - Split</h2>
+<p>.split(separator) - convert a string to an array of substrings (more on arrays later), using the separator to determine what the substrings are</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">phrase</span> <span class="o">=</span> <span class="s1">'Lannisters always pay their debts.'</span><span class="p">;</span>
+
+<span class="nx">phrase</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">);</span>  <span class="c1">// use a space as a separator</span>
+
+<span class="c1">// [ 'Lannisters', 'always', 'pay', 'their', 'debts.' ]</span>
+<span class="nx">Split</span> <span class="nx">on</span> <span class="nx">an</span> <span class="nx">empty</span> <span class="nx">string</span> <span class="nx">to</span> <span class="nx">get</span> <span class="nx">an</span> <span class="nx">array</span> <span class="k">of</span> <span class="nx">single</span> <span class="nx">characters</span><span class="p">.</span>
+
+<span class="kd">let</span> <span class="nx">cat</span> <span class="o">=</span> <span class="s1">'Blue'</span><span class="p">;</span>
+<span class="nx">cat</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
+
+<span class="c1">// [ 'B', 'l', 'u', 'e' ]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="string-methods-replace">
+<h2>String Methods - Replace</h2>
+<div class="docutils container">
+<p>.replace(regex, newSubstr) - replace characters in a string based on a regular expression with a new substring. A regular expression or RegEx is a language for matching patterns in strings - we won’t worry about these for now!</p>
+</div>
+<div class="docutils container">
+<p>This is very complex because RegExes are hard. Returns a new string.</p>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">yay</span> <span class="o">=</span> <span class="s1">'Happy Happy, Joy Joy'</span><span class="p">;</span>
+<span class="nx">yay</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/H/g</span><span class="p">,</span> <span class="s1">'Fl'</span><span class="p">);</span>
+
+<span class="c1">// 'Flappy Flappy, Joy Joy'</span>
+</pre></div>
+</div>
+</div>
+<p>If you don’t do a regular expression with /g, only the first instance of the sub-string is replaced.</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">funnyString</span> <span class="o">=</span> <span class="s1">'lol'</span><span class="p">;</span>
+
+<span class="nx">funnyString</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s1">'l'</span><span class="p">,</span> <span class="s1">'p'</span><span class="p">);</span>  <span class="c1">// 'pop'</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="string-concatenation">
+<h2>String Concatenation</h2>
+<p>The most common operation we want to do with strings is to concatenate them (put multiple strings together).</p>
+<p>The traditional way to do this is with the + operator.</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">myName</span> <span class="o">=</span> <span class="s1">'Colt'</span> <span class="o">+</span> <span class="s1">' '</span> <span class="o">+</span> <span class="s1">'Steele'</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myName</span><span class="p">);</span> <span class="c1">// 'Colt Steele'</span>
+<span class="nx">This</span> <span class="nx">does</span> <span class="nx">the</span> <span class="nx">same</span> <span class="nx">thing</span> <span class="k">as</span> <span class="nx">the</span> <span class="p">.</span><span class="nx">concat</span> <span class="nx">method</span>
+
+<span class="nx">hello</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="s1">' world'</span><span class="p">);</span> <span class="c1">// hello world</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="template-literals">
+<h2>Template Literals</h2>
+<p>A fancy way to insert variables into your strings is by using template literals. Template strings use backticks instead of single or double quotes - - <cite>like this!</cite></p>
+<p>Variables are interpolated with ${}</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="s1">'Nicholas Cage'</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="mf">54</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">job</span> <span class="o">=</span> <span class="s1">'actor'</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">bio</span> <span class="o">=</span> <span class="sb">`</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb"> is a </span><span class="si">${</span><span class="nx">age</span><span class="si">}</span><span class="sb"> year-old </span><span class="si">${</span><span class="nx">job</span><span class="si">}</span><span class="sb">.`</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">bio</span><span class="p">);</span>
+<span class="s1">'Nicholas Cage is a 54 year-old actor.'</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>This is more readable than the alternative:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">bio</span> <span class="o">=</span> <span class="nx">name</span> <span class="o">+</span> <span class="s1">' is a '</span> <span class="o">+</span> <span class="nx">age</span> <span class="o">+</span> <span class="s1">' year-old '</span> <span class="o">+</span> <span class="nx">job</span> <span class="o">+</span> <span class="s1">'.'</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">bio</span><span class="p">);</span>
+<span class="s1">'Nicholas Cage is a 54 year-old actor.'</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="long-strings">
+<h2>Long Strings</h2>
+<p>You can have strings that span multiple lines in several ways:</p>
+<div class="docutils container">
+<ol class="arabic simple">
+<li>Use the + operator at the end or beginning of each line to concatenate multiple strings from different lines together.</li>
+<li>Use back-slashes in the same string to ignore the line-breaks.</li>
+</ol>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">hipsterIpsum</span> <span class="o">=</span> <span class="s1">'Lorem ipsum dolor amet biodiesel, '</span> <span class="o">+</span>
+<span class="s1">' viral skateboard next level. Gentrify brooklyn roof party, '</span> <span class="o">+</span>
+<span class="s1">' aesthetic distillery pinterest umami semiotics. '</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">hipsterIpsum2</span> <span class="o">=</span> <span class="s1">'Gastropub vexillologist williamsburg \</span>
+<span class="s1">pin tattooed hashtag lo-fi master cleanse. Venmo ennui \</span>
+<span class="s1">before they sold out blue bottle pitchfork.'</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<p>An even easier way is to use backticks!</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">hipsterIpsum</span> <span class="o">=</span> <span class="sb">``</span>
+  <span class="nx">Lorem</span> <span class="nx">ipsum</span> <span class="nx">dolor</span> <span class="nx">amet</span> <span class="nx">biodiesel</span><span class="p">,</span>
+  <span class="nx">viral</span> <span class="nx">skateboard</span> <span class="nx">next</span> <span class="nx">level</span><span class="p">.</span> <span class="nx">Gentrify</span> <span class="nx">brooklyn</span> <span class="nx">roof</span> <span class="nx">party</span><span class="p">,</span>
+  <span class="nx">aesthetic</span> <span class="nx">distillery</span> <span class="nx">pinterest</span> <span class="nx">umami</span> <span class="nx">semiotics</span><span class="p">.</span>
+<span class="sb">``</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="checking-variable-types">
+<h2>Checking Variable Types</h2>
+<p>You can usually* use typeof to determine what a variable is holding</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">myName</span> <span class="o">=</span> <span class="s1">'Colt Steele'</span><span class="p">;</span>
+<span class="k">typeof</span> <span class="nx">myName</span> <span class="c1">// "string"</span>
+
+<span class="kd">let</span> <span class="nx">favoriteNumber</span> <span class="o">=</span> <span class="mf">420</span><span class="p">;</span>
+<span class="k">typeof</span> <span class="nx">favoriteNumber</span> <span class="c1">// "number"</span>
+
+<span class="kd">let</span> <span class="nx">awesome</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="k">typeof</span> <span class="nx">awesome</span><span class="p">;</span> <span class="c1">// "boolean"</span>
+
+<span class="kd">let</span> <span class="nx">willILiveForever</span><span class="p">;</span>
+<span class="k">typeof</span> <span class="nx">willILiveForever</span> <span class="c1">// "undefined"</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./primitive_data_handout_files/jquery.js.download"></script>
+<script type="text/javascript" src="./primitive_data_handout_files/underscore.js.download"></script>
+<script type="text/javascript" src="./primitive_data_handout_files/doctools.js.download"></script>
+<script type="text/javascript" src="./primitive_data_handout_files/language_data.js.download"></script> 
+
+</body></html>

@@ -1,0 +1,216 @@
+/* --------------- FALLBACK ---------------- */
+// window.addEventListener("error", function () {
+//     $("#creative_container").show();
+//     $("#fallback").css("background-image", 'url(./images/backup_300x250.jpg)').show().on("click", console.log('clickOut'));
+// });
+/* ----------------------------------------- */
+
+////////////////////
+/// BANNER CLASS ///
+////////////////////
+
+class Banner {
+    constructor(config, content) {
+        this.container = config.bannerContainer
+        this.width = config.width;
+        this.height = config.height;
+        this.autoplay = config.autoplay;
+        this.autoplayTimeline = new TimelineMax();
+        this.autoplayInterval = config.autoplayInterval;
+        this.loadingTime = config.loadingTime;
+        this.slideAnimations = [];
+        this.currentSlide = 0;
+        this.enableDots = true;
+        this.content = content;
+    }
+  
+    setContent(){
+        const _self = this;
+
+        /* override css */
+        if(this.content[`overrideCSS_${this.width}x${this.height}`].value){
+            $('head').append(`<style type="text/css">${this.content[`overrideCSS_${this.width}x${this.height}`].value}</style>`);
+        }
+  
+        /* set product data */
+        this.container.find('.dotsContainer').html('');
+        this.container.find('#creative_container').css('background-image', `url(${this.content['background_'+ this.width +'x'+ this.height].value})`);
+  
+        this.content.products.value.forEach(function(product, index){
+            var slide = _self.container.find('#templateSlide').clone();
+  
+            slide.attr('id', `slide_${index}`);
+  
+            slide.find('.dellLogo').attr('src', _self.content.Logo.value);
+            slide.find('.mdfDescription').html(product.vf_desc.value);
+            slide.find('.mdfLogo').attr('src', product.vf_logo.value);
+            slide.find('.header').html(_self.content[`Header${index + 1}`].value);
+            slide.find('.model').html(product.model_name.value);
+            slide.find('.productImage').attr('src', product.prod_image.value);
+            
+            if(parseInt(product.savings_percent.value) > parseInt(_self.content.savings_percent_threshold.value)){
+                slide.find('.price').html(`${product.savings_amount.value}`);
+            } else {
+                slide.find('.price').remove();
+            }
+  
+            _self.container.find('.sliderContainer').append(slide);
+  
+            /* dots generation */
+            if(_self.content.products.value.length > 1){
+                _self.container.find('.dotsContainer').append(`<div id='dot_${index}' class='dot ${index == 0 ? 'active' : ''}'></div>`);
+            }
+  
+            /* set in and out animations for all slides */
+            _self.slideAnimations.push({
+                in: function(){
+                    slide.find('.slideFixedItem').css('opacity', 1);
+    
+                    TweenMax.to(slide.find('.slideItem'), 0.4, {delay: 0.4, autoAlpha: 1,
+                        onStart: function(){
+                            _self.enableDots = true;
+                        }
+                    });
+                },
+                out: function(){
+                    slide.find('.slideFixedItem').css('opacity', 0);
+    
+                    TweenMax.to(slide.find('.slideItem'), 0.4, {autoAlpha: 0,
+                        onStart: function(){
+                            _self.enableDots = false;
+                        }
+                    });
+                }
+            });
+        });
+  
+        this.container.find('#templateSlide').remove();
+        this.container.find('.exitCTA').html(this.content.cta_text.value);
+  
+        if(this.content.overlay_text.value) {
+            this.container.find('.closeOverlay').attr('src', this.content.overlay_close_image.value);
+            this.container.find('.legalCTA').html(this.content.legal_text.value);
+            this.container.find('.overlayText').html(this.content.overlay_text.value);
+        } else {
+            this.container.find('.overlay').remove();
+            this.container.find('.legalCTA').remove();
+        }
+
+        /* center button */
+        var offset = (this.container.find('.textContainer').outerWidth() - this.container.find('.ctaContainer').outerWidth()) / 2;
+        this.container.find('.ctaContainer').css('left', this.container.find('.textContainer').position().left + offset);
+  
+        /* add the click event for the generated dots */
+        this.container.find('.dot').click(function(e){
+            if(_self.enableDots){
+                var clickedDot = e.currentTarget.id.split('_')[1];
+    
+                if(clickedDot != _self.currentSlide){
+                    _self.nextSlide(_self.currentSlide, clickedDot);
+                } else {
+                    _self.clickOut();
+                }
+                
+                _self.autoplayTimeline.pause();
+            }
+        });
+  
+        this.setEvents();
+    }
+  
+    setEvents(){
+        const _self = this;
+  
+        /* click out */
+        this.container.find('.clickLayer, .exitCTA').click(function(){
+            _self.clickOut();
+        });
+        
+        this.container.find('.legalCTA').click(function(){
+            _self.autoplayTimeline.pause();
+            _self.container.find('.overlay').css('visibility', 'visible');
+        });
+        
+        this.container.find('.closeOverlay').click(function(){
+            _self.container.find('.overlay').css('visibility', 'hidden');
+        });
+    }
+  
+    nextSlide(current, next){
+        this.container.find(`#dot_${current}`).removeClass('active');
+        this.container.find(`#dot_${next}`).addClass('active');
+  
+        this.slideAnimations[current].out();
+        this.slideAnimations[next].in();
+  
+        this.currentSlide = next;
+    }
+  
+    clickOut(){
+        const _self = this;
+  
+        window.dispatchEvent(
+            new CustomEvent('lemonpi.interaction/click', {
+              detail: {
+                placeholder:  ['products', _self.currentSlide, 'url'],
+                query: {}
+              }
+            })
+        );
+    }
+  
+    start(){
+        const _self = this;
+  
+        this.setContent();
+  
+        /* initialize the banner */
+        setTimeout(function(){
+            _self.slideAnimations[0].in();
+        
+            /* remove the loading screen */
+            TweenMax.to(_self.container.find('.loadingScreen'), 0.2, {autoAlpha: 0, onComplete: function(){
+                _self.setAutoplay();
+            }});
+        }, _self.loadingTime);
+    }
+
+    setAutoplay(){
+        if(this.autoplay){
+            const _self = this;
+            
+            this.slideAnimations.forEach(function(animation, index){
+                if(index < (_self.slideAnimations.length - 1)){
+                    _self.autoplayTimeline.add(function(){
+                        _self.nextSlide(index, index + 1);
+                    }, _self.autoplayInterval * (index + 1));
+                } else {
+                    _self.autoplayTimeline.add(function(){
+                        _self.nextSlide(index, 0);
+                    }, _self.autoplayInterval * (index + 1));
+                }
+            });
+
+            this.autoplayTimeline.play();
+        }
+    }
+};
+  
+////////////////
+/// SETTINGS ///
+////////////////
+
+const bannerConfig = {
+    width: 300,
+    height: 250,
+    autoplay: true,
+    autoplayInterval: 2,
+    loadingTime: 10,
+    bannerContainer: $('#content')
+}
+
+lemonpi.subscribe(function callback(content) {
+    const banner = new Banner(bannerConfig, content);
+
+    banner.start();
+});

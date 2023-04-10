@@ -1,0 +1,30 @@
+section {
+    border: 1px solid rgb(199, 199, 199);
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 0px 3px rgb(226, 226, 226);
+}
+
+
+img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+
+}
+
+section :not(img, hr) { 
+    margin: .5em 1em;
+
+}
+
+hr {
+    background-color:  rgb(199, 199, 199);
+    border: none;
+    height: 1px;
+}
+
+

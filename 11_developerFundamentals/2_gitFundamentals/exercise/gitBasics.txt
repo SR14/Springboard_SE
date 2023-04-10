@@ -1,0 +1,19 @@
+$ mkdir learn_git_again
+$ cd learn_git_again
+$ touch third.txt
+$ git init
+$ git status
+$ git add third.txt
+$ git status
+$ git commit -m 'adding the third.txt'
+$ git log
+$ touch fourth.txt
+$ git add fourth.txt
+$ git commit -m 'adding fourth.txt'
+$ rm third.txt
+$ git add third.txt
+$ git commit -m 'removing third.txt'
+$ git log
+$ cd ~
+$ git config --global --replace-all core.pager cat
+$ man git config

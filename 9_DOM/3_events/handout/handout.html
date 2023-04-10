@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>JavaScript Events</title>
+
+    <link rel="stylesheet" href="./handout_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./handout_files/handouts-sphinx.css">
+
+    
+    <link href="./handout_files/css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="page-sidebar">
+        <header>
+            <p class="project">Springboard</p>
+
+            <p class="title">JavaScript Events</p>
+
+            <p class="backlink"><a href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html"> « Back to Homepage</a></p>
+
+        </header>
+        <div id="toc">
+            <ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#">JavaScript Events</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#goals">Goals</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#id1">Goals</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#events">Events</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#what-is-an-event">What is an event?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#what-kinds-of-events-do-we-have">What Kinds Of Events Do We Have?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#this-is-really-what-most-browser-based-js-is-about">This Is Really What Most Browser Based JS Is About!</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#so-how-do-we-do-it">So How Do We Do It?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#attaching-the-name-of-the-function">Attaching The Name Of The Function</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#adding-in-javascript">Adding In Javascript</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#using-addeventlistener">Using addEventListener</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#which-one-should-we-use">Which One Should We Use?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#a-gotcha-waiting-for-the-dom-to-load">A Gotcha - Waiting For The Dom To Load</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#accessing-the-event-object">Accessing The Event Object</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#what-is-inside-of-the-event-object">What Is Inside Of The Event Object?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#let-s-see-this-in-action">Let’s see this in action</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#solving-our-problem">Solving our problem</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#another-example">Another example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#adding-multiple-event-listeners">Adding Multiple Event Listeners</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#id2">Adding Multiple Event Listeners</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#what-happens-when-we-want-to-add-new-elements">What happens when we want to add new elements?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#it-doesn-t-work">It doesn’t work!</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#adding-the-listener-when-we-create">Adding the listener when we create</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#event-delegation">Event delegation</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#how-to-do-better-using-event-delegation">How to do better using event delegation</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#event-bubbling-and-capturing">Event Bubbling And Capturing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#removing-event-listeners">Removing Event Listeners</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#id3">Removing Event Listeners</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#how-it-works">How it works</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#removing-event-listeners-correctly">Removing Event Listeners Correctly</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#data-attributes">Data attributes</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#id4">Data attributes</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#an-example">An example</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events/index.html#recap">Recap</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div id="page-content">
+        
+  <div class="section" id="javascript-events">
+<h1>JavaScript Events</h1>
+<p><a class="reference external" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-dom-events-demo.zip">Download Demo Code</a></p>
+<div class="section" id="goals">
+<h2>Goals</h2>
+<div class="section" id="id1">
+<div class="docutils container">
+<ul class="simple">
+<li>Explain what an event is in JavaScript</li>
+<li>Add event listeners and prevent default actions using JavaScript</li>
+<li>Access information about the event using a special object</li>
+<li>Add event listeners efficiently</li>
+<li>Explore data attributes</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="events">
+<h2>Events</h2>
+<div class="section" id="what-is-an-event">
+<h3>What is an event?</h3>
+<p>DOM events are “actions” that occur as a result of something the user or the browser does.</p>
+<div class="docutils container">
+<p>We can use JavaScript to execute code when these kinds of “events” happen.</p>
+</div>
+</div>
+<div class="section" id="what-kinds-of-events-do-we-have">
+<h3>What Kinds Of Events Do We Have?</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>clicking on something</li>
+<li>hovering over something with the mouse</li>
+<li>pressing certain keys</li>
+<li>when the DOM has loaded</li>
+<li>when a form is submitted</li>
+</ul>
+</div>
+</div>
+<div class="section" id="this-is-really-what-most-browser-based-js-is-about">
+<h3>This Is Really What Most Browser Based JS Is About!</h3>
+<p>We write code that listens for events - and react accordingly!</p>
+<div class="docutils container">
+<p>This is commonly called Event Driven Programming</p>
+</div>
+<div class="docutils container">
+<p>What kinds of web pages have you used recently that have JavaScript that listens for events?</p>
+</div>
+</div>
+<div class="section" id="so-how-do-we-do-it">
+<h3>So How Do We Do It?</h3>
+<p>We have three options!</p>
+<div class="docutils container">
+<ol class="arabic simple">
+<li>Attach the name of the function to the element in HTML</li>
+<li>Attach the name of the function to an element in JavaScript</li>
+<li>Use the addEventListener method</li>
+</ol>
+</div>
+</div>
+<div class="section" id="attaching-the-name-of-the-function">
+<h3>Attaching The Name Of The Function</h3>
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"runClickHandler()"</span><span class="p">&gt;</span> Hello World <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+In HTML
+</pre></div>
+</div>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">runClickHandler</span><span class="p">(){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"You just clicked the h1 element!"</span><span class="p">;</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="adding-in-javascript">
+<h3>Adding In Javascript</h3>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">h1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"h1"</span><span class="p">);</span>
+
+<span class="nx">h1</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"You just clicked the h1 element!"</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="using-addeventlistener">
+<h3>Using addEventListener</h3>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">h1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"h1"</span><span class="p">);</span>
+
+<span class="nx">h1</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"You just clicked the h1 element!"</span><span class="p">;</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="which-one-should-we-use">
+<h3>Which One Should We Use?</h3>
+<p>We’re going to go with addEventListener - here’s why:</p>
+<div class="docutils container">
+<ul class="simple">
+<li>It gives us the most flexibility around our event listeners</li>
+<li>It avoids writing any inline code in our HTML and keeps our HTML and JS seperate</li>
+<li>This is commonly called “Separation of Concerns”</li>
+</ul>
+</div>
+</div>
+<div class="section" id="a-gotcha-waiting-for-the-dom-to-load">
+<h3>A Gotcha - Waiting For The Dom To Load</h3>
+<p>If you are trying to access properties in the DOM, before the web page has loaded - it won’t work! This becomes an issue if you put &lt;script&gt; tags in the &lt;head&gt; before the DOM has loaded</p>
+<div class="docutils container">
+<p>Thankfully we have an event we can listen for to handle this! It’s called DOMContentLoaded</p>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"DOMContentLoaded"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="c1">// place your code inside here</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="accessing-the-event-object">
+<h3>Accessing The Event Object</h3>
+<p>Inside of the callback to addEventListener, we get access to a special object as a parameter - the event object</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">h1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"h1"</span><span class="p">);</span>
+
+<span class="c1">// we can call this parameter whatever we want - event is very common</span>
+<span class="nx">h1</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="c1">// let's take a look!</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="what-is-inside-of-the-event-object">
+<h3>What Is Inside Of The Event Object?</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>target - what element is the target of the event</li>
+<li>pageX / pageY - where on the page did this event occur?</li>
+<li>key - what key was pressed that triggered this event?</li>
+<li>preventDefault() - a function used to prevent the default behavior of the event.<ul>
+<li>This is <strong>very useful</strong> for stopping form submissions from refreshing the page which is their default behavior</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="let-s-see-this-in-action">
+<h3>Let’s see this in action</h3>
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+  Name: <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">"firstName"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Add your name!<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">formElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"form"</span><span class="p">);</span>
+
+<span class="nx">formElement</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"submit"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"you just submitted the form!"</span><span class="p">)</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>Unfortunately this will not work! The default behavior of a form is to trigger a refreshing of the page.</p>
+</div>
+</div>
+<div class="section" id="solving-our-problem">
+<h3>Solving our problem</h3>
+<p>If we want to stop the default behavior of an event, we need to use the special <cite>event.preventDefault()</cite> method.</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">formElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"form"</span><span class="p">);</span>
+
+<span class="nx">formElement</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"submit"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"you just submitted the form!"</span><span class="p">);</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="another-example">
+<h3>Another example</h3>
+<p>So far we’ve seen click and submit, events - let’s take a look at another one, keyPress!</p>
+<div class="docutils container">
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">demo/keypress-demo/index.html</span></div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Press the "a" key!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"script.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="docutils container">
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-text">demo/keypress-demo/script.js</span></div>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// listen for the keypress everywhere</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"keypress"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">key</span> <span class="o">===</span> <span class="s2">"a"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s2">"you just pressed the 'a' key!"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="adding-multiple-event-listeners">
+<h2>Adding Multiple Event Listeners</h2>
+<div class="section" id="id2">
+<p>It’s very common that you will want to add multiple event listeners on elements</p>
+<div class="docutils container">
+<p>Let’s see an example:</p>
+</div>
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>See your friend list!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">"friend-list"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Michelle <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Remove<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Juan <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Remove<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Emma <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Remove<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"script-list.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">buttons</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">"button"</span><span class="p">);</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">button</span> <span class="k">of</span> <span class="nx">buttons</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">button</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>Everything seems to be working!</p>
+</div>
+</div>
+<div class="section" id="what-happens-when-we-want-to-add-new-elements">
+<h3>What happens when we want to add new elements?</h3>
+<div class="docutils container">
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>See your friend list!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">"friend-list"</span><span class="p">&gt;&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"first-name"</span><span class="p">&gt;&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class="na">id</span><span class="o">=</span><span class="s">"first-name"</span> <span class="p">/&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Add a friend!<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"script-form.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"form"</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">friendList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"#friend-list"</span><span class="p">);</span>
+
+<span class="kr">const</span> <span class="nx">buttons</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">"li button"</span><span class="p">);</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">button</span> <span class="k">of</span> <span class="nx">buttons</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">button</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"submit"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+  <span class="kr">const</span> <span class="nx">newFriendInput</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"#first-name"</span><span class="p">);</span>
+  <span class="kr">const</span> <span class="nx">newLi</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"li"</span><span class="p">);</span>
+  <span class="kr">const</span> <span class="nx">newButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"button"</span><span class="p">);</span>
+  <span class="nx">newLi</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">newFriendInput</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+  <span class="nx">newButton</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="s2">"Remove"</span><span class="p">;</span>
+
+  <span class="nx">newLi</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">newButton</span><span class="p">);</span>
+  <span class="nx">friendList</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">newLi</span><span class="p">);</span>
+  <span class="nx">form</span><span class="p">.</span><span class="nx">reset</span><span class="p">();</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="it-doesn-t-work">
+<h3>It doesn’t work!</h3>
+<p>The issue here is that our event listener only works for elements <strong>currently</strong> on the page</p>
+<div class="docutils container">
+<p>There are two ways we can fix this</p>
+</div>
+<div class="docutils container">
+<ol class="arabic simple">
+<li>Adding the event listener when we create elements</li>
+<li>Event Delegation</li>
+</ol>
+</div>
+<div class="docutils container">
+<p>Let’s start with adding an event listener when we create</p>
+</div>
+</div>
+<div class="section" id="adding-the-listener-when-we-create">
+<h3>Adding the listener when we create</h3>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"form"</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">friendList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"#friend-list"</span><span class="p">);</span>
+
+<span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"submit"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+  <span class="kr">const</span> <span class="nx">newFriendInput</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"#first-name"</span><span class="p">);</span>
+  <span class="kr">const</span> <span class="nx">newLi</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"li"</span><span class="p">);</span>
+  <span class="kr">const</span> <span class="nx">newButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"button"</span><span class="p">);</span>
+  <span class="nx">newLi</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">newFriendInput</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+  <span class="nx">newButton</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="s2">"Remove"</span><span class="p">;</span>
+
+  <span class="nx">newButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
+  <span class="p">});</span>
+
+  <span class="nx">newLi</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">newButton</span><span class="p">);</span>
+  <span class="nx">friendList</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">newLi</span><span class="p">);</span>
+  <span class="nx">form</span><span class="p">.</span><span class="nx">reset</span><span class="p">();</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<p>This will work, but it’s not the most efficient approach</p>
+<div class="docutils container">
+<p>We’re adding an event listener for every single button inside of each &lt;li&gt;</p>
+</div>
+<div class="docutils container">
+<p>This means if we had 1,000,000 friends, we’d have 1,000,000 listeners!</p>
+</div>
+<div class="docutils container">
+<p>We can fix this using event delegation</p>
+</div>
+</div>
+<div class="section" id="event-delegation">
+<h3>Event delegation</h3>
+<p>The idea behind event delegation is that we make a parent element the “delegate”</p>
+<div class="docutils container">
+<p>In our case, the parent element is the &lt;ul&gt; element</p>
+</div>
+<div class="docutils container">
+<p>We attach a single event listener on the parent or delegate element and then if the event happens inside a certain child element, we can access that child element using event.target</p>
+</div>
+</div>
+<div class="section" id="how-to-do-better-using-event-delegation">
+<h3>How to do better using event delegation</h3>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">friendList</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">tagName</span> <span class="o">===</span> <span class="s2">"BUTTON"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">});</span> 
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>Exact same behavior with only one event listener!</p>
+</div>
+</div>
+<div class="section" id="event-bubbling-and-capturing">
+<h3>Event Bubbling And Capturing</h3>
+<p>The process of an event moving from the place it is clicked to its target is called capturing</p>
+<div class="docutils container">
+<p>When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.</p>
+</div>
+<div class="docutils container">
+<p>This is called bubbling.</p>
+</div>
+</div>
+</div>
+<div class="section" id="removing-event-listeners">
+<h2>Removing Event Listeners</h2>
+<div class="section" id="id3">
+<p>Sometimes after you add an event listener, you will want to remove it.</p>
+<div class="docutils container">
+<p>Some examples of this include:</p>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>A game is over and no more events should be registered</li>
+<li>You can no longer drag and drop something into a part of the page</li>
+<li>You do not want the user submitting any more information</li>
+</ul>
+</div>
+</div>
+<div class="section" id="how-it-works">
+<h3>How it works</h3>
+<p>We can use the removeEventListener function to remove any event listeners</p>
+<div class="docutils container">
+<p>This <strong>can not</strong> be called on multiple elements</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">buttons</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">"button"</span><span class="p">);</span>
+
+<span class="nx">buttons</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">"You just clicked a button"</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>The code above will not work!</p>
+</div>
+<p>Maybe we can just add it to an element individually like this:</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">button</span> <span class="k">of</span> <span class="nx">buttons</span><span class="p">){</span>
+  <span class="nx">button</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s1">'You just clicked on a button!'</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>But this won’t work either!</p>
+</div>
+</div>
+<div class="section" id="removing-event-listeners-correctly">
+<h3>Removing Event Listeners Correctly</h3>
+<p>removeEventListener needs a reference to the name of the function to remove</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">alertData</span><span class="p">(){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">"You just clicked a button"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">button</span> <span class="k">of</span> <span class="nx">buttons</span><span class="p">){</span>
+  <span class="nx">button</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="nx">alertData</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>annonymous functions will not work here!</p>
+</div>
+</div>
+</div>
+<div class="section" id="data-attributes">
+<h2>Data attributes</h2>
+<div class="section" id="id4">
+<p>When creating elements and HTML pages, it’s very common that you might want to add some metadata or additional information about elements</p>
+<div class="docutils container">
+<p>These are not things that the user should see, but accessible information in CSS and JavaScript</p>
+</div>
+<div class="docutils container">
+<p>Instead of placing this in an <cite>id</cite> or <cite>class</cite>, we can create custom attributes called data attributes</p>
+</div>
+<div class="docutils container">
+<p>These attributes start with data- and then anything you would like. You can read them easily in CSS and JavaScript</p>
+</div>
+</div>
+<div class="section" id="an-example">
+<h3>An example</h3>
+<div class="literal-block-wrapper docutils container" id="id7">
+<div class="code-block-caption"><span class="caption-text">demo/data-attributes/index.html</span></div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">"cars"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">data-model</span><span class="o">=</span><span class="s">"model 3"</span> <span class="na">data-year</span><span class="o">=</span><span class="s">"2014"</span><span class="p">&gt;</span>Tesla<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">data-model</span><span class="o">=</span><span class="s">"crv"</span> <span class="na">data-year</span><span class="o">=</span><span class="s">"2017"</span><span class="p">&gt;</span>Honda<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">data-model</span><span class="o">=</span><span class="s">"focus"</span> <span class="na">data-year</span><span class="o">=</span><span class="s">"2011"</span><span class="p">&gt;</span>Ford<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">data-model</span><span class="o">=</span><span class="s">"prius"</span> <span class="na">data-year</span><span class="o">=</span><span class="s">"2015"</span><span class="p">&gt;</span>Toyota<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"script.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<div class="literal-block-wrapper docutils container" id="id8">
+<div class="code-block-caption"><span class="caption-text">demo/data-attributes/script.js</span></div>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">ul</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"ul"</span><span class="p">);</span>
+
+<span class="nx">ul</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">selectedElement</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"see all data attributes"</span><span class="p">,</span> <span class="nx">selectedElement</span><span class="p">.</span><span class="nx">dataset</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+    <span class="s2">"see one data attribute"</span><span class="p">,</span>
+    <span class="nx">selectedElement</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s2">"data-model"</span><span class="p">)</span>
+  <span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="recap">
+<h3>Recap</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>We can add event listeners using addEventListener and remove them using removeEventListener</li>
+<li>Using the event object, we can gather useful information about the target, tagName and much more</li>
+<li>To add element metadata, we can use data attributes and read them using getAttribute or dataset</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./handout_files/jquery.js.download"></script>
+<script type="text/javascript" src="./handout_files/underscore.js.download"></script>
+<script type="text/javascript" src="./handout_files/doctools.js.download"></script>
+<script type="text/javascript" src="./handout_files/language_data.js.download"></script> 
+
+</body></html>

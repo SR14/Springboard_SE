@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+.banner {
+    border:1px solid #000;
+    background-color: #12395b; 
+    overflow:hidden;
+    display:block !important;
+}
+.bannerSize {
+    width: 300px;
+    height: 600px;
+}
+#btnExit{ 
+    cursor:pointer;
+    opacity:0;
+}
+.retina{
+    background-size: contain !important;
+}
+.hide{
+    opacity: 0;
+}
+
+#bg02{
+    bottom:0;
+    height: 0;
+    background-color: #12395b; 
+}
+#yellowline{
+    top: 0px;
+    left: 70px;
+    width: 158px;
+    height: 6px;
+    background-color: #fac705;
+}
+#copy_eyebrow{
+    top: 12px;
+    left: 68px;
+    width: 161px;
+    height: 30px;
+    background: url('copy_eyebrow.svg');
+}
+#house{
+    top: 203px;
+    left: 39px;
+    width: 85px;
+    height: 89px;
+    background: url('house.svg');
+}
+#plus{
+    top: 253px;
+    left: 117px;
+    width: 26px;
+    height: 27px;
+    background: url('plus.svg');
+}
+#car{
+    top: 209px;
+    left: 12px;
+    width: 88px;
+    height: 92px;
+    background: url('car.svg');
+}
+#copy1_left, #copy1_right{
+    top: 134px;
+    width: 198px;
+    height: 48px;
+    background: url(copy1.svg);
+    left: 49px;
+}
+
+#copy1_blur_left, #copy1_blur_right{
+    top: 131px;
+    left: 0px;
+    width: 307px;
+    height: 110px;
+    background: url('copy1_blur.png');
+}
+#copy1_right{
+    left:-107px;
+}
+#copy1_blur_right{
+    left:-163px;
+}
+
+#half_frame01{
+    top: 0px;
+    left: 0px;
+    width: 159px;
+    height: 600px;
+    overflow: hidden;
+}
+#half_frame02{
+    top: 0px;
+    right: 0px;
+    width: 140px;
+    height: 600px;
+    overflow: hidden;
+}
+#copy2{
+    top: 297px;
+    left: 35px;
+    width: 41px;
+    height: 16px;
+    background: url('copy2.svg');
+}
+#copy3{
+    top: 297px;
+    left: 47px;
+    width: 66px;
+    height: 16px;
+    background: url('copy3.svg');
+}
+#house_blur{
+    top: 207px;
+    left: -1px;
+    width: 132px;
+    height: 112px;
+    background: url('house_blur.png');
+}
+#car_blur{
+    top: 222px;
+    left: 7px;
+    width: 123px;
+    height: 115px;
+    background: url('car_blur.png');
+}
+#plus_blur{
+    top: 250px;
+    left: 133px;
+    width: 36px;
+    height: 56px;
+    background: url(plus_blur.png);
+}
+#copy4{
+    top: 131px;
+    left: 76px;
+    width: 142px;
+    height: 56px;
+    background: url('copy4.svg');
+
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+}
+#copy5{
+    top: 183px;
+    left: 24px;
+    width: 252px;
+    height: 51px;
+    background: url('copy5.svg');
+
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+#copy_ef01{
+    top: 131px;
+    left: 24px;
+    width: 252px;
+    height: 104px;
+    background: url('copy_EF1.svg');
+}
+#cta{
+    top: 271px;
+    left: 67px;
+    background-color: #fac705;
+    width: 162px;
+    height: 36px;
+    overflow: hidden;
+}
+#copy_cta{
+    top: 10px;
+    left: 26px;
+    background: url(copy_cta.svg) no-repeat;
+    width: 113px;
+    height: 17px;
+}
+#shimmer{
+    top:-9px;
+    left:-80px;
+    background: url(shimmer.png) no-repeat;
+    width: 76px;
+    height: 53px;
+}
+#usaa_logo{
+    background: url(usaa_logo.svg) no-repeat;
+    width: 53px;
+    height: 55px;
+    top: 175px;
+    left: 230px;
+}
+
+#usaa_logo2{
+    background: url(usaa_logo.svg) no-repeat;
+    width: 72px;
+    height: 75px;
+    top: 466px;
+    left: 117px;
+}
+

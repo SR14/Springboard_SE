@@ -1,0 +1,68 @@
+/* STYLE FORM SECTION */
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#submit-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text-container {
+    outline: 01px solid black;
+    width: 500px;
+    height: 400px;
+}
+
+#text-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+input {
+    width: 300px;
+    text-align: center;
+}
+
+button {
+    width: 500px;
+}
+
+/* STYLE MEMES */
+#meme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.meme {
+    outline: 1px solid black;
+    width: 500px;
+    height: 400px;
+    background-size: 500px 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5em;
+    text-align: center;
+
+
+}
+
+.text {
+    padding: 10px;
+    color: white;
+    text-shadow: 3px 3px black;
+}

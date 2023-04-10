@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Conditional Logic</title>
+
+    <link rel="stylesheet" href="./conditional_logic_handout_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./conditional_logic_handout_files/handouts-sphinx.css">
+
+    
+    <link href="./conditional_logic_handout_files/css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="page-sidebar">
+        <header>
+            <p class="project">Springboard</p>
+
+            <p class="title">Conditional Logic</p>
+
+            <p class="backlink"><a href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html"> « Back to Homepage</a></p>
+
+        </header>
+        <div id="toc">
+            <ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#">Conditional Logic</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#goals">Goals</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#id1">Goals</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#comparison-operators">Comparison operators</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#id2">Comparison operators</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#vs">== vs ===</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#conditional-statements">Conditional statements</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#what-are-conditional-statements">What Are Conditional Statements?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#basic-conditional-statements">Basic conditional statements</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#why-do-we-need-conditionals">Why Do We Need Conditionals?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#example">Example :</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#else-if">Else if</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#id3">Conditional statements</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#boolean-expressions">Boolean expressions</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#id4">Boolean expressions</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#evaluating-expressions-as-true-or-false">Evaluating expressions as true or false</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#truthy-or-falsy-values">Truthy or falsy values</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#determining-truthiness">Determining Truthiness</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#logical-operators">Logical Operators</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#not">NOT !</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#or">OR ||</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#and">AND &amp;&amp;</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#id5">Example</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#short-circuiting">Short Circuiting</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#operator-precedence">Operator Precedence</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/js-boolean-logic/index.html#the-ternary-operator">The Ternary Operator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div id="page-content">
+        
+  <div class="section" id="conditional-logic">
+<h1>Conditional Logic</h1>
+<div class="section" id="goals">
+<h2>Goals</h2>
+<div class="section" id="id1">
+<div class="docutils container">
+<ul class="simple">
+<li>Explain the basic structure of a conditional statement</li>
+<li>Explain how expressions evaluate to either true or false for controlling conditional statements</li>
+<li>Construct ternaries and switch statements to control the flow of our programs</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="comparison-operators">
+<h2>Comparison operators</h2>
+<div class="section" id="id2">
+<div class="docutils container">
+<p>A JavaScript expression can evaluate to either true or false through the use of comparison operators</p>
+</div>
+<div class="docutils container">
+<p>Comparison operators are useful when comparing multiple values</p>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">userAge</span> <span class="o">=</span> <span class="mf">20</span><span class="p">;</span>
+
+<span class="nx">userAge</span> <span class="o">&gt;</span> <span class="mf">10</span><span class="p">;</span>      <span class="c1">// -&gt; true</span>
+<span class="nx">userAge</span> <span class="o">&lt;=</span> <span class="mf">20</span><span class="p">;</span>     <span class="c1">// -&gt; true</span>
+<span class="nx">userAge</span> <span class="o">===</span> <span class="mf">30</span><span class="p">;</span>    <span class="c1">// -&gt; false</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>A list of comparison operators</p>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li><cite>===</cite>       strict equality</li>
+<li><cite>==</cite> equality</li>
+<li><cite>!==</cite>       strict inequality</li>
+<li><cite>!=</cite>        not equal</li>
+<li><cite>&lt;</cite>   less than</li>
+<li><cite>&lt;=</cite>        less than or equal to</li>
+<li><cite>&gt;</cite>   greater than</li>
+<li><cite>&gt;=</cite>        greater than or equal to</li>
+</ul>
+</div>
+<div class="docutils container">
+<p>Be careful when using relational operators (i.e. less than, greater than, etc) on things that aren’t numbers!</p>
+</div>
+</div>
+<div class="section" id="vs">
+<h3>== vs ===</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Checks for equality of value, but not equality of type.</li>
+<li>It coerces both values to the same type and then compares them.</li>
+<li>This can lead to some unexpected results!</li>
+<li>Use <cite>===</cite> and <cite>!==</cite></li>
+</ul>
+</div>
+</div>
+<div class="section" id="conditional-statements">
+<h3>Conditional statements</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>In javascript every expression returns a value</li>
+<li>All values can be evaluated as true or false</li>
+<li>This allows us to control the flow of our programs through conditional statements</li>
+<li>We will explore expression as boolean values in detail but first let’s look at conditional statements</li>
+</ul>
+</div>
+</div>
+<div class="section" id="what-are-conditional-statements">
+<h3>What Are Conditional Statements?</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>When an expression is passed to a conditional statement, the expression is converted to true or false</li>
+<li>This allows us to determine if a code branch runs or not</li>
+<li>In other words, the code runs only if certain conditions are met</li>
+</ul>
+</div>
+</div>
+<div class="section" id="basic-conditional-statements">
+<h3>Basic conditional statements</h3>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"This was true"</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"This was false"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// this would print true</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li><cite>if</cite> x is true, run the first block of code</li>
+<li><cite>else</cite> in any other case, run another block of code</li>
+<li>We can place any expression in the parentheses and it will be converted to true or false</li>
+</ul>
+</div>
+</div>
+<div class="section" id="why-do-we-need-conditionals">
+<h3>Why Do We Need Conditionals?</h3>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// print it was true</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="c1">// print it was false</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>In this example we hardcoded true so the first block will always execute</li>
+<li>But in programming real applications, it’s all about responding to different user inputs</li>
+<li>Typically we won’t know what the value of a variable is going to be and use conditional logic to handle different scenarios</li>
+</ul>
+</div>
+</div>
+<div class="section" id="example">
+<h3>Example :</h3>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">inputPassword</span> <span class="o">=</span> <span class="s1">'secret1'</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">secret1</span> <span class="o">===</span> <span class="nx">dbPassword</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// authenticate the user</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="c1">// print your password was incorrect</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>User enters password</li>
+<li>Does it match the database?<ul>
+<li>Yes, proceed</li>
+<li>No, try again</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// let inputPassword = 'secret1';</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">secret1</span> <span class="o">===</span> <span class="nx">databasePassword</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// authenticate the user</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="c1">// print your password was incorrect</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>Notice here we used ‘<cite>===</cite>’ to compare the user input with the stored value in our database</li>
+<li>This is our first example of a comparison operator</li>
+<li>Comparison operators are one approach for converting an expression to a boolean value</li>
+</ul>
+</div>
+</div>
+<div class="section" id="else-if">
+<h3>Else if</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>In addition to <cite>‘if’</cite> and <cite>‘else’</cite> statements</li>
+<li>There is a third condition <cite>‘else if’</cite></li>
+<li><cite>‘else if’</cite> is unique because it can be used multiple times</li>
+</ul>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">if</span></code> x is true, run the first block of code</li>
+<li><code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code> y is true, run a different block of code</li>
+<li><code class="docutils literal notranslate"><span class="pre">else</span></code> in any other case, run another block of code</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mf">10</span><span class="p">;</span>
+
+<span class="c1">// only one of the branches below will run</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">&gt;</span> <span class="mf">10</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'x is greater than 10'</span><span class="p">);</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="mf">10</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'x is equal to 10'</span><span class="p">);</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'x is less than 10'</span><span class="p">);</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>It is important to note only one code branch will run</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mf">11</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">&gt;</span> <span class="mf">10</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'x is greater than 10'</span><span class="p">);</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="mf">11</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'x is equal to 11'</span><span class="p">);</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'x is less than 10'</span><span class="p">);</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>Even if two conditions are true, only the code in the first true condition runs</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>Conditional statements</h3>
+<p>What will this code do?</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mf">11</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">&gt;</span> <span class="mf">10</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'x is greater than 10'</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="mf">11</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'x is equal to 11'</span><span class="p">);</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'x is less than 10'</span><span class="p">);</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>Since there are multiple <cite>‘if’</cite> statements multiple blocks of code can run</li>
+<li>If the second <cite>‘if’</cite> condition was replaced with ‘else if’ only the first true statement will run</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="boolean-expressions">
+<h2>Boolean expressions</h2>
+<div class="section" id="id4">
+<div class="docutils container">
+<p>If you’re wondering where the name Boolean comes from, it’s George Boole. He invented Boolean Algebra / Logic which is the basis of modern computing.</p>
+</div>
+<div class="docutils container">
+<p>Boolean logic is actually simple to understand! It’s just the system of logic governing true or false values and the relationships formed by combining them together into logical expressions.</p>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>When we pass an expression to a conditional statement the return value is converted to true or false</li>
+<li>This allows us to control the flow of the program</li>
+</ul>
+</div>
+</div>
+<div class="section" id="evaluating-expressions-as-true-or-false">
+<h3>Evaluating expressions as true or false</h3>
+<div class="docutils container">
+<p>To understand how expressions become true or false we must know the following concepts</p>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>Truthy or falsy values</li>
+<li>Comparison operators</li>
+<li>Logical operators</li>
+</ul>
+</div>
+</div>
+<div class="section" id="truthy-or-falsy-values">
+<h3>Truthy or falsy values</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Expressions in the parentheses of a conditional statement resolve to true or false</li>
+<li>Values that are not explicitly true or false are still innately evaluated “truthy” or “falsey”.</li>
+</ul>
+</div>
+<div class="docutils container">
+<p>There are only six falsy values</p>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>false</li>
+<li>null</li>
+<li>undefined</li>
+<li>0</li>
+<li>‘’</li>
+<li>NaN</li>
+</ul>
+</div>
+<div class="docutils container">
+<p>Everything else evaluates to true</p>
+</div>
+</div>
+<div class="section" id="determining-truthiness">
+<h3>Determining Truthiness</h3>
+<div class="docutils container">
+<p>If you are ever unsure if something is truthy or falsey, you can simply convert it to a boolean</p>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>One way of doing this by wrapping it in a Boolean constructor</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">favoriteNumber</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+
+<span class="nb">Boolean</span><span class="p">(</span><span class="s1">'hi'</span><span class="p">);</span>             <span class="c1">// true</span>
+<span class="nb">Boolean</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>               <span class="c1">// false</span>
+<span class="nb">Boolean</span><span class="p">(</span><span class="nx">favoriteNumber</span><span class="p">);</span>   <span class="c1">// false</span>
+<span class="nb">Boolean</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>             <span class="c1">// false</span>
+<span class="nb">Boolean</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>                <span class="c1">// true</span>
+<span class="nb">Boolean</span><span class="p">(</span><span class="kc">undefined</span><span class="p">);</span>        <span class="c1">// false</span>
+<span class="nb">Boolean</span><span class="p">(</span><span class="s1">'cat'</span><span class="p">);</span>            <span class="c1">// true</span>
+<span class="nb">Boolean</span><span class="p">(</span><span class="o">-</span><span class="mf">0</span><span class="p">);</span>               <span class="c1">// false</span>
+<span class="nb">Boolean</span><span class="p">(</span><span class="o">-</span><span class="mf">1</span><span class="p">);</span>               <span class="c1">// true</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="logical-operators">
+<h3>Logical Operators</h3>
+<div class="docutils container">
+<p>Logical Operators are the final approach for evaluating expressions as either true or false</p>
+</div>
+<div class="docutils container">
+<p>There are three essential logical operators in JavaScript:</p>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>NOT !</li>
+<li>OR ||</li>
+<li>AND &amp;&amp;</li>
+</ul>
+</div>
+</div>
+<div class="section" id="not">
+<h3>NOT !</h3>
+<div class="docutils container">
+<p>“!” flips the value of the expression</p>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">!</span><span class="nx">a</span><span class="p">);</span> <span class="c1">// =&gt; false</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>You can think of “!a” reading like the following</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nx">not</span> <span class="nx">a</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// -&gt; run this code</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>The bang “!” operator can also be used to evaluate an expression as a boolean value</li>
+<li>We already saw how we can do this with the Boolean constructor</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nb">Boolean</span><span class="p">(</span><span class="s1">'hi'</span><span class="p">);</span>      <span class="c1">// true</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>Another approach is to use use “!!” (bang bang)</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">favoriteNumber</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+
+<span class="o">!!</span><span class="s1">'hi'</span><span class="p">;</span>             <span class="c1">// true</span>
+<span class="o">!!</span><span class="s1">''</span><span class="p">;</span>               <span class="c1">// false</span>
+<span class="o">!!</span><span class="nx">favoriteNumber</span><span class="p">;</span>   <span class="c1">// false</span>
+<span class="o">!!</span><span class="kc">null</span><span class="p">;</span>             <span class="c1">// false</span>
+<span class="o">!!</span><span class="mf">1</span><span class="p">;</span>                <span class="c1">// true</span>
+<span class="o">!!</span><span class="kc">undefined</span><span class="p">;</span>        <span class="c1">// false</span>
+<span class="o">!!</span><span class="s1">'cat'</span><span class="p">;</span>            <span class="c1">// true</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>This flips the boolean value twice to give the correct “truthy / falsy” value</li>
+</ul>
+</div>
+</div>
+<div class="section" id="or">
+<h3>OR ||</h3>
+<div class="docutils container">
+<p>The easiest way to think about ‘||’</p>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>If the left value is true or the right value is true the entire expression is true</li>
+<li>If both the left value and the right value are false, the entire expression is false</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">b</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">||</span> <span class="nx">b</span><span class="p">);</span> <span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">||</span> <span class="nx">a</span><span class="p">);</span> <span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span> <span class="o">||</span> <span class="nx">b</span><span class="p">);</span> <span class="c1">// false</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>But we should look at this more precisely, the “||” logical operator checks two values</li>
+<li>If the value on the left evaluates to true, the left value is returned</li>
+<li>The left value then gets converted to a truthy / falsy value</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s1">'hi'</span> <span class="o">||</span> <span class="mf">5</span>        <span class="c1">// =&gt; 'hi' (truthy)</span>
+
+<span class="mf">1000</span> <span class="o">||</span> <span class="s1">''</span>       <span class="c1">// =&gt; 1000 (truthy)</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>If the value to the left is false then the value to the right will be returned regardless of its value</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s1">''</span> <span class="o">||</span> <span class="mf">5</span>          <span class="c1">// =&gt; 5 (truthy)</span>
+
+<span class="s1">''</span> <span class="o">||</span> <span class="mf">0</span>          <span class="c1">// =&gt; 0 (falsey)</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>The return value is what ultimately gets converted to a truthy falsy value</p>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>The “||” logical operator is often used with conditional statements</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s1">''</span> <span class="o">||</span> <span class="mf">5</span>     <span class="c1">// =&gt; 5</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>Since 5 evaluates to true the entire expression evaluates to true</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Boolean</span><span class="p">(</span><span class="s1">''</span> <span class="o">||</span> <span class="mi">5</span><span class="p">)</span> <span class="o">//</span> <span class="o">=&gt;</span> <span class="n">true</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="s1">''</span> <span class="o">||</span> <span class="mf">5</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// this code will execute</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="c1">// this code will not</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="and">
+<h3>AND &amp;&amp;</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>The “&amp;&amp;” logical operator also checks two values</li>
+<li>With “||” the left side <code class="docutils literal notranslate"><span class="pre">or</span></code> the right side need to be true to return a truthy value</li>
+<li>With “&amp;&amp;” the left side <code class="docutils literal notranslate"><span class="pre">and</span></code> the right side both need to be true for the expression to return a truthy value</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">b</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">&amp;&amp;</span> <span class="nx">b</span><span class="p">);</span> <span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">&amp;&amp;</span> <span class="nx">a</span><span class="p">);</span> <span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span> <span class="o">&amp;&amp;</span> <span class="nx">b</span><span class="p">);</span> <span class="c1">// false</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id5">
+<h3>Example</h3>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nx">a</span> <span class="o">&amp;&amp;</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// a and b are both true</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">a</span> <span class="o">&amp;&amp;</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// a is false but b is true</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">a</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// a is true but b is false</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="c1">// a is false and b is false</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="short-circuiting">
+<h3>Short Circuiting</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Note that in an expression with “&amp;&amp;” or “||”, sometimes the right-hand side never actually runs!</li>
+<li>Specifically there are two cases where the expression is “short-circuited”:</li>
+</ul>
+</div>
+<div class="docutils container">
+<ol class="arabic simple">
+<li>false expression &amp;&amp; anything</li>
+</ol>
+<ul class="simple">
+<li>(<em>If the left expression is false we immediately move on</em>)</li>
+</ul>
+<ol class="arabic simple" start="2">
+<li>true expression || anything</li>
+</ol>
+<ul class="simple">
+<li>(<em>If the left expression is true we immediately move on</em>)</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="mf">2</span> <span class="o">+</span> <span class="mf">2</span> <span class="o">===</span> <span class="mf">5</span> <span class="o">&amp;&amp;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'this will never run!'</span><span class="p">);</span>
+
+<span class="mf">5</span> <span class="o">&gt;</span> <span class="mf">1</span> <span class="o">||</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'this won\'t either!'</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="operator-precedence">
+<h3>Operator Precedence</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>NOT (!) has higher precedence than &amp;&amp; and ||</li>
+<li>&amp;&amp; has higher precedence than ||</li>
+<li>You can alter this using parenthesis ()</li>
+</ul>
+</div>
+</div>
+<div class="section" id="the-ternary-operator">
+<h3>The Ternary Operator</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>A more advanced application of conditional statements is the ternary operator</li>
+<li>A ternary operator is the shorthand for an “if / else” statement<ul>
+<li>(<em>ternary operators can only have two branches and do not work with “else if”</em>)</li>
+</ul>
+</li>
+<li>The name ternary comes from the fact that there are three operands. An expression followed by two statements</li>
+<li>They allow us to write conditionals on one line</li>
+</ul>
+</div>
+<div class="docutils container">
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>( expression to check ) ? statement if true : statement if false
+</pre></div>
+</div>
+</div>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// guess a number between 1 to 20</span>
+
+<span class="kd">let</span> <span class="nx">guess</span> <span class="o">=</span> <span class="mf">15</span><span class="p">;</span>
+
+<span class="nx">guess</span> <span class="o">&gt;</span> <span class="nx">answer</span> <span class="o">?</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'too high'</span><span class="p">)</span> <span class="o">:</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'too low'</span><span class="p">);</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<p>Often you will capture the return value of a ternary operator in a variable</p>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">guess</span> <span class="o">=</span> <span class="mf">15</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">wasCorrect</span> <span class="o">=</span> <span class="p">(</span><span class="nx">guess</span> <span class="o">===</span> <span class="mf">15</span><span class="p">)</span> <span class="o">?</span> <span class="s1">'Your correct!'</span> <span class="o">:</span> <span class="s1">'Incorrect'</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">wasCorrect</span><span class="p">)</span> <span class="c1">// =&gt; 'Your correct!'</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./conditional_logic_handout_files/jquery.js.download"></script>
+<script type="text/javascript" src="./conditional_logic_handout_files/underscore.js.download"></script>
+<script type="text/javascript" src="./conditional_logic_handout_files/doctools.js.download"></script>
+<script type="text/javascript" src="./conditional_logic_handout_files/language_data.js.download"></script> 
+
+</body></html>

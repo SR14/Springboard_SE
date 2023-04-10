@@ -1,0 +1,1 @@
+window.mnjs.contextual.contextualcallback({"status":"OK","code":200,"notify_object":{"nid":"eT02_2nLE55n","ttl":120},"data":{"category":{"taxo":"IAB-2.0","ids":[123,127],"name":"Careers/Job Search"},"segments":[{"key":"Careers"},{"key":"Job_Search"}],"bssegments":[],"bs":1,"bsst":"unknown_safe"}});

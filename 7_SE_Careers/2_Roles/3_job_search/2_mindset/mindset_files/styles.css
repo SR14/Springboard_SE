@@ -1,0 +1,225 @@
+:root {
+    --bannerWidth: 300px;
+    --bannerHeight: 250px;
+    --primaryColor: rgb(68, 68, 68);
+    --secondaryColor: rgb(128, 128, 128);
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 10;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primaryColor);
+    font-weight: 400;
+}
+
+#content,
+#creative_container,
+.fallbackImage,
+.loadingScreen,
+.overlay,
+.clickLayer,
+.sliderContainer,
+.slide {
+    width: var(--bannerWidth);
+    height: var(--bannerHeight);
+}
+
+#creative_container {
+    border: 1px solid #111;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.loadingScreen {
+    background-color: #FFF;
+    z-index: 99;
+}
+
+.fallback {
+    z-index: 999;
+}
+
+.fallbackImage {
+    background-image: url('./images/backup_300x250.jpg');
+}
+
+.overlay {
+    z-index: 90;
+    padding: 35px 20px;
+    visibility: hidden;
+    background-color: rgba(256,256,256,0.9);
+}
+
+.overlay .closeOverlay {
+    top: 5px;
+    left: unset;
+    right: 5px;
+    width: 25px;
+    padding: 5px;
+}
+
+.overlay .overlayText {
+    position: initial;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.dotsContainer {
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    top: unset;
+    left: unset;
+    right: 90px;
+    bottom: 21px;
+}
+
+.dotsContainer .dot {
+    position: initial;
+    min-width: 12px;
+    min-height: 12px;
+    border-radius: 100%;
+    border: 1px solid var(--primaryColor);
+    transition: background-color .4s, transform .2s;
+    margin-right: 18px;
+}
+
+.dotsContainer .dot:hover {
+    transform: scale(1.2);
+}
+
+.dotsContainer .dot:last-child {
+    margin-right: 0;
+}
+
+.dotsContainer .dot.active,
+.dotsContainer .dot.active:hover {
+    background-color: var(--primaryColor);
+    transform: scale(1);
+}
+
+.slideItem,
+.slideFixedItem {
+    opacity: 0;
+}
+
+.dellLogo {
+    top: 10px;
+    left: 10px;
+    width: 55px;
+}
+
+.mdfContainer {
+    top: 13px;
+    left: unset;
+    right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+}
+
+.mdfContainer .mdfDescription {
+    position: initial;
+    font-size: 11px;
+    line-height: 12px;
+    width: 100%;
+    text-align: right;
+}
+
+.mdfContainer .mdfLogo {
+    position: initial;
+    margin-left: 15px;
+    width: 60px;
+}
+
+.textContainer {
+    top: 60px;
+    left: 10px;
+    text-align: center;
+    width: 110px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textContainer .header {
+    position: initial;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.textContainer .model {
+    position: initial;
+    font-size: 10px;
+    line-height: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.textContainer .price {
+    position: initial;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    width: 100%;
+    color: var(--secondaryColor);
+}
+
+.productImage {
+    top: 80px;
+    left: unset;
+    right: 30px;
+    width: 130px;
+}
+
+.ctaContainer {
+    top: unset;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 80;
+    max-width: 100px;
+}
+
+.ctaContainer .exitCTA {
+    position: initial;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0px;
+    background-color: transparent;
+    padding: 4px 10px;
+    border: 2px solid var(--primaryColor);
+    width: 100%;
+}
+
+.ctaContainer .legalCTA {
+    position: initial;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    font-size: 10px;
+    line-height: 10px;
+    width: 100%;
+}

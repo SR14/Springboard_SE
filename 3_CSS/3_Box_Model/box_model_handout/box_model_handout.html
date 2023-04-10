@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-box-model/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>CSS Box Model</title>
+
+    <link rel="stylesheet" href="./box_model_handout_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./box_model_handout_files/handouts-sphinx.css">
+
+    
+    <link href="./box_model_handout_files/css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="page-sidebar">
+        <header>
+            <p class="project">Springboard</p>
+
+            <p class="title">CSS Box Model</p>
+
+            <p class="backlink"><a href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-box-model/index.html"> « Back to Homepage</a></p>
+
+        </header>
+        <div id="toc">
+            <ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-box-model/index.html#">CSS Box Model</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-box-model/index.html#goals">Goals</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-box-model/index.html#id1">Goals</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-box-model/index.html#box-model">Box Model</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-box-model/index.html#id2">Box Model</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-box-model/index.html#direction-shorthands">Direction Shorthands</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-box-model/index.html#box-sizing">Box Sizing</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-box-model/index.html#outline">Outline</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-box-model/index.html#learning-more">Learning More</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div id="page-content">
+        
+  <div class="section" id="css-box-model">
+<h1>CSS Box Model</h1>
+<p><a class="reference external" href="https://curric.springboard.com/software-engineering-career-track-prep/default/lectures/css-box-model-demo.zip">Download Demo Code</a></p>
+<div class="section" id="goals">
+<h2>Goals</h2>
+<div class="section" id="id1">
+<div class="docutils container">
+<ul class="simple">
+<li>Explain what the Box Model is</li>
+<li>Compare and contrast border, margin, padding and outline</li>
+<li>Easily calculate true width and height with box-sizing</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="box-model">
+<h2>Box Model</h2>
+<div class="section" id="id2">
+<a class="reference internal image-reference" href="./box_model_handout_files/box-models.png"><img alt="_images/box-models.png" src="./box_model_handout_files/box-models.png" style="width: 30%;"></a>
+<div class="docutils container">
+<ul class="simple">
+<li>Margin is outside of border <em>(“space between”)</em></li>
+<li>Padding is inside of border <em>(“space inside”)</em></li>
+</ul>
+</div>
+</div>
+<div class="section" id="direction-shorthands">
+<h3>Direction Shorthands</h3>
+<p><cite>margin</cite>, <cite>padding</cite>, and <cite>border</cite> all support <span class="raw-reveal"><br></span> four different ways to set their value:</p>
+<div class="docutils container">
+<ul class="simple">
+<li><em>one number</em> for top, right, bottom, and left<ul>
+<li>e.g. <cite>margin: 10px;</cite></li>
+</ul>
+</li>
+<li><em>two numbers</em>, for top &amp; bottom, right &amp; left<ul>
+<li>e.g. <cite>margin: 10px 20px;</cite></li>
+</ul>
+</li>
+<li><em>three numbers</em>, for top, right &amp; left, bottom<ul>
+<li>e.g. <cite>margin: 10px 20px 30px;</cite></li>
+</ul>
+</li>
+<li><em>four numbers</em>, for top, right, bottom, left<ul>
+<li>e.g. <cite>margin: 10px 20px 30px 40px;</cite></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="box-sizing">
+<h3>Box Sizing</h3>
+<div class="compare docutils container">
+<div class="docutils container">
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">div</span> <span class="p">{</span>
+<span class="hll">  <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">content-box</span><span class="p">;</span>
+</span>  <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+  <span class="k">border</span><span class="p">:</span> <span class="kc">solid</span> <span class="mi">5</span><span class="kt">px</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li><cite>content-box</cite> is the default</li>
+<li>Content area is 100px</li>
+<li>Don’t know how wide element is</li>
+</ul>
+</div>
+</div>
+<div class="docutils container">
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">div</span> <span class="p">{</span>
+<span class="hll">  <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span>
+</span>  <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+  <span class="k">border</span><span class="p">:</span> <span class="kc">solid</span> <span class="mi">5</span><span class="kt">px</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<ul class="simple">
+<li>Element width is 100px</li>
+<li>Don’t know width of content area</li>
+<li>Often, easier to work with</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="outline">
+<h3>Outline</h3>
+<div class="docutils container">
+<p>Outlines are like borders …</p>
+<div class="docutils container">
+<ul class="simple">
+<li>but are outside of borders</li>
+<li>but never take up space</li>
+</ul>
+<div class="docutils container">
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">div</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+  <span class="k">outline</span><span class="p">:</span> <span class="kc">solid</span> <span class="mi">5</span><span class="kt">px</span> <span class="kc">red</span><span class="p">;</span>
+  <span class="k">outline-offset</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>Often most used for hover effects, so things don’t “move”</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="learning-more">
+<h3>Learning More</h3>
+<p><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">Intro to the Box Model</a></p>
+<p><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing">Mastering Margin Collapsing</a></p>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./box_model_handout_files/jquery.js.download"></script>
+<script type="text/javascript" src="./box_model_handout_files/underscore.js.download"></script>
+<script type="text/javascript" src="./box_model_handout_files/doctools.js.download"></script>
+<script type="text/javascript" src="./box_model_handout_files/language_data.js.download"></script> 
+
+</body></html>

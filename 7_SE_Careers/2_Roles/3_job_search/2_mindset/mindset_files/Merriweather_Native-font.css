@@ -1,0 +1,16 @@
+@font-face {
+		font-family: 'Merriweather';
+		src: url('https://i.forbesimg.com/assets/fonts/Merriweather_Native/Merriweather-Regular.eot') format("embedded-opentype");
+		src: url('https://i.forbesimg.com/assets/fonts/Merriweather_Native/Merriweather-Regular.ttf') format("truetype");
+		src: url('https://i.forbesimg.com/assets/fonts/Merriweather_Native/Merriweather-Regular.woff') format("woff");
+		src: url('https://i.forbesimg.com/assets/fonts/Merriweather_Native/Merriweather-Regular.woff2') format("woff2");
+}
+
+@font-face {
+		font-family: 'Merriweather';
+		font-weight: 700;
+		src: url('https://i.forbesimg.com/assets/fonts/Merriweather_Native/Merriweather-Bold.eot') format("embedded-opentype");
+		src: url('https://i.forbesimg.com/assets/fonts/Merriweather_Native/Merriweather-Bold.ttf') format("truetype");
+		src: url('https://i.forbesimg.com/assets/fonts/Merriweather_Native/Merriweather-Bold.woff') format("woff");
+		src: url('https://i.forbesimg.com/assets/fonts/Merriweather_Native/Merriweather-Bold.woff2') format("woff2");
+}

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Debugging + Errors</title>
+
+    <link rel="stylesheet" href="./webpage_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./webpage_files/handouts-sphinx.css">
+
+    
+    <link href="./webpage_files/css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="page-sidebar">
+        <header>
+            <p class="project">Springboard</p>
+
+            <p class="title">Debugging + Errors</p>
+
+            <p class="backlink"><a href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html"> « Back to Homepage</a></p>
+
+        </header>
+        <div id="toc">
+            <ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#">Debugging + Errors</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#goals">Goals</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#id1">Goals</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#debugging">Debugging</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#id2">Debugging</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#syntaxerror">SyntaxError</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#id3">SyntaxError</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#referenceerror">ReferenceError</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#id4">ReferenceError</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#typeerror">TypeError</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#id5">TypeError</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#two-kinds-of-bugs">Two Kinds of Bugs</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#a-process-for-debugging">A process for debugging</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#console-log">console.log</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#id6">console.log</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#javascript-debugger">JavaScript Debugger</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#id7">JavaScript Debugger</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#starting-debugger">Starting Debugger</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#step-over">Step Over</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#step-into">Step Into</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#step-out">Step Out</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#call-stack">Call Stack</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#scope">Scope</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#tips-to-avoid-bugs">Tips To Avoid Bugs</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#plan-first">Plan First</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#keep-it-simple">Keep It Simple</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#common-javascript-bugs">Common JavaScript Bugs</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#good-news">Good News</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#error-handling">Error Handling</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#id8">Error Handling</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#let-s-try-it-out">Let’s “try” it out!</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#introducing-try-catch">Introducing try / catch</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#another-example">Another example</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#using-try-catch">Using try / catch</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#when-to-use-try-catch">When to use try/catch</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#making-your-own-errors">Making your own errors!</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#exploring-with-try-catch">Exploring with try/catch</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#throwing-better-errors">Throwing better errors</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#when-should-you-use-this">When should you use this?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#when-should-you-not-use-this">When should you not use this?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#finally">finally</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging/index.html#recap">Recap</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div id="page-content">
+        
+  <div class="section" id="debugging-errors">
+<h1>Debugging + Errors</h1>
+<p><a class="reference external" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/js-debugging-demo.zip">Download Demo Code</a></p>
+<div class="section" id="goals">
+<h2>Goals</h2>
+<div class="section" id="id1">
+<div class="docutils container">
+<ul class="simple">
+<li>Define three of the most common errors in JavaScript and how to debug them</li>
+<li>Examine the Chrome Dev Tools for debugging</li>
+<li>Catch errors using try/catch/finally blocks</li>
+<li>Throw errors with specific messages</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="debugging">
+<h2>Debugging</h2>
+<div class="section" id="id2">
+<div class="docutils container">
+<ul class="simple">
+<li>You are going to make mistakes!</li>
+<li>Let’s examine ways to better debug</li>
+<li>Let’s first examine some common errors</li>
+</ul>
+</div>
+</div>
+<div class="section" id="syntaxerror">
+<h3>SyntaxError</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>You’ve seen this one before!</li>
+<li>You have to fix these right away!</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id3">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span>"awesome
+
+function first( {}
+
+let = "nice!"
+</pre></div>
+</div>
+</div>
+<div class="section" id="referenceerror">
+<h3>ReferenceError</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Thrown when you try to access a variable that is <strong>not defined</strong></li>
+<li>This does not mean <strong>undefined</strong></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id4">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">sayHi</span><span class="p">(){</span>
+  <span class="kd">let</span> <span class="nx">greeting</span> <span class="o">=</span> <span class="s2">"hi!"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">sayHi</span><span class="p">();</span>
+
+<span class="nx">greeting</span><span class="p">;</span>   <span class="c1">// ReferenceError</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="typeerror">
+<h3>TypeError</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Trying to do something with a type that you can not</li>
+<li>Accessing properties on <cite>undefined</cite> or <cite>null</cite></li>
+<li>Invoking <em>(“calling”)</em> something that is not a function</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id5">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">"awesome"</span><span class="p">.</span><span class="nx">splice</span><span class="p">()</span> <span class="c1">// TypeError</span>
+
+<span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="nx">obj</span><span class="p">.</span><span class="nx">firstName</span><span class="p">.</span><span class="nx">moreInfo</span> <span class="c1">// TypeError</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="two-kinds-of-bugs">
+<h3>Two Kinds of Bugs</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>An error is thrown — <strong>easier</strong></li>
+<li>You didn’t get what you wanted — <strong>harder!</strong></li>
+</ul>
+</div>
+</div>
+<div class="section" id="a-process-for-debugging">
+<h3>A process for debugging</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Make assumptions</li>
+<li>Test assumptions</li>
+<li>Prove assumptions</li>
+<li>Repeat</li>
+</ul>
+</div>
+</div>
+<div class="section" id="console-log">
+<h3>console.log</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Be mindful about what you print out</li>
+<li>Great for a sanity check</li>
+<li>Even better when you add parameters</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id6">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"We made it!"</span><span class="p">);</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"The value of x is ---&gt;"</span><span class="p">,</span> <span class="nx">x</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="javascript-debugger">
+<h2>JavaScript Debugger</h2>
+<div class="section" id="id7">
+<ul class="simple">
+<li>Watch execution of code and examine at any point</li>
+<li>Built into Chrome (other browsers have similiar abilities)</li>
+<li>Can debug in-browser code <em>or</em> Node</li>
+</ul>
+</div>
+<div class="section" id="starting-debugger">
+<h3>Starting Debugger</h3>
+<p>View code or adding “breakpoints”:</p>
+<p><cite>View</cite> → <cite>Developer</cite> → <cite>Developer Tools</cite> → <cite>Sources</cite> tab</p>
+<p>Click left of line of code to add a blue breakpoint</p>
+<p>Can put breakpoint into code itself:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">myFunction</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+  <span class="kr">debugger</span><span class="p">;</span>   <span class="c1">// &lt;-- will always stop here</span>
+
+  <span class="c1">// rest of code follows ...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-over">
+<h3>Step Over</h3>
+<a class="reference internal image-reference" href="./webpage_files/step-over-outline.svg"><img alt="_images/step-over-outline.svg" src="./webpage_files/step-over-outline.svg" width="60%"></a>
+<p>Run current line, but don’t debug into any function calls</p>
+</div>
+<div class="section" id="step-into">
+<h3>Step Into</h3>
+<a class="reference internal image-reference" href="./webpage_files/step-into-outline.svg"><img alt="_images/step-into-outline.svg" src="./webpage_files/step-into-outline.svg" width="60%"></a>
+<p>Run current line, stepping into any function calls</p>
+</div>
+<div class="section" id="step-out">
+<h3>Step Out</h3>
+<a class="reference internal image-reference" href="./webpage_files/step-out-outline.svg"><img alt="_images/step-out-outline.svg" src="./webpage_files/step-out-outline.svg" width="60%"></a>
+<p>Return from this function to caller</p>
+</div>
+<div class="section" id="call-stack">
+<h3>Call Stack</h3>
+<a class="reference internal image-reference" href="./webpage_files/call-stack.svg"><img alt="_images/call-stack.svg" src="./webpage_files/call-stack.svg" width="60%"></a>
+<p>Shows <em>stack</em> of function calls that got you here</p>
+</div>
+<div class="section" id="scope">
+<h3>Scope</h3>
+<a class="reference internal image-reference" href="./webpage_files/scope.svg"><img alt="_images/scope.svg" src="./webpage_files/scope.svg" width="60%"></a>
+<p>Shows current value of variables</p>
+<p>Can click to change value</p>
+</div>
+</div>
+<div class="section" id="tips-to-avoid-bugs">
+<h2>Tips To Avoid Bugs</h2>
+<div class="section" id="plan-first">
+<h3>Plan First</h3>
+<blockquote>
+<div><p>Software and cathedrals are much the same — <span class="raw-reveal"><br></span>
+first we build them, then we pray.</p>
+<p class="attribution">—Sam Redwine, 1988</p>
+</div></blockquote>
+</div>
+<div class="section" id="keep-it-simple">
+<h3>Keep It Simple</h3>
+<blockquote>
+<div><p>Everyone knows that debugging is twice as hard <span class="raw-reveal"><br></span>
+as writing a program in the first place.</p>
+<p>If you’re as clever as you can be when you write it, <span class="raw-reveal"><br></span>
+how will you ever debug it?</p>
+<p class="attribution">—Brian Kernighan, <em>The Elements of Programming Style</em></p>
+</div></blockquote>
+<p>(That’s a particularly excellent intermediate book, by the way)</p>
+</div>
+<div class="section" id="common-javascript-bugs">
+<h3>Common JavaScript Bugs</h3>
+<div class="docutils container">
+<ul class="simple">
+<li><cite>==</cite> is very loose about comparisons (<cite>===</cite> isn’t)<ul>
+<li><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">==</span> <span class="pre">"7"</span></code></li>
+</ul>
+</li>
+<li>Objects &amp; arrays are not equal to similar objects &amp; arrays<ul>
+<li><code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span> <span class="pre">!==</span> <span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span></code></li>
+</ul>
+</li>
+<li>Calling function with missing arguments makes those arguments <cite>undefined</cite></li>
+<li>Calling function with extra arguments is ignored (the extra arguments are ignored).</li>
+<li>Getting a missing property from object/index from array is <cite>undefined</cite></li>
+</ul>
+</div>
+</div>
+<div class="section" id="good-news">
+<h3>Good News</h3>
+<blockquote>
+<div><p>If debugging is the process of removing bugs, <span class="raw-reveal"><br></span>
+then programming must be <span class="raw-reveal"><br></span>
+the process of putting them in.</p>
+<p class="attribution">—Edsger W. Dijkstra</p>
+</div></blockquote>
+<div class="docutils container">
+<ul class="simple">
+<li>Bugs are an opportunity to improve debugging skills &amp; to learn something</li>
+<li>You will have lots of chances to practice this valuable skill!</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="error-handling">
+<h2>Error Handling</h2>
+<div class="section" id="id8">
+<div class="docutils container">
+<ul class="simple">
+<li>Sometimes errors can not be avoided!</li>
+<li>This especially happens when working with external APIs / other people’s data<ul>
+<li>Connection failures</li>
+<li>The API is down</li>
+</ul>
+</li>
+<li>Instead of errors crashing our program, let’s handle them gracefully!</li>
+</ul>
+</div>
+</div>
+<div class="section" id="let-s-try-it-out">
+<h3>Let’s “try” it out!</h3>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">functionThatDoesNotExist</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"did we make it?"</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">try</span> <span class="p">{</span>
+  <span class="nx">functionThatDoesNotExist</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"something went wrong!"</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"did we make it?"</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>Notice the important difference here!</p>
+</div>
+</div>
+<div class="section" id="introducing-try-catch">
+<h3>Introducing try / catch</h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">try</span> <span class="p">{</span>
+  <span class="c1">// place the code you would like to try to run</span>
+<span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">err</span><span class="p">){</span>
+  <span class="c1">// if an error occurs, run whatever code we place in here!</span>
+<span class="p">}</span>
+
+<span class="c1">// keep going!</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<p><cite>try</cite> and <cite>catch</cite> create block scope, so if you define a variable inside using <cite>let</cite> or <cite>const</cite> it will only exist in that block.</p>
+</div>
+<div class="docutils container">
+<p>The parameter to <cite>catch</cite> is optional, but we highly recommend using it so you can see what the error is and any information about it!</p>
+</div>
+</div>
+<div class="section" id="another-example">
+<h3>Another example</h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">displayInitials</span><span class="p">(</span><span class="nx">user</span><span class="p">){</span>
+  <span class="kd">let</span> <span class="nx">firstNameLetter</span> <span class="o">=</span> <span class="nx">user</span><span class="p">.</span><span class="nx">firstName</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">toUpperCase</span><span class="p">();</span>
+  <span class="kd">let</span> <span class="nx">lastNameLetter</span> <span class="o">=</span> <span class="nx">user</span><span class="p">.</span><span class="nx">lastName</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">toUpperCase</span><span class="p">();</span>
+  <span class="k">return</span> <span class="sb">`Hello </span><span class="si">${</span><span class="nx">firstNameLetter</span><span class="si">}</span><span class="sb">.</span><span class="si">${</span><span class="nx">lastNameLetter</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<p>What happens when we don’t pass in an object?</p>
+</div>
+<div class="docutils container">
+<p>What happens when our object does not have the correct keys or values?</p>
+</div>
+</div>
+<div class="section" id="using-try-catch">
+<h3>Using try / catch</h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">displayInitials</span><span class="p">(</span><span class="nx">user</span><span class="p">){</span>
+  <span class="kd">let</span> <span class="nx">firstNameLetter</span><span class="p">;</span>
+  <span class="kd">let</span> <span class="nx">lastNameLetter</span><span class="p">;</span>
+  <span class="k">try</span> <span class="p">{</span>
+    <span class="nx">firstNameLetter</span> <span class="o">=</span> <span class="nx">user</span><span class="p">.</span><span class="nx">firstName</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">toUpperCase</span><span class="p">();</span>
+    <span class="nx">lastNameLetter</span> <span class="o">=</span> <span class="nx">user</span><span class="p">.</span><span class="nx">lastName</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">toUpperCase</span><span class="p">();</span>
+  <span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+    <span class="k">return</span> <span class="s2">"Invalid input!"</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="sb">`Hello </span><span class="si">${</span><span class="nx">firstNameLetter</span><span class="si">}</span><span class="sb">.</span><span class="si">${</span><span class="nx">lastNameLetter</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<p>Strive to only place code that will throw an error inside your try/catch block!</p>
+</div>
+</div>
+<div class="section" id="when-to-use-try-catch">
+<h3>When to use try/catch</h3>
+<p>Think about using try/catch when:</p>
+<div class="docutils container">
+<ul class="simple">
+<li>The output of your program is unpredictable</li>
+<li>There is any chance that an unexpected error may occur</li>
+<li>You don’t want a tremendous amount of conditional logic</li>
+</ul>
+</div>
+</div>
+<div class="section" id="making-your-own-errors">
+<h3>Making your own errors!</h3>
+<p>You can actually create your own errors in JavaScript using the <cite>throw</cite> keyword</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"an error is coming...."</span><span class="p">);</span>
+<span class="k">throw</span> <span class="s2">"What just happened?!?"</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"did we make it?"</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="exploring-with-try-catch">
+<h3>Exploring with try/catch</h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"an error is coming...."</span><span class="p">);</span>
+
+<span class="k">try</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="s2">"Oh no!"</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"what happened?"</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="docutils container">
+<p>All we see here is the string that we passed to throw with no information about the kind of error or where it happened.</p>
+</div>
+</div>
+<div class="section" id="throwing-better-errors">
+<h3>Throwing better errors</h3>
+<p>Instead of just using the <cite>throw</cite> keyword, you can make a new Error object using the <cite>new</cite> keyword.</p>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"an error is coming...."</span><span class="p">);</span>
+
+<span class="k">try</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s2">"Oh no!"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"what kind of error?"</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"what is the message?"</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"where did it happen?"</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nx">stack</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>Notice that we get more information here including where the error occured!</p>
+</div>
+<div class="docutils container">
+<p>We’ll discuss what <cite>new</cite> does in much more detail later in the course, but for now you should use it when making your own errors.</p>
+</div>
+</div>
+<div class="section" id="when-should-you-use-this">
+<h3>When should you use this?</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>any time you want to hide errors from a user</li>
+<li>any time you want to produce custom errors for your users’ benefit.</li>
+<li>it works as a nice fallback in areas of your code that could fail under unusual circumstances that were not foreseen during development</li>
+<li>it can hide overly-technical error messages from users who wouldn’t understand them anyhow</li>
+<li>use it for portions of your code where you suspect errors will occur that are beyond your control</li>
+</ul>
+</div>
+</div>
+<div class="section" id="when-should-you-not-use-this">
+<h3>When should you not use this?</h3>
+<p>If you know an error is going to occur, because in this case you would want to debug the problem, not hide it.</p>
+<div class="docutils container">
+<p>You still have to debug on your own!</p>
+</div>
+</div>
+<div class="section" id="finally">
+<h3>finally</h3>
+<div class="docutils container">
+<p>try/catch blocks come with another optional keyword <cite>finally</cite> which will execute code regardless if an error is thrown or not</p>
+</div>
+<div class="docutils container">
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">try</span> <span class="p">{</span>
+  <span class="kc">undefined</span><span class="p">();</span> <span class="c1">// this will throw a TypeError</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"something went wrong!"</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">finally</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"we're all done!"</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>You will rarely find yourself using this, but it’s good to know if you want to be explicit about what to run no matter what in a try/catch block</p>
+</div>
+</div>
+<div class="section" id="recap">
+<h3>Recap</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>A SyntaxError happen when JavaScript is unable to parse certain syntax</li>
+<li>A ReferenceError occurs when JavaScript tries to access a variable that is not aware of - remember your scopes!</li>
+<li>A TypeError occurs when JavaScript runs an invalid expression on the wrong type</li>
+<li>You can throw your own errors using the throw keyword</li>
+<li>Using try/catch/finally blocks are an excellent way to handle errors when they may be unpredictable</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./webpage_files/jquery.js.download"></script>
+<script type="text/javascript" src="./webpage_files/underscore.js.download"></script>
+<script type="text/javascript" src="./webpage_files/doctools.js.download"></script>
+<script type="text/javascript" src="./webpage_files/language_data.js.download"></script> 
+
+</body></html>

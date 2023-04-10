@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Terminal Intro</title>
+
+    <link rel="stylesheet" href="./handout_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./handout_files/handouts-sphinx.css">
+
+    
+    <link href="./handout_files/css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="page-sidebar">
+        <header>
+            <p class="project">Springboard</p>
+
+            <p class="title">Terminal Intro</p>
+
+            <p class="backlink"><a href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html"> « Back to Homepage</a></p>
+
+        </header>
+        <div id="toc">
+            <ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#">Terminal Intro</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#goals">Goals</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#id1">Goals</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#what-is-terminal">What is Terminal?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#what-is-a-shell-bash-zsh">What is a shell? Bash/ZSH</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#shell">shell</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#terminal">terminal</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#installing-terminal">Installing Terminal</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#id2">Installing Terminal</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#paths-and-folders">Paths and Folders</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#id3">Paths and Folders</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#the-users-folder">The users folder</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#moving-around">Moving Around</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#where-am-i">Where am I?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#id4">Moving around</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#absolute-paths-vs-relative-paths">Absolute Paths vs Relative Paths</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#moving-around-the-terminal-efficiently">Moving around the terminal efficiently</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#useful-keyboard-shortcuts">Useful keyboard shortcuts</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#listing-files">Listing Files</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#flags">Flags</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#using-the-manual-to-learn-more">Using the manual to learn more</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#files-and-folders">Files and Folders</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#creating-files-and-folders">Creating Files And Folders</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#displaying-contents-of-a-file">Displaying Contents Of A File</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#opening-up-a-file">Opening up a file</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#moving-files-and-folders">Moving Files And Folders</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#renaming-files-and-folders">Renaming files and folders</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#copying-files-and-folders">Copying Files and Folders</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#deleting-files-and-folders">Deleting Files And Folders</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#where-did-it-go">Where did it go?</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/lectures/terminal-intro/index.html#removing-a-folder">Removing a folder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div id="page-content">
+        
+  <div class="section" id="terminal-intro">
+<h1>Terminal Intro</h1>
+<div class="section" id="goals">
+<h2>Goals</h2>
+<div class="section" id="id1">
+<div class="docutils container">
+<ul class="simple">
+<li>Define what Terminal is and how it is structured</li>
+<li>Navigate through and list files on your machine</li>
+<li>Define the following terms: shell, terminal, directory, absolute path, relative path</li>
+<li>List files using flags</li>
+<li>Create, move, copy and remove files</li>
+<li>Explain what the following commands do: <cite>cat</cite>, <cite>echo</cite>, <cite>less</cite>, <cite>open</cite></li>
+</ul>
+</div>
+</div>
+<div class="section" id="what-is-terminal">
+<h3>What is Terminal?</h3>
+<p>Terminal is an application that gives us a command line interface (or CLI) to interact with the computer.</p>
+<div class="docutils container">
+<p>Everything you can do in Finder you can do in Terminal, but it’s faster!</p>
+</div>
+</div>
+<div class="section" id="what-is-a-shell-bash-zsh">
+<h3>What is a shell? Bash/ZSH</h3>
+<p>You will also hear the term “shell” when learning about Terminal so it is important to distinguish between these terms.</p>
+</div>
+<div class="section" id="shell">
+<h3>shell</h3>
+<p>The <strong>shell</strong> is the program which actually processes commands and returns output.</p>
+<div class="docutils container">
+<p>Most shells also manage foreground and background processes, command history and command line editing.</p>
+</div>
+<div class="docutils container">
+<p>These features (and many more) are standard in bash, the most common shell in modern linux systems.</p>
+</div>
+</div>
+<div class="section" id="terminal">
+<h3>terminal</h3>
+<p>A <strong>terminal</strong> refers to a wrapper program which runs a shell.</p>
+<div class="docutils container">
+<p>Decades ago, this was a physical device consisting of little more than a monitor and keyboard.</p>
+</div>
+<div class="docutils container">
+<p>As unix/linux systems added better multiprocessing and windowing systems, this terminal concept was abstracted into software.</p>
+</div>
+</div>
+</div>
+<div class="section" id="installing-terminal">
+<h2>Installing Terminal</h2>
+<div class="section" id="id2">
+<div class="docutils container">
+<p>If you’re on a Mac or Linux, you’re good to go! Simply launch the Terminal application</p>
+</div>
+<div class="docutils container">
+<ul>
+<li><p class="first">If you’re using a Windows machine we recommend using the WSL terminal, as shown in the Windows tutorials in this unit.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="paths-and-folders">
+<h2>Paths and Folders</h2>
+<div class="section" id="id3">
+<p>In Terminal, all files and folders begin at the root directory.</p>
+<div class="docutils container">
+<p>The root directory is noted by a <cite>/</cite>.</p>
+</div>
+<div class="docutils container">
+<p>Inside the root directory are essential files/folders that your machine needs, but we do not modify the files and folders in the root directory often.</p>
+</div>
+</div>
+<div class="section" id="the-users-folder">
+<h3>The users folder</h3>
+<div class="docutils container">
+<p>Inside of the root directory, we have a folder called <cite>Users</cite> which contains all of the user accounts on your computer.</p>
+</div>
+<div class="docutils container">
+<p>If you move into the directory for your user account, you will be in the <cite>home</cite> directory, which is denoted by <cite>~</cite>.</p>
+</div>
+<div class="docutils container">
+<p>For example, if your user name on the computer is <cite>colt</cite>, then your home directory would be <cite>/Users/colt</cite>.</p>
+</div>
+<div class="docutils container">
+<p>A synonym for the <cite>/Users/colt</cite> path is <cite>~</cite> when you are logged in as <cite>colt</cite>.</p>
+</div>
+</div>
+<div class="section" id="moving-around">
+<h3>Moving Around</h3>
+<p>The first thing you want to start to understand when using Terminal is how to navigate from folder to folder.</p>
+</div>
+<div class="section" id="where-am-i">
+<h3>Where am I?</h3>
+<p>Before you start moving around, it’s helpful to know where you are.</p>
+<div class="docutils container">
+<p>Thankfully, there is a handy command called <cite>pwd</cite> which will display the absolute path and let you know what current directory you are working in.</p>
+</div>
+<div class="docutils container">
+<p>So if you are ever unsure, just type in <cite>pwd</cite> (which is short for <em>print working directory</em>).</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>Moving around</h3>
+<div class="docutils container">
+<p>One of the most common commands you will be using in Terminal is <cite>cd</cite> which is short for “change directory.”</p>
+</div>
+<div class="docutils container">
+<p>In order to change a directory, type <cite>cd</cite> followed by the directory or a path to the directory.</p>
+</div>
+<p>If we want to move up a directory we use <cite>cd ..</cite> and if we want to move into a directory we specify the name of the directory we are moving into.</p>
+<div class="docutils container">
+<p>For example, if you are in your home directory and type <cite>cd Desktop</cite>, you should move into your Desktop directory.</p>
+</div>
+<div class="docutils container">
+<p>We just mentioned that you can type <cite>cd</cite> followed by a directory or path. But what is a path?</p>
+</div>
+</div>
+<div class="section" id="absolute-paths-vs-relative-paths">
+<h3>Absolute Paths vs Relative Paths</h3>
+<p>A path is simply the way to reach a file or folder; it’s like an address for the file or folder you’re trying to reach.</p>
+<div class="docutils container">
+<p>When we specify a path starting from the root directory <cite>/</cite>, we call that an absolute path.</p>
+</div>
+<div class="docutils container">
+<p>If you’re currently in the <cite>~</cite> home directory and you want to change directories into the Desktop folder, here are two following ways:</p>
+</div>
+<div class="docutils container">
+<ol class="arabic simple">
+<li><cite>cd Desktop</cite> - relative to where I am currently</li>
+<li><cite>cd /Users/colt/Desktop</cite> - absolute, starting from the root (first <cite>/</cite>, then <cite>Users</cite>, then <cite>colt</cite>, then <cite>Desktop</cite>)</li>
+</ol>
+</div>
+</div>
+<div class="section" id="moving-around-the-terminal-efficiently">
+<h3>Moving around the terminal efficiently</h3>
+<p>One of the hardest parts about getting used to the Terminal is the handling an interface where you can not easily use a mouse!</p>
+<div class="docutils container">
+<p>This means we will have lots of typing to do and quite a few shortcuts to learn!</p>
+</div>
+<div class="docutils container">
+<p>If you hold down the alt/option key you can click on a line in the terminal to move your cursor there, but it is still much easier to get comfortable with keyboard shortcuts</p>
+</div>
+</div>
+<div class="section" id="useful-keyboard-shortcuts">
+<h3>Useful keyboard shortcuts</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Command/Control + a (move to beginning of line)</li>
+<li>Command/Control + e (move to end of line)</li>
+<li>Command/Control + w (delete the word where your cursor is)</li>
+<li>Command/Control + u (delete an entire line)</li>
+<li>Option/Alt + left/right (jump between words)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="listing-files">
+<h3>Listing Files</h3>
+<p>One of the most important commands you are going to be using is <cite>ls</cite>, which lists the contents of a directory.</p>
+<div class="docutils container">
+<p>Typing <cite>ls</cite> in your home directory will show you all of the files and folders inside of that directory.</p>
+</div>
+<div class="docutils container">
+<p>Sometimes the default <cite>ls</cite> command does not give us all the information we want. In such cases, we’ll need to add some flags to get more details.</p>
+</div>
+</div>
+<div class="section" id="flags">
+<h3>Flags</h3>
+<div class="docutils container">
+<ul class="simple">
+<li>Flags can change and even enhance commands and are added using a <cite>-</cite> after the command.</li>
+<li>Flags are usually represented by single uppercase and lowercase letters.</li>
+<li>With the <cite>ls</cite> command, we can pass in the <cite>-a</cite> flag to list “all” files (including hidden files and folders).</li>
+<li>If we want the <cite>ls</cite> command to give us more information about each file, we can pass in the <cite>-l</cite> flag.</li>
+<li>To combine flags we can just use one <cite>-</cite> and pass in each flag. So the command to use <cite>ls</cite> and show all files and more detailed information about each one would be <cite>ls -la</cite>.</li>
+</ul>
+</div>
+<p>Using flags for <cite>ls</cite> will be essential when working with permissions as well as when you start working with <cite>git</cite>.</p>
+</div>
+<div class="section" id="using-the-manual-to-learn-more">
+<h3>Using the manual to learn more</h3>
+<p>If you ever want to learn more about a terminal command you can use the <cite>man</cite> command followed by the terminal command to see a manual on the command!</p>
+<div class="docutils container">
+<p>Let’s try it with <cite>ls</cite></p>
+</div>
+</div>
+</div>
+<div class="section" id="files-and-folders">
+<h2>Files and Folders</h2>
+<div class="section" id="creating-files-and-folders">
+<h3>Creating Files And Folders</h3>
+<div class="docutils container">
+<p>To create a folder we use the <cite>mkdir</cite> command (short for “make directory”), followed by the name (or space-separated names) of the folder(s) that we would like to create.</p>
+</div>
+<div class="docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir first_folder
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>Now that we made the <cite>first_folder</cite>, how do we change directories into it?</p>
+</div>
+<div class="docutils container">
+<p>We use the <cite>cd</cite> command!</p>
+</div>
+<p>Now that we are inside our new folder, <cite>first_folder</cite>, let’s create a new file.  A simple way to create a file is with the <cite>touch</cite> command.</p>
+<div class="docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>touch first_file
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="displaying-contents-of-a-file">
+<h3>Displaying Contents Of A File</h3>
+<p>You can display the contents of a file using the <strong>cat</strong> command.</p>
+<div class="docutils container">
+<p>If you type <cite>cat NAME_OF_FILE</cite> you can see the contents of the file easily, right there in Terminal.</p>
+</div>
+<div class="docutils container">
+<p>Let’s add some text to a file so that we can use <cite>cat</cite>.</p>
+</div>
+<div class="docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">"Hello World"</span> &gt; first_file
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>The <strong>echo</strong> command simply writes text to the terminal.</p>
+</div>
+<div class="docutils container">
+<p>The <cite>&gt;</cite> is called a redirect.  The <cite>&gt;</cite> redirects the output from the command on the left side into the file on the right hand side.</p>
+</div>
+<div class="docutils container">
+<p>We will see more on redirection later on!</p>
+</div>
+</div>
+<div class="section" id="opening-up-a-file">
+<h3>Opening up a file</h3>
+<p>If you would like to open up a file, you can use the <cite>open</cite> command.</p>
+<div class="docutils container">
+<p>So if we want to see the contents of <cite>first_file</cite> we can do <cite>open first_file</cite>.</p>
+</div>
+<div class="docutils container">
+<p>The <cite>open</cite> command is also very useful if you want to open all the files and folders in a directory.</p>
+</div>
+</div>
+<div class="section" id="moving-files-and-folders">
+<h3>Moving Files And Folders</h3>
+<p>To move files and folders we use the <cite>mv</cite> command. Let’s try this out!</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv test.txt ../
+</pre></div>
+</div>
+</div>
+<div class="section" id="renaming-files-and-folders">
+<h3>Renaming files and folders</h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv test.txt newfile.txt
+</pre></div>
+</div>
+</div>
+<div class="section" id="copying-files-and-folders">
+<h3>Copying Files and Folders</h3>
+<p>Sometimes you may want to make a copy of a file or a folder. To copy a file, we use the <cite>cp</cite> command (short for copy).</p>
+<div class="docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp PATH_TO_ORIGINAL_FILE PATH_TO_COPIED_FILE
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>For example, if we wanted to create a copy of <cite>test.txt</cite> and call it <cite>test_copy.txt</cite>, we could enter the following command (assuming we’re inside of <cite>first_folder</cite>:</p>
+</div>
+<div class="docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp test.txt test_copy.txt
+</pre></div>
+</div>
+</div>
+<p>In order to copy a directory, you need to modify the <cite>cp</cite> command as follows:</p>
+<div class="docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp -r first_folder first_folder_copy
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>The <cite>-r</cite> is called a _flag_; you can think of a flag for a command as an option that can be passed to that command.</p>
+</div>
+<div class="docutils container">
+<p>To learn more about the flags that you can pass to <cite>cp</cite>, you can type <cite>man cp</cite></p>
+</div>
+</div>
+<div class="section" id="deleting-files-and-folders">
+<h3>Deleting Files And Folders</h3>
+<p>To remove a file or folder we use the <strong>rm</strong> command.</p>
+<div class="docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm newfile.txt
+</pre></div>
+</div>
+</div>
+<div class="docutils container">
+<p>If this works, you should not see any output from the Terminal. You can always run <cite>ls</cite> make sure the file is not there</p>
+</div>
+</div>
+<div class="section" id="where-did-it-go">
+<h3>Where did it go?</h3>
+<p>Now that it is gone… where did it go? The Trash? The answer is it is completely removed from your computer.</p>
+<div class="docutils container">
+<p>There is no undo so be <strong>VERY</strong> careful when using the <cite>rm</cite> command.</p>
+</div>
+</div>
+<div class="section" id="removing-a-folder">
+<h3>Removing a folder</h3>
+<p>It turns out that <cite>rm</cite> is for a file, while the command <cite>rmdir</cite> is used to remove (empty) directories.</p>
+<div class="docutils container">
+<p>If there is anything inside the folder, you will have to use <cite>rm -rf</cite>.</p>
+</div>
+<div class="docutils container">
+<p>Like we saw with <cite>cp</cite>, the <cite>r</cite> and <cite>f</cite> in <cite>-rf</cite> are examples of flags.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./handout_files/jquery.js.download"></script>
+<script type="text/javascript" src="./handout_files/underscore.js.download"></script>
+<script type="text/javascript" src="./handout_files/doctools.js.download"></script>
+<script type="text/javascript" src="./handout_files/language_data.js.download"></script> 
+
+</body></html>
