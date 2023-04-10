@@ -1,1 +1,0 @@
-window.mnjs.callback.autoRefreshResponseParser({"lid":"1183009822","ref":true,"litype":"AD_EXCHANGE","nt":0});
