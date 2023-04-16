@@ -62,11 +62,7 @@ const extend = (array1, array2) => [...array1, ...array2];
 /** Return a new object with all the keys and values
 from obj and a new key/value pair */
 
-const addKeyVal = (obj, key, val) => {
-    const addObj = {};
-    addObj[key] = val;
-    return ({...obj, ...addObj})
-}
+const addKeyVal = (obj, key, val) => ({...obj, [key]:val})
 
 
 /** Return a new object with a key removed. */
@@ -86,9 +82,4 @@ const combine = (obj1, obj2) => ({...obj1, ...obj2});
 
 /** Return a new object with a modified key and value. */
 
-const update = (obj, key, val) => {
-    const updateObj = {};
-    updateObj[key]  = val;
-
-    return {...obj, ...updateObj}
-}
+const update = (obj, key, val) => ({...obj, [key]:val})
