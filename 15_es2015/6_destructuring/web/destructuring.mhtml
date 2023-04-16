@@ -1,0 +1,2777 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://lessons.springboard.com/Array-and-Object-Destructuring-9a11404c374e416296d9337795f93b80#4fc5d771e3a446519a5814bfd43a37ff
+Subject: Array and Object Destructuring
+Date: Sun, 16 Apr 2023 02:49:35 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----"
+
+
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/html
+Content-ID: <frame-552F9468A08687D5FED72AEC9B42DDC8@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://lessons.springboard.com/Array-and-Object-Destructuring-9a11404c374e416296d9337795f93b80#4fc5d771e3a446519a5814bfd43a37ff
+
+<!DOCTYPE html><html class=3D"notion-html"><head lang=3D"en"><meta http-equ=
+iv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"><link rel=3D"sty=
+lesheet" type=3D"text/css" href=3D"cid:css-c057ef75-18e8-4afb-ae65-794fbc80=
+fc29@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:=
+css-e1db5fbb-c38b-44b7-bd32-f087bfcbf245@mhtml.blink" /><link rel=3D"styles=
+heet" type=3D"text/css" href=3D"cid:css-80131808-c1c5-4bf1-90e1-30c376c516c=
+9@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css=
+-4110ebf5-6d6c-4aaf-9760-ced5f307a492@mhtml.blink" /><link rel=3D"styleshee=
+t" type=3D"text/css" href=3D"cid:css-f31e1706-3a69-4743-bded-80e9e2ea0c25@m=
+html.blink" />
+         =20
+   =20
+   =20
+   =20
+ =20
+          <meta name=3D"viewport" content=3D"width=3Ddevice-width,height=3D=
+device-height,initial-scale=3D1,maximum-scale=3D1,user-scalable=3Dno,viewpo=
+rt-fit=3Dcover"><title>Array and Object Destructuring</title><meta name=3D"=
+description" content=3D"Springboard Course Material"><meta name=3D"twitter:=
+card" content=3D"summary_large_image"><meta name=3D"twitter:site" content=
+=3D"@NotionHQ"><meta name=3D"twitter:title" content=3D"Springboard Course M=
+aterial"><meta name=3D"twitter:description" content=3D"Springboard Course M=
+aterial"><meta name=3D"twitter:url" content=3D"https://www.notion.so"><meta=
+ name=3D"twitter:image" content=3D"https://www.springboard.com/assets/image=
+s/new-springboard-logo-dark@2x.png"><meta property=3D"og:site_name" content=
+=3D"Springboard Course Material"><meta property=3D"og:type" content=3D"webs=
+ite"><meta property=3D"og:url" content=3D"https://lessons.springboard.com">=
+<meta property=3D"og:title" content=3D"Springboard Course Material"><meta p=
+roperty=3D"og:description" content=3D"Springboard Course Material"><meta pr=
+operty=3D"og:image" content=3D"https://www.springboard.com/assets/images/ne=
+w-springboard-logo-dark@2x.png"><meta property=3D"og:locale" content=3D"en_=
+US"><link rel=3D"shortcut icon" type=3D"image/x-icon" href=3D"data:image/pn=
+g;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAc=
+BJREFUWEftlt1RwkAUhc/djM9iBWoHWoFYAHGZEJ6xAksQKpFnNpEYCjBWoCVgB+GZSdbZ/EASE=
+EjQic4kj0vu7sc9Z08uoeaHaj4fDcDf7ECvx9skgweA2gBayifCdkvBmoYuE3/5gPTAtJEQzkfR=
+cxubmia/Qhi+F188AmC9FWPXRYhNAEN3ANz9CgDwImyXZ/feBuADOFUvEWR3Ys8UUOWnb3S4BE1=
+TOYTtnu0DSLUrrft3lBk/bOy5rQMNQH0diO9/+BprKT+FPbuo7L5MoWnoK2NLYreW5Xjpz5EH+j=
+19qJwvJQZp8BBhNLHcYQL1FCERu0+Ly6yr/aXEY3oTiDAOQ/jWszuKALIujf883pYh447j+KbRm=
+QN0nhTPhe1exjWHr3POWycsdEC4yXZUhdt2AEhvGWjdGGDdvqwsZdYjAC2YJtG+YlgBJC1Sma8k=
+iEMoJ0EwjiXQBnkJDlsvSLAAMCaCryTO5UDehFi1+1gj7jVh9oBdqVUVpEnCf9eBH/0cFwachbD=
+daMLKJWHBhDUPJHWPZFHMxhDq+6CG0iiYjpgJVfB4YGx40FBa9a5XrSs1alc9ZFddA1B7B74AGh=
+5GMBiZx8IAAAAASUVORK5CYII=3D"><link rel=3D"apple-touch-icon" href=3D"https:=
+//www.springboard.com/assets/images/new-fav-icon.ico"><meta name=3D"apple-m=
+obile-web-app-capable" content=3D"yes"><meta name=3D"apple-itunes-app" cont=
+ent=3D"app-id=3D1232780281"><meta name=3D"format-detection" content=3D"tele=
+phone=3Dno"><meta name=3D"msapplication-tap-highlight" content=3D"no"><link=
+ href=3D"https://lessons.springboard.com/print.5c792172.css" rel=3D"stylesh=
+eet" media=3D"print"><link href=3D"https://lessons.springboard.com/app-56ad=
+3358fe048b60e541.css" rel=3D"stylesheet"></head><body class=3D"notion-body"=
+><div class=3D"springboard-logo-container"><img class=3D"springboard-logo" =
+src=3D"https://www.springboard.com/assets/images/new-springboard-logo-dark@=
+2x.png" alt=3D"Springboard Logo"></div><div id=3D"notion-app"><div class=3D=
+"notion-app-inner notion-light-theme" style=3D"color: rgb(55, 53, 47); fill=
+: currentcolor; line-height: 1.5; font-family: ui-sans-serif, -apple-system=
+, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Em=
+oji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Sy=
+mbol&quot;; -webkit-font-smoothing: auto; background-color: white;"><div st=
+yle=3D"height: 100%;"><div class=3D"notion-cursor-listener" style=3D"width:=
+ 100vw; height: 100%; position: relative; display: flex; flex: 1 1 0%; back=
+ground: white; cursor: text;"><div class=3D"" style=3D"display: flex; flex-=
+direction: column; width: 100%; overflow: hidden;"><div style=3D"max-width:=
+ 100vw; z-index: 100; background: white; user-select: none;"><div class=3D"=
+notion-topbar" style=3D"width: 100%; max-width: 100vw; height: 45px; opacit=
+y: 1; transition: opacity 700ms ease 0s, color 700ms ease 0s; position: rel=
+ative;"><div style=3D"display: flex; justify-content: space-between; align-=
+items: center; overflow: hidden; height: 45px; padding-left: 12px; padding-=
+right: 10px;"><div class=3D"notranslate" style=3D"display: flex; align-item=
+s: center; line-height: 1.2; font-size: 14px; height: 100%; flex-grow: 0; m=
+argin-right: 8px; min-width: 0px;"><div data-block-id=3D"8ee4277b-573a-4b75=
+-bfac-61357183ca4a" class=3D"notion-selectable notion-page-block" style=3D"=
+display: flex; align-items: center; min-width: 0px;"><a href=3D"https://les=
+sons.springboard.com/Course-materials-8ee4277b573a4b75bfac61357183ca4a" rel=
+=3D"noopener noreferrer" style=3D"display: flex; color: rgb(55, 53, 47); te=
+xt-decoration: none; user-select: none; transition: background 20ms ease-in=
+ 0s; cursor: pointer; align-items: center; flex-shrink: 1; white-space: now=
+rap; height: 24px; border-radius: 4px; font-size: inherit; line-height: 1.2=
+; min-width: 0px; padding: 2px;"><div style=3D"display: flex; align-items: =
+center; min-width: 0px;"><div class=3D"notranslate" style=3D"white-space: n=
+owrap; overflow: hidden; text-overflow: ellipsis; max-width: 160px;">Course=
+ materials</div></div></a></div><span style=3D"margin-left: 2px; margin-rig=
+ht: 2px; color: rgba(55, 53, 47, 0.5);">/</span><div style=3D"display: flex=
+; align-items: center; flex-shrink: 0;"><div role=3D"button" tabindex=3D"0"=
+ style=3D"user-select: none; transition: background 20ms ease-in 0s; cursor=
+: pointer; display: inline-flex; align-items: center; flex-shrink: 0; white=
+-space: nowrap; height: 24px; border-radius: 4px; font-size: 14px; line-hei=
+ght: 1.2; min-width: 0px; padding-left: 6px; padding-right: 6px; color: rgb=
+(55, 53, 47);">...</div><span style=3D"margin-left: 2px; margin-right: 2px;=
+ color: rgba(55, 53, 47, 0.5);">/</span></div><div data-block-id=3D"59bf7b1=
+a-1350-48bd-922f-d175d6554cf9" class=3D"notion-selectable notion-page-block=
+" style=3D"display: flex; align-items: center; min-width: 0px;"><a href=3D"=
+https://lessons.springboard.com/Handouts-59bf7b1a135048bd922fd175d6554cf9" =
+rel=3D"noopener noreferrer" style=3D"display: flex; color: rgb(55, 53, 47);=
+ text-decoration: none; user-select: none; transition: background 20ms ease=
+-in 0s; cursor: pointer; align-items: center; flex-shrink: 1; white-space: =
+nowrap; height: 24px; border-radius: 4px; font-size: inherit; line-height: =
+1.2; min-width: 0px; padding: 2px;"><div style=3D"display: flex; align-item=
+s: center; min-width: 0px;"><div class=3D"notranslate" style=3D"white-space=
+: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160px;">Han=
+douts</div></div></a></div><span style=3D"margin-left: 2px; margin-right: 2=
+px; color: rgba(55, 53, 47, 0.5);">/</span><div role=3D"button" tabindex=3D=
+"0" style=3D"user-select: none; transition: background 20ms ease-in 0s; cur=
+sor: pointer; display: inline-flex; align-items: center; flex-shrink: 1; wh=
+ite-space: nowrap; height: 24px; border-radius: 4px; font-size: 14px; line-=
+height: 1.2; min-width: 0px; padding-left: 6px; padding-right: 6px; color: =
+rgb(55, 53, 47);"><div class=3D"notion-record-icon notranslate" style=3D"di=
+splay: flex; align-items: center; justify-content: center; height: 20px; wi=
+dth: 20px; border-radius: 0.25em; flex-shrink: 0; margin-right: 6px;"><div>=
+<div style=3D"width: 100%; height: 100%;"><img src=3D"https://lessons.sprin=
+gboard.com/icons/snippet_gray.svg?mode=3Dlight" referrerpolicy=3D"same-orig=
+in" style=3D"display: block; object-fit: cover; border-radius: 3px; width: =
+22px; height: 22px; transition: opacity 100ms ease-out 0s;"></div></div></d=
+iv><div class=3D"notranslate" style=3D"white-space: nowrap; overflow: hidde=
+n; text-overflow: ellipsis; max-width: 240px;">Array and Object Destructuri=
+ng</div></div></div><div style=3D"flex-grow: 1; flex-shrink: 1;"></div><div=
+ role=3D"button" tabindex=3D"0" style=3D"user-select: none; transition: bac=
+kground 20ms ease-in 0s; cursor: pointer; display: inline-flex; align-items=
+: center; flex-shrink: 0; white-space: nowrap; height: 28px; border-radius:=
+ 4px; font-size: 14px; line-height: 1.2; min-width: 0px; padding-left: 8px;=
+ padding-right: 8px; color: rgb(55, 53, 47);"><svg viewBox=3D"0 0 17 17" cl=
+ass=3D"searchNew" style=3D"width: 14px; height: 14px; display: block; fill:=
+ inherit; flex-shrink: 0; backface-visibility: hidden; margin-right: 6px;">=
+<path d=3D"M6.78027 13.6729C8.24805 13.6729 9.60156 13.1982 10.709 12.4072L=
+14.875 16.5732C15.0684 16.7666 15.3232 16.8633 15.5957 16.8633C16.167 16.86=
+33 16.5713 16.4238 16.5713 15.8613C16.5713 15.5977 16.4834 15.3516 16.29 15=
+.1582L12.1504 11.0098C13.0205 9.86719 13.5391 8.45215 13.5391 6.91406C13.53=
+91 3.19629 10.498 0.155273 6.78027 0.155273C3.0625 0.155273 0.0214844 3.196=
+29 0.0214844 6.91406C0.0214844 10.6318 3.0625 13.6729 6.78027 13.6729ZM6.78=
+027 12.2139C3.87988 12.2139 1.48047 9.81445 1.48047 6.91406C1.48047 4.01367=
+ 3.87988 1.61426 6.78027 1.61426C9.68066 1.61426 12.0801 4.01367 12.0801 6.=
+91406C12.0801 9.81445 9.68066 12.2139 6.78027 12.2139Z"></path></svg>Search=
+</div><div role=3D"button" tabindex=3D"0" style=3D"user-select: none; trans=
+ition: background 20ms ease-in 0s; cursor: pointer; display: flex; align-it=
+ems: center; justify-content: center; width: 32px; height: 28px; border-rad=
+ius: 3px;"><svg viewBox=3D"0 0 13 3" class=3D"dots" style=3D"width: 18px; h=
+eight: 18px; display: block; fill: inherit; flex-shrink: 0; backface-visibi=
+lity: hidden;"><g><path d=3D"M3,1.5A1.5,1.5,0,1,1,1.5,0,1.5,1.5,0,0,1,3,1.5=
+Z"></path><path d=3D"M8,1.5A1.5,1.5,0,1,1,6.5,0,1.5,1.5,0,0,1,8,1.5Z"></pat=
+h><path d=3D"M13,1.5A1.5,1.5,0,1,1,11.5,0,1.5,1.5,0,0,1,13,1.5Z"></path></g=
+></svg></div><div style=3D"flex: 0 0 auto; width: 1px; height: 16px; margin=
+-left: 8px; margin-right: 8px; background: rgba(55, 53, 47, 0.16);"></div><=
+div role=3D"button" tabindex=3D"0" style=3D"user-select: none; transition: =
+background 20ms ease-in 0s; cursor: pointer; display: inline-flex; align-it=
+ems: center; flex-shrink: 0; white-space: nowrap; height: 28px; border-radi=
+us: 4px; font-size: 14px; line-height: 1.2; min-width: 0px; padding-left: 8=
+px; padding-right: 8px; color: rgb(55, 53, 47);"><svg viewBox=3D"0 0 120 12=
+6" class=3D"notionLogo" style=3D"width: 18px; height: 18px; display: block;=
+ fill: inherit; flex-shrink: 0; backface-visibility: hidden; margin-right: =
+6px;"><path d=3D"M 20.6927 21.9315C 24.5836 25.0924 26.0432 24.8512 33.3492=
+ 24.3638L 102.228 20.2279C 103.689 20.2279 102.474 18.7705 101.987 18.5283L=
+ 90.5477 10.2586C 88.3558 8.55699 85.4356 6.60818 79.8387 7.09563L 13.1433 =
+11.9602C 10.711 12.2014 10.2251 13.4175 11.1939 14.3924L 20.6927 21.9315ZM =
+24.8281 37.9835L 24.8281 110.456C 24.8281 114.351 26.7745 115.808 31.1553 1=
+15.567L 106.853 111.187C 111.236 110.946 111.724 108.267 111.724 105.103L 1=
+11.724 33.1169C 111.724 29.958 110.509 28.2544 107.826 28.4976L 28.721 33.1=
+169C 25.8018 33.3622 24.8281 34.8225 24.8281 37.9835ZM 99.5567 41.8711C 100=
+.042 44.0622 99.5567 46.2512 97.3618 46.4974L 93.7143 47.2241L 93.7143 100.=
+728C 90.5477 102.43 87.6275 103.403 85.1942 103.403C 81.2983 103.403 80.322=
+6 102.186 77.4044 98.54L 53.5471 61.087L 53.5471 97.3239L 61.0964 99.0275C =
+61.0964 99.0275 61.0964 103.403 55.0057 103.403L 38.2148 104.377C 37.727 10=
+3.403 38.2148 100.973 39.9179 100.486L 44.2996 99.2717L 44.2996 51.36L 38.2=
+158 50.8725C 37.728 48.6815 38.9431 45.5225 42.3532 45.2773L 60.3661 44.063=
+1L 85.1942 82.0036L 85.1942 48.4402L 78.864 47.7136C 78.3781 45.0351 80.322=
+6 43.0902 82.7569 42.849L 99.5567 41.8711ZM 7.5434 5.39404L 76.9175 0.28527=
+6C 85.4366 -0.445402 87.6285 0.0440428 92.983 3.93368L 115.128 19.4982C 118=
+.782 22.1747 120 22.9034 120 25.8211L 120 111.187C 120 116.537 118.051 119.=
+701 111.237 120.185L 30.6734 125.05C 25.5584 125.294 23.124 124.565 20.4453=
+ 121.158L 4.13735 99.9994C 1.21516 96.1048 0 93.191 0 89.7819L 0 13.903C 0 =
+9.5279 1.94945 5.8785 7.5434 5.39404Z"></path></svg>Try Notion</div><div cl=
+ass=3D"toggle-mode"><div style=3D"margin-left: auto; margin-right: 14px; mi=
+n-width: 0px;"><div role=3D"button" tabindex=3D"0" style=3D"user-select: no=
+ne; transition: background 120ms ease-in 0s; cursor: pointer; border-radius=
+: 44px;"><div style=3D"display: flex; flex-shrink: 0; height: 14px; width: =
+26px; border-radius: 44px; border-style: solid; border-width: 0.1em; border=
+-color: #37352f73; padding: 2px; box-sizing: content-box; transition: backg=
+round 200ms ease 0s, box-shadow 200ms ease 0s;"><div style=3D"width: 14px; =
+height: 14px; border-radius: 44px; background: white; transition: transform=
+ 200ms ease-out 0s, background 200ms ease-out 0s; transform: translateX(0px=
+) translateY(0px); content: url(&quot;https://cloakist.s3.amazonaws.com/tog=
+gle_moon.svg&quot;);"></div></div></div></div></div></div></div><div style=
+=3D"width: calc(100% - 0px); user-select: none;"></div></div><div class=3D"=
+notion-frame" style=3D"flex-grow: 0; flex-shrink: 1; display: flex; flex-di=
+rection: column; background: white; z-index: 1; height: calc(100vh - 45px);=
+ max-height: 100%; position: relative; width: 977px;"><div class=3D"notion-=
+scroller vertical" style=3D"display: flex; flex-direction: column; z-index:=
+ 1; flex-grow: 1; position: relative; align-items: center; margin-right: 0p=
+x; margin-bottom: 0px; overflow: hidden auto;"><div style=3D"position: abso=
+lute; top: 0px; left: 0px;"><div></div></div><div class=3D"whenContentEdita=
+ble" data-content-editable-root=3D"true" style=3D"caret-color: rgb(55, 53, =
+47); width: 100%; display: flex; flex-direction: column; position: relative=
+; align-items: center; flex-grow: 1; --whenContentEditable--WebkitUserModif=
+y:read-write-plaintext-only;"><span style=3D"height: 1px; width: 1px;"></sp=
+an><div contenteditable=3D"false" class=3D"pseudoSelection" data-content-ed=
+itable-void=3D"true" style=3D"user-select: none; --pseudoSelection--backgro=
+und:transparent; width: 100%; display: flex; flex-direction: column; align-=
+items: center; flex-shrink: 0; flex-grow: 0; z-index: 2;"></div><div style=
+=3D"width: 100%; display: flex; justify-content: center; z-index: 3; flex-s=
+hrink: 0;"><div style=3D"max-width: 100%; min-width: 0px; width: 900px;"><d=
+iv style=3D"width: 100%; display: flex; flex-direction: column; align-items=
+: center; flex-shrink: 0; flex-grow: 0;"><div style=3D"max-width: 100%; pad=
+ding-left: calc(96px + env(safe-area-inset-left)); width: 100%;"><div conte=
+nteditable=3D"false" class=3D"pseudoSelection" data-content-editable-void=
+=3D"true" style=3D"user-select: none; --pseudoSelection--background:transpa=
+rent; pointer-events: none;"><div class=3D"notion-record-icon notranslate" =
+style=3D"display: flex; align-items: center; justify-content: center; heigh=
+t: 78px; width: 78px; border-radius: 0.25em; flex-shrink: 0; position: rela=
+tive; z-index: 1; margin-left: 3px; margin-bottom: 0px; margin-top: 96px; p=
+ointer-events: auto;"><div><div style=3D"width: 100%; height: 100%;"><img s=
+rc=3D"https://lessons.springboard.com/icons/snippet_gray.svg?mode=3Dlight" =
+referrerpolicy=3D"same-origin" style=3D"display: block; object-fit: cover; =
+border-radius: 3px; width: 85.8px; height: 85.8px; transition: opacity 100m=
+s ease-out 0s;"></div></div></div><div class=3D"notion-page-controls" style=
+=3D"display: flex; justify-content: flex-start; flex-wrap: wrap; margin-top=
+: 8px; margin-bottom: 4px; margin-left: -1px; color: rgba(55, 53, 47, 0.5);=
+ font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &qu=
+ot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; height: 24px; pointer=
+-events: auto;"></div></div><div style=3D"padding-right: calc(96px + env(sa=
+fe-area-inset-right));"><div><div data-block-id=3D"9a11404c-374e-4162-96d9-=
+337795f93b80" class=3D"notion-selectable notion-page-block" style=3D"color:=
+ rgb(55, 53, 47); font-weight: 700; line-height: 1.2; font-size: 40px; font=
+-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&q=
+uot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Se=
+goe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; cursor: text; display: fle=
+x; align-items: center;"><div spellcheck=3D"true" placeholder=3D"Untitled" =
+data-content-editable-leaf=3D"true" contenteditable=3D"false" style=3D"max-=
+width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; ca=
+ret-color: rgb(55, 53, 47); padding: 3px 2px;"><span style=3D"text-decorati=
+on:none;color:inherit" data-token-index=3D"0" class=3D"notion-enable-hover"=
+>Array and Object Destructuring</span></div></div><div style=3D"margin-left=
+: 4px;"></div></div></div></div></div><div style=3D"width: 100%; display: f=
+lex; flex-direction: column; align-items: center; flex-shrink: 0; flex-grow=
+: 0;"><div contenteditable=3D"false" data-content-editable-void=3D"true" st=
+yle=3D"padding-left: calc(96px + env(safe-area-inset-left)); padding-right:=
+ calc(96px + env(safe-area-inset-right)); max-width: 100%; width: 100%;"></=
+div></div></div></div><main style=3D"display: flex; width: 100%; justify-co=
+ntent: center; padding-top: 5px;"><div style=3D"max-width: 100%; min-width:=
+ 0px; width: 900px;"><div class=3D"notion-page-content" style=3D"flex-shrin=
+k: 0; flex-grow: 1; max-width: 100%; display: flex; align-items: flex-start=
+; flex-direction: column; font-size: 16px; line-height: 1.5; width: 100%; z=
+-index: 4; padding-bottom: 30vh; padding-left: calc(96px + env(safe-area-in=
+set-left)); padding-right: calc(96px + env(safe-area-inset-right));"><div d=
+ata-block-id=3D"79f084ad-369a-49c9-9913-280a38e814ae" class=3D"notion-selec=
+table notion-table_of_contents-block" style=3D"width: 100%; max-width: 775p=
+x; margin-top: 4px; margin-bottom: 4px;"><div contenteditable=3D"false" dat=
+a-content-editable-void=3D"true" style=3D"position: relative;"><div style=
+=3D"color: rgb(120, 119, 116); fill: rgb(120, 119, 116);"><a href=3D"https:=
+//lessons.springboard.com/Array-and-Object-Destructuring-9a11404c374e416296=
+d9337795f93b80#8fd2228a6bc44b59ae0af4656378a61c" rel=3D"noopener noreferrer=
+" style=3D"display: block; color: inherit; text-decoration: none; user-sele=
+ct: none; transition: background 20ms ease-in 0s; cursor: pointer;"><div st=
+yle=3D"padding: 6px 2px; font-size: 14px; line-height: 1.3; display: flex; =
+align-items: center; margin-left: 0px;"><div class=3D"notranslate" style=3D=
+"white-space: nowrap; overflow: hidden; text-overflow: ellipsis; background=
+-image: linear-gradient(to right, rgba(55, 53, 47, 0.16) 0%, rgba(55, 53, 4=
+7, 0.16) 100%); background-repeat: repeat-x; background-position: 0px 100%;=
+ background-size: 100% 1px;">Goals</div></div></a></div><div style=3D"color=
+: rgb(120, 119, 116); fill: rgb(120, 119, 116);"><a href=3D"https://lessons=
+.springboard.com/Array-and-Object-Destructuring-9a11404c374e416296d9337795f=
+93b80#72f1220330fd4ac39991924cb280ab2f" rel=3D"noopener noreferrer" style=
+=3D"display: block; color: inherit; text-decoration: none; user-select: non=
+e; transition: background 20ms ease-in 0s; cursor: pointer;"><div style=3D"=
+padding: 6px 2px; font-size: 14px; line-height: 1.3; display: flex; align-i=
+tems: center; margin-left: 0px;"><div class=3D"notranslate" style=3D"white-=
+space: nowrap; overflow: hidden; text-overflow: ellipsis; background-image:=
+ linear-gradient(to right, rgba(55, 53, 47, 0.16) 0%, rgba(55, 53, 47, 0.16=
+) 100%); background-repeat: repeat-x; background-position: 0px 100%; backgr=
+ound-size: 100% 1px;">Object Destructuring</div></div></a></div><div style=
+=3D"color: rgb(120, 119, 116); fill: rgb(120, 119, 116);"><a href=3D"https:=
+//lessons.springboard.com/Array-and-Object-Destructuring-9a11404c374e416296=
+d9337795f93b80#3ad8775b2446463d8ea10fa4d2ab889c" rel=3D"noopener noreferrer=
+" style=3D"display: block; color: inherit; text-decoration: none; user-sele=
+ct: none; transition: background 20ms ease-in 0s; cursor: pointer;"><div st=
+yle=3D"padding: 6px 2px; font-size: 14px; line-height: 1.3; display: flex; =
+align-items: center; margin-left: 24px;"><div class=3D"notranslate" style=
+=3D"white-space: nowrap; overflow: hidden; text-overflow: ellipsis; backgro=
+und-image: linear-gradient(to right, rgba(55, 53, 47, 0.16) 0%, rgba(55, 53=
+, 47, 0.16) 100%); background-repeat: repeat-x; background-position: 0px 10=
+0%; background-size: 100% 1px;">That=E2=80=99s A Lot of Typing</div></div><=
+/a></div><div style=3D"color: rgb(120, 119, 116); fill: rgb(120, 119, 116);=
+"><a href=3D"https://lessons.springboard.com/Array-and-Object-Destructuring=
+-9a11404c374e416296d9337795f93b80#090263ae6bb2486b8265c59d71556fa5" rel=3D"=
+noopener noreferrer" style=3D"display: block; color: inherit; text-decorati=
+on: none; user-select: none; transition: background 20ms ease-in 0s; cursor=
+: pointer;"><div style=3D"padding: 6px 2px; font-size: 14px; line-height: 1=
+.3; display: flex; align-items: center; margin-left: 24px;"><div class=3D"n=
+otranslate" style=3D"white-space: nowrap; overflow: hidden; text-overflow: =
+ellipsis; background-image: linear-gradient(to right, rgba(55, 53, 47, 0.16=
+) 0%, rgba(55, 53, 47, 0.16) 100%); background-repeat: repeat-x; background=
+-position: 0px 100%; background-size: 100% 1px;">Destructuring + Spread</di=
+v></div></a></div><div style=3D"color: rgb(120, 119, 116); fill: rgb(120, 1=
+19, 116);"><a href=3D"https://lessons.springboard.com/Array-and-Object-Dest=
+ructuring-9a11404c374e416296d9337795f93b80#63187819b26c45b9bcaff8ddcb78e203=
+" rel=3D"noopener noreferrer" style=3D"display: block; color: inherit; text=
+-decoration: none; user-select: none; transition: background 20ms ease-in 0=
+s; cursor: pointer; background: rgba(55, 53, 47, 0.08);"><div style=3D"padd=
+ing: 6px 2px; font-size: 14px; line-height: 1.3; display: flex; align-items=
+: center; margin-left: 24px;"><div class=3D"notranslate" style=3D"white-spa=
+ce: nowrap; overflow: hidden; text-overflow: ellipsis; background-image: li=
+near-gradient(to right, rgba(55, 53, 47, 0.16) 0%, rgba(55, 53, 47, 0.16) 1=
+00%); background-repeat: repeat-x; background-position: 0px 100%; backgroun=
+d-size: 100% 1px;">Untitled</div></div></a></div><div style=3D"color: rgb(1=
+20, 119, 116); fill: rgb(120, 119, 116);"><a href=3D"https://lessons.spring=
+board.com/Array-and-Object-Destructuring-9a11404c374e416296d9337795f93b80#0=
+f1e36860b044343b0df27ca0fab40af" rel=3D"noopener noreferrer" style=3D"displ=
+ay: block; color: inherit; text-decoration: none; user-select: none; transi=
+tion: background 20ms ease-in 0s; cursor: pointer;"><div style=3D"padding: =
+6px 2px; font-size: 14px; line-height: 1.3; display: flex; align-items: cen=
+ter; margin-left: 24px;"><div class=3D"notranslate" style=3D"white-space: n=
+owrap; overflow: hidden; text-overflow: ellipsis; background-image: linear-=
+gradient(to right, rgba(55, 53, 47, 0.16) 0%, rgba(55, 53, 47, 0.16) 100%);=
+ background-repeat: repeat-x; background-position: 0px 100%; background-siz=
+e: 100% 1px;">Renaming with destructuring</div></div></a></div><div style=
+=3D"color: rgb(120, 119, 116); fill: rgb(120, 119, 116);"><a href=3D"https:=
+//lessons.springboard.com/Array-and-Object-Destructuring-9a11404c374e416296=
+d9337795f93b80#4fc5d771e3a446519a5814bfd43a37ff" rel=3D"noopener noreferrer=
+" style=3D"display: block; color: inherit; text-decoration: none; user-sele=
+ct: none; transition: background 20ms ease-in 0s; cursor: pointer;"><div st=
+yle=3D"padding: 6px 2px; font-size: 14px; line-height: 1.3; display: flex; =
+align-items: center; margin-left: 24px;"><div class=3D"notranslate" style=
+=3D"white-space: nowrap; overflow: hidden; text-overflow: ellipsis; backgro=
+und-image: linear-gradient(to right, rgba(55, 53, 47, 0.16) 0%, rgba(55, 53=
+, 47, 0.16) 100%); background-repeat: repeat-x; background-position: 0px 10=
+0%; background-size: 100% 1px;">Defaults with destructuring</div></div></a>=
+</div><div style=3D"color: rgb(120, 119, 116); fill: rgb(120, 119, 116);"><=
+a href=3D"https://lessons.springboard.com/Array-and-Object-Destructuring-9a=
+11404c374e416296d9337795f93b80#f881e0ec0c044ebc8664c5a222684985" rel=3D"noo=
+pener noreferrer" style=3D"display: block; color: inherit; text-decoration:=
+ none; user-select: none; transition: background 20ms ease-in 0s; cursor: p=
+ointer;"><div style=3D"padding: 6px 2px; font-size: 14px; line-height: 1.3;=
+ display: flex; align-items: center; margin-left: 24px;"><div class=3D"notr=
+anslate" style=3D"white-space: nowrap; overflow: hidden; text-overflow: ell=
+ipsis; background-image: linear-gradient(to right, rgba(55, 53, 47, 0.16) 0=
+%, rgba(55, 53, 47, 0.16) 100%); background-repeat: repeat-x; background-po=
+sition: 0px 100%; background-size: 100% 1px;">Destructuring nested objects<=
+/div></div></a></div><div style=3D"color: rgb(120, 119, 116); fill: rgb(120=
+, 119, 116);"><a href=3D"https://lessons.springboard.com/Array-and-Object-D=
+estructuring-9a11404c374e416296d9337795f93b80#28ba720a813a4bfb9d02d1abe6ba4=
+00c" rel=3D"noopener noreferrer" style=3D"display: block; color: inherit; t=
+ext-decoration: none; user-select: none; transition: background 20ms ease-i=
+n 0s; cursor: pointer;"><div style=3D"padding: 6px 2px; font-size: 14px; li=
+ne-height: 1.3; display: flex; align-items: center; margin-left: 24px;"><di=
+v class=3D"notranslate" style=3D"white-space: nowrap; overflow: hidden; tex=
+t-overflow: ellipsis; background-image: linear-gradient(to right, rgba(55, =
+53, 47, 0.16) 0%, rgba(55, 53, 47, 0.16) 100%); background-repeat: repeat-x=
+; background-position: 0px 100%; background-size: 100% 1px;">Destructuring =
+functions</div></div></a></div><div style=3D"color: rgb(120, 119, 116); fil=
+l: rgb(120, 119, 116);"><a href=3D"https://lessons.springboard.com/Array-an=
+d-Object-Destructuring-9a11404c374e416296d9337795f93b80#6249535be04547eb8e9=
+ab86a8af681f8" rel=3D"noopener noreferrer" style=3D"display: block; color: =
+inherit; text-decoration: none; user-select: none; transition: background 2=
+0ms ease-in 0s; cursor: pointer;"><div style=3D"padding: 6px 2px; font-size=
+: 14px; line-height: 1.3; display: flex; align-items: center; margin-left: =
+0px;"><div class=3D"notranslate" style=3D"white-space: nowrap; overflow: hi=
+dden; text-overflow: ellipsis; background-image: linear-gradient(to right, =
+rgba(55, 53, 47, 0.16) 0%, rgba(55, 53, 47, 0.16) 100%); background-repeat:=
+ repeat-x; background-position: 0px 100%; background-size: 100% 1px;">You C=
+an Apply The Same Concept To Arrays!</div></div></a></div><div style=3D"col=
+or: rgb(120, 119, 116); fill: rgb(120, 119, 116);"><a href=3D"https://lesso=
+ns.springboard.com/Array-and-Object-Destructuring-9a11404c374e416296d933779=
+5f93b80#9e18a08dca7c4c3685f3fd2f8d5a54c6" rel=3D"noopener noreferrer" style=
+=3D"display: block; color: inherit; text-decoration: none; user-select: non=
+e; transition: background 20ms ease-in 0s; cursor: pointer;"><div style=3D"=
+padding: 6px 2px; font-size: 14px; line-height: 1.3; display: flex; align-i=
+tems: center; margin-left: 0px;"><div class=3D"notranslate" style=3D"white-=
+space: nowrap; overflow: hidden; text-overflow: ellipsis; background-image:=
+ linear-gradient(to right, rgba(55, 53, 47, 0.16) 0%, rgba(55, 53, 47, 0.16=
+) 100%); background-repeat: repeat-x; background-position: 0px 100%; backgr=
+ound-size: 100% 1px;">Fancy 1-Line Array Value Swap</div></div></a></div></=
+div></div><div data-block-id=3D"8fd2228a-6bc4-4b59-ae0a-f4656378a61c" class=
+=3D"notion-selectable notion-sub_header-block" style=3D"width: 100%; max-wi=
+dth: 775px; margin-top: 1.4em; margin-bottom: 1px;"><div style=3D"display: =
+flex; width: 100%; color: inherit; fill: inherit;"><div spellcheck=3D"true"=
+ placeholder=3D"Heading 2" data-content-editable-leaf=3D"true" contentedita=
+ble=3D"false" style=3D"max-width: 100%; width: 100%; white-space: pre-wrap;=
+ word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; fo=
+nt-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;=
+Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-s=
+ize: 1.5em; line-height: 1.3;"><span style=3D"font-weight:600" data-token-i=
+ndex=3D"0" class=3D"notion-enable-hover">Goals</span></div></div></div><div=
+ data-block-id=3D"b36871c5-d556-4b26-af4e-cf46673cfef6" class=3D"notion-sel=
+ectable notion-bulleted_list-block" style=3D"width: 100%; max-width: 775px;=
+ margin-top: 1px; margin-bottom: 1px;"><div style=3D"display: flex; align-i=
+tems: flex-start; width: 100%; padding-left: 2px; color: inherit; fill: inh=
+erit;"><div contenteditable=3D"false" class=3D"pseudoSelection" data-conten=
+t-editable-void=3D"true" data-text-edit-side=3D"start" style=3D"user-select=
+: none; --pseudoSelection--background:transparent; margin-right: 2px; width=
+: 24px; display: flex; align-items: center; justify-content: center; flex-g=
+row: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);"><div class=3D=
+"pseudoBefore" style=3D"font-size: 1.5em; line-height: 1; margin-bottom: 0p=
+x; --pseudoBefore--fontFamily:Arial; --pseudoBefore--content:&quot;=E2=80=
+=A2&quot;;"></div></div><div style=3D"flex: 1 1 0px; min-width: 1px; displa=
+y: flex; flex-direction: column;"><div style=3D"display: flex;"><div spellc=
+heck=3D"true" placeholder=3D"List" data-content-editable-leaf=3D"true" cont=
+enteditable=3D"false" style=3D"max-width: 100%; width: 100%; white-space: p=
+re-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px=
+ 2px; text-align: left;">Understand what destructuring is</div></div></div>=
+</div></div><div data-block-id=3D"9fecf50f-47c8-4bfb-b8d3-c3b1d6ba1848" cla=
+ss=3D"notion-selectable notion-bulleted_list-block" style=3D"width: 100%; m=
+ax-width: 775px; margin-top: 1px; margin-bottom: 1px;"><div style=3D"displa=
+y: flex; align-items: flex-start; width: 100%; padding-left: 2px; color: in=
+herit; fill: inherit;"><div contenteditable=3D"false" class=3D"pseudoSelect=
+ion" data-content-editable-void=3D"true" data-text-edit-side=3D"start" styl=
+e=3D"user-select: none; --pseudoSelection--background:transparent; margin-r=
+ight: 2px; width: 24px; display: flex; align-items: center; justify-content=
+: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px)=
+;"><div class=3D"pseudoBefore" style=3D"font-size: 1.5em; line-height: 1; m=
+argin-bottom: 0px; --pseudoBefore--fontFamily:Arial; --pseudoBefore--conten=
+t:&quot;=E2=80=A2&quot;;"></div></div><div style=3D"flex: 1 1 0px; min-widt=
+h: 1px; display: flex; flex-direction: column;"><div style=3D"display: flex=
+;"><div spellcheck=3D"true" placeholder=3D"List" data-content-editable-leaf=
+=3D"true" contenteditable=3D"false" style=3D"max-width: 100%; width: 100%; =
+white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47)=
+; padding: 3px 2px; text-align: left;">Use object destructuring to write le=
+ss code</div></div></div></div></div><div data-block-id=3D"adb071a4-7aec-4d=
+4b-93cd-fae8673b8d9b" class=3D"notion-selectable notion-bulleted_list-block=
+" style=3D"width: 100%; max-width: 775px; margin-top: 1px; margin-bottom: 1=
+px;"><div style=3D"display: flex; align-items: flex-start; width: 100%; pad=
+ding-left: 2px; color: inherit; fill: inherit;"><div contenteditable=3D"fal=
+se" class=3D"pseudoSelection" data-content-editable-void=3D"true" data-text=
+-edit-side=3D"start" style=3D"user-select: none; --pseudoSelection--backgro=
+und:transparent; margin-right: 2px; width: 24px; display: flex; align-items=
+: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height=
+: calc(1.5em + 3px + 3px);"><div class=3D"pseudoBefore" style=3D"font-size:=
+ 1.5em; line-height: 1; margin-bottom: 0px; --pseudoBefore--fontFamily:Aria=
+l; --pseudoBefore--content:&quot;=E2=80=A2&quot;;"></div></div><div style=
+=3D"flex: 1 1 0px; min-width: 1px; display: flex; flex-direction: column;">=
+<div style=3D"display: flex;"><div spellcheck=3D"true" placeholder=3D"List"=
+ data-content-editable-leaf=3D"true" contenteditable=3D"false" style=3D"max=
+-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; c=
+aret-color: rgb(55, 53, 47); padding: 3px 2px; text-align: left;">Use array=
+ destructuring to swap values and extract nested values</div></div></div></=
+div></div><div data-block-id=3D"72f12203-30fd-4ac3-9991-924cb280ab2f" class=
+=3D"notion-selectable notion-sub_header-block" style=3D"width: 100%; max-wi=
+dth: 775px; margin-top: 1.4em; margin-bottom: 1px;"><div style=3D"display: =
+flex; width: 100%; color: inherit; fill: inherit;"><div spellcheck=3D"true"=
+ placeholder=3D"Heading 2" data-content-editable-leaf=3D"true" contentedita=
+ble=3D"false" style=3D"max-width: 100%; width: 100%; white-space: pre-wrap;=
+ word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; fo=
+nt-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;=
+Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-s=
+ize: 1.5em; line-height: 1.3;"><span style=3D"font-weight:600" data-token-i=
+ndex=3D"0" class=3D"notion-enable-hover">Object Destructuring</span></div><=
+/div></div><div data-block-id=3D"824525f8-f611-4947-a6c4-c95b3f7aa5b7" clas=
+s=3D"notion-selectable notion-text-block" style=3D"width: 100%; max-width: =
+775px; margin-top: 1px; margin-bottom: 1px;"><div style=3D"color: inherit; =
+fill: inherit;"><div style=3D"display: flex;"><div spellcheck=3D"true" plac=
+eholder=3D" " data-content-editable-leaf=3D"true" contenteditable=3D"false"=
+ style=3D"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: =
+break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">JavaScript pro=
+grammers take things out of objects all the time.</div></div></div></div><d=
+iv data-block-id=3D"b913eda1-725d-4cfe-8637-a025516aa3fe" class=3D"notion-s=
+electable notion-text-block" style=3D"width: 100%; max-width: 775px; margin=
+-top: 1px; margin-bottom: 1px;"><div style=3D"color: inherit; fill: inherit=
+;"><div style=3D"display: flex;"><div spellcheck=3D"true" placeholder=3D" "=
+ data-content-editable-leaf=3D"true" contenteditable=3D"false" style=3D"max=
+-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; c=
+aret-color: rgb(55, 53, 47); padding: 3px 2px;">Here=E2=80=99s how you used=
+ to have to extract values into variables.</div></div></div></div><div data=
+-block-id=3D"91856d0b-9111-44d2-8130-ff2b9b98c68c" class=3D"notion-selectab=
+le notion-code-block" style=3D"width: 100%; max-width: 775px; margin-top: 4=
+px; margin-bottom: 4px;"><div style=3D"display: flex;"><div contenteditable=
+=3D"false" data-content-editable-void=3D"true" style=3D"flex-grow: 1; borde=
+r-radius: 3px; text-align: left; position: relative; background: rgb(247, 2=
+46, 243); min-width: 0px; width: 100%;"><div><div class=3D"line-numbers not=
+ion-code-block" style=3D"display: flex; overflow-x: auto;"><div spellcheck=
+=3D"false" autocorrect=3D"off" autocapitalize=3D"off" placeholder=3D" " dat=
+a-content-editable-leaf=3D"true" contenteditable=3D"false" style=3D"flex-gr=
+ow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Menlo=
+, Consolas, &quot;PT Mono&quot;, &quot;Liberation Mono&quot;, Courier, mono=
+space; font-size: 85%; tab-size: 2; padding: 34px 16px 32px 32px; min-heigh=
+t: 1em; color: rgb(55, 53, 47); white-space: pre;"><span class=3D"token key=
+word" data-token-index=3D"0">let</span><span class=3D"" data-token-index=3D=
+"0"> userData </span><span class=3D"token operator" data-token-index=3D"0">=
+=3D</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"to=
+ken punctuation" data-token-index=3D"0">{</span><span class=3D"" data-token=
+-index=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">username</span><span class=3D"token operator" data-token-index=3D"0"=
+>:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"tok=
+en string" data-token-index=3D"0">'smith'</span><span class=3D"token punctu=
+ation" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"=
+0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">id</span><span class=3D"token operator" data-token-index=3D"0">:</sp=
+an><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token num=
+ber" data-token-index=3D"0">12345</span><span class=3D"token punctuation" d=
+ata-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">password</span><span class=3D"token operator" data-token-index=3D"0"=
+>:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"tok=
+en string" data-token-index=3D"0">'fiddlesticks'</span><span class=3D"token=
+ punctuation" data-token-index=3D"0">,</span><span class=3D"" data-token-in=
+dex=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">firstName</span><span class=3D"token operator" data-token-index=3D"0=
+">:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"to=
+ken string" data-token-index=3D"0">'Angela'</span><span class=3D"token punc=
+tuation" data-token-index=3D"0">,</span><span class=3D"" data-token-index=
+=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">lastName</span><span class=3D"token operator" data-token-index=3D"0"=
+>:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"tok=
+en string" data-token-index=3D"0">'Smith'</span><span class=3D"token punctu=
+ation" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"=
+0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">age</span><span class=3D"token operator" data-token-index=3D"0">:</s=
+pan><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token st=
+ring" data-token-index=3D"0">'guess'</span><span class=3D"token punctuation=
+" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">isLegit</span><span class=3D"token operator" data-token-index=3D"0">=
+:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"toke=
+n keyword" data-token-index=3D"0">undefined</span><span class=3D"" data-tok=
+en-index=3D"0">
+</span><span class=3D"token punctuation" data-token-index=3D"0">}</span><sp=
+an class=3D"token punctuation" data-token-index=3D"0">;</span><span class=
+=3D"" data-token-index=3D"0">
+
+</span><span class=3D"token keyword" data-token-index=3D"0">let</span><span=
+ class=3D"" data-token-index=3D"0"> username </span><span class=3D"token op=
+erator" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=
+=3D"0"> userData</span><span class=3D"token punctuation" data-token-index=
+=3D"0">.</span><span class=3D"" data-token-index=3D"0">username</span><span=
+ class=3D"token punctuation" data-token-index=3D"0">;</span><span class=3D"=
+" data-token-index=3D"0">
+</span><span class=3D"token keyword" data-token-index=3D"0">let</span><span=
+ class=3D"" data-token-index=3D"0"> firstName </span><span class=3D"token o=
+perator" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=
+=3D"0"> userData</span><span class=3D"token punctuation" data-token-index=
+=3D"0">.</span><span class=3D"" data-token-index=3D"0">firstName</span><spa=
+n class=3D"token punctuation" data-token-index=3D"0">;</span><span class=3D=
+"" data-token-index=3D"0">
+</span><span class=3D"token keyword" data-token-index=3D"0">let</span><span=
+ class=3D"" data-token-index=3D"0"> lastName </span><span class=3D"token op=
+erator" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=
+=3D"0"> userData</span><span class=3D"token punctuation" data-token-index=
+=3D"0">.</span><span class=3D"" data-token-index=3D"0">lastName</span><span=
+ class=3D"token punctuation" data-token-index=3D"0">;</span><span class=3D"=
+" data-token-index=3D"0">
+</span><span class=3D"token keyword" data-token-index=3D"0">let</span><span=
+ class=3D"" data-token-index=3D"0"> id </span><span class=3D"token operator=
+" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=3D"0">=
+ userData</span><span class=3D"token punctuation" data-token-index=3D"0">.<=
+/span><span class=3D"" data-token-index=3D"0">id</span><span class=3D"token=
+ punctuation" data-token-index=3D"0">;</span><span>
+</span></div></div></div><div style=3D"position: absolute; top: 3px; right:=
+ 1px; color: rgba(55, 53, 47, 0.65); display: flex; align-items: center; ju=
+stify-content: flex-end; height: 25px; font-size: 11.5px; opacity: 0; trans=
+ition: opacity 300ms ease-in 0s;"></div><div style=3D"position: absolute; t=
+op: 8px; left: 8px; color: rgba(55, 53, 47, 0.65); display: flex; align-ite=
+ms: center; justify-content: flex-end; opacity: 0; transition: opacity 300m=
+s ease-in 0s;"><div aria-disabled=3D"true" role=3D"button" tabindex=3D"-1" =
+style=3D"user-select: none; transition: background 20ms ease-in 0s; cursor:=
+ default; display: inline-flex; align-items: center; white-space: nowrap; h=
+eight: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding=
+-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.65); margin-right=
+: 5px;">JavaScript<svg viewBox=3D"0 0 30 30" class=3D"chevronDown" style=3D=
+"width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.35); f=
+lex-shrink: 0; backface-visibility: hidden; margin-left: 4px;"><polygon poi=
+nts=3D"15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon></svg></div></di=
+v><div style=3D"background: white; padding-right: 105px;"></div></div></div=
+></div><div data-block-id=3D"3ad8775b-2446-463d-8ea1-0fa4d2ab889c" class=3D=
+"notion-selectable notion-sub_sub_header-block" style=3D"width: 100%; max-w=
+idth: 775px; margin-top: 1em; margin-bottom: 1px;"><div style=3D"display: f=
+lex; width: 100%; color: inherit; fill: inherit;"><div spellcheck=3D"true" =
+placeholder=3D"Heading 3" data-content-editable-leaf=3D"true" contenteditab=
+le=3D"false" style=3D"max-width: 100%; width: 100%; white-space: pre-wrap; =
+word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; fon=
+t-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&=
+quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;S=
+egoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-si=
+ze: 1.25em; line-height: 1.3;"><span style=3D"font-weight:600" data-token-i=
+ndex=3D"0" class=3D"notion-enable-hover">That=E2=80=99s A Lot of Typing</sp=
+an></div></div></div><div data-block-id=3D"84cc79a3-cdfa-4bea-91f8-59d19c55=
+38d5" class=3D"notion-selectable notion-text-block" style=3D"width: 100%; m=
+ax-width: 775px; margin-top: 1px; margin-bottom: 1px;"><div style=3D"color:=
+ inherit; fill: inherit;"><div style=3D"display: flex;"><div spellcheck=3D"=
+true" placeholder=3D" " data-content-editable-leaf=3D"true" contenteditable=
+=3D"false" style=3D"max-width: 100%; width: 100%; white-space: pre-wrap; wo=
+rd-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">So t=
+hey came up with some syntactic sugar.</div></div></div></div><div data-blo=
+ck-id=3D"93a1651d-a1e4-4da1-a965-5900a1252a20" class=3D"notion-selectable n=
+otion-code-block" style=3D"width: 100%; max-width: 775px; margin-top: 4px; =
+margin-bottom: 4px;"><div style=3D"display: flex;"><div contenteditable=3D"=
+false" data-content-editable-void=3D"true" style=3D"flex-grow: 1; border-ra=
+dius: 3px; text-align: left; position: relative; background: rgb(247, 246, =
+243); min-width: 0px; width: 100%;"><div><div class=3D"line-numbers notion-=
+code-block" style=3D"display: flex; overflow-x: auto;"><div spellcheck=3D"f=
+alse" autocorrect=3D"off" autocapitalize=3D"off" placeholder=3D" " data-con=
+tent-editable-leaf=3D"true" contenteditable=3D"false" style=3D"flex-grow: 1=
+; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Menlo, Con=
+solas, &quot;PT Mono&quot;, &quot;Liberation Mono&quot;, Courier, monospace=
+; font-size: 85%; tab-size: 2; padding: 34px 16px 32px 32px; min-height: 1e=
+m; color: rgb(55, 53, 47); white-space: pre;"><span class=3D"token keyword"=
+ data-token-index=3D"0">let</span><span class=3D"" data-token-index=3D"0"> =
+userData </span><span class=3D"token operator" data-token-index=3D"0">=3D</=
+span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token p=
+unctuation" data-token-index=3D"0">{</span><span class=3D"" data-token-inde=
+x=3D"0">
+   </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">username</span><span class=3D"token operator" data-token-index=3D"0"=
+>:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"tok=
+en string" data-token-index=3D"0">'smith'</span><span class=3D"token punctu=
+ation" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"=
+0">
+   </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">id</span><span class=3D"token operator" data-token-index=3D"0">:</sp=
+an><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token num=
+ber" data-token-index=3D"0">12345</span><span class=3D"token punctuation" d=
+ata-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"0">
+   </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">password</span><span class=3D"token operator" data-token-index=3D"0"=
+>:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"tok=
+en string" data-token-index=3D"0">'fiddlesticks'</span><span class=3D"token=
+ punctuation" data-token-index=3D"0">,</span><span class=3D"" data-token-in=
+dex=3D"0">
+   </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">firstName</span><span class=3D"token operator" data-token-index=3D"0=
+">:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"to=
+ken string" data-token-index=3D"0">'Angela'</span><span class=3D"token punc=
+tuation" data-token-index=3D"0">,</span><span class=3D"" data-token-index=
+=3D"0">
+   </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">lastName</span><span class=3D"token operator" data-token-index=3D"0"=
+>:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"tok=
+en string" data-token-index=3D"0">'Smith'</span><span class=3D"token punctu=
+ation" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"=
+0">
+   </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">age</span><span class=3D"token operator" data-token-index=3D"0">:</s=
+pan><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token st=
+ring" data-token-index=3D"0">'guess'</span><span class=3D"token punctuation=
+" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"0">
+   </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">isLegit</span><span class=3D"token operator" data-token-index=3D"0">=
+:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"toke=
+n keyword" data-token-index=3D"0">undefined</span><span class=3D"" data-tok=
+en-index=3D"0">
+ </span><span class=3D"token punctuation" data-token-index=3D"0">}</span><s=
+pan class=3D"token punctuation" data-token-index=3D"0">;</span><span class=
+=3D"" data-token-index=3D"0">
+
+</span><span class=3D"token comment" data-token-index=3D"0">/*
+  declare variables: username, firstName, lastName, id
+   values taken from the keys of the same name in userData
+ */</span><span class=3D"" data-token-index=3D"0">
+ </span><span class=3D"token keyword" data-token-index=3D"0">let</span><spa=
+n class=3D"" data-token-index=3D"0"> </span><span class=3D"token punctuatio=
+n" data-token-index=3D"0">{</span><span class=3D"" data-token-index=3D"0"> =
+username</span><span class=3D"token punctuation" data-token-index=3D"0">,</=
+span><span class=3D"" data-token-index=3D"0"> firstName</span><span class=
+=3D"token punctuation" data-token-index=3D"0">,</span><span class=3D"" data=
+-token-index=3D"0"> lastName</span><span class=3D"token punctuation" data-t=
+oken-index=3D"0">,</span><span class=3D"" data-token-index=3D"0"> id </span=
+><span class=3D"token punctuation" data-token-index=3D"0">}</span><span cla=
+ss=3D"" data-token-index=3D"0"> </span><span class=3D"token operator" data-=
+token-index=3D"0">=3D</span><span class=3D"" data-token-index=3D"0"> userDa=
+ta</span><span class=3D"token punctuation" data-token-index=3D"0">;</span><=
+span class=3D"" data-token-index=3D"0">
+
+ console</span><span class=3D"token punctuation" data-token-index=3D"0">.</=
+span><span class=3D"token function" data-token-index=3D"0">log</span><span =
+class=3D"token punctuation" data-token-index=3D"0">(</span><span class=3D""=
+ data-token-index=3D"0">username</span><span class=3D"token punctuation" da=
+ta-token-index=3D"0">)</span><span class=3D"token punctuation" data-token-i=
+ndex=3D"0">;</span><span class=3D"" data-token-index=3D"0">  </span><span c=
+lass=3D"token comment" data-token-index=3D"0">// smith</span><span class=3D=
+"" data-token-index=3D"0">
+ console</span><span class=3D"token punctuation" data-token-index=3D"0">.</=
+span><span class=3D"token function" data-token-index=3D"0">log</span><span =
+class=3D"token punctuation" data-token-index=3D"0">(</span><span class=3D""=
+ data-token-index=3D"0">id</span><span class=3D"token punctuation" data-tok=
+en-index=3D"0">)</span><span class=3D"token punctuation" data-token-index=
+=3D"0">;</span><span class=3D"" data-token-index=3D"0">        </span><span=
+ class=3D"token comment" data-token-index=3D"0">// 12345</span><span>
+</span></div></div></div><div style=3D"position: absolute; top: 3px; right:=
+ 1px; color: rgba(55, 53, 47, 0.65); display: flex; align-items: center; ju=
+stify-content: flex-end; height: 25px; font-size: 11.5px; opacity: 0; trans=
+ition: opacity 300ms ease-in 0s;"></div><div style=3D"position: absolute; t=
+op: 8px; left: 8px; color: rgba(55, 53, 47, 0.65); display: flex; align-ite=
+ms: center; justify-content: flex-end; opacity: 0; transition: opacity 300m=
+s ease-in 0s;"><div aria-disabled=3D"true" role=3D"button" tabindex=3D"-1" =
+style=3D"user-select: none; transition: background 20ms ease-in 0s; cursor:=
+ default; display: inline-flex; align-items: center; white-space: nowrap; h=
+eight: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding=
+-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.65); margin-right=
+: 5px;">JavaScript<svg viewBox=3D"0 0 30 30" class=3D"chevronDown" style=3D=
+"width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.35); f=
+lex-shrink: 0; backface-visibility: hidden; margin-left: 4px;"><polygon poi=
+nts=3D"15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon></svg></div></di=
+v><div style=3D"background: white; padding-right: 105px;"></div></div></div=
+></div><div data-block-id=3D"090263ae-6bb2-486b-8265-c59d71556fa5" class=3D=
+"notion-selectable notion-sub_sub_header-block" style=3D"width: 100%; max-w=
+idth: 775px; margin-top: 1em; margin-bottom: 1px;"><div style=3D"display: f=
+lex; width: 100%; color: inherit; fill: inherit;"><div spellcheck=3D"true" =
+placeholder=3D"Heading 3" data-content-editable-leaf=3D"true" contenteditab=
+le=3D"false" style=3D"max-width: 100%; width: 100%; white-space: pre-wrap; =
+word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; fon=
+t-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&=
+quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;S=
+egoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-si=
+ze: 1.25em; line-height: 1.3;"><span style=3D"font-weight:600" data-token-i=
+ndex=3D"0" class=3D"notion-enable-hover">Destructuring + Spread</span></div=
+></div></div><div data-block-id=3D"63187819-b26c-45b9-bcaf-f8ddcb78e203" cl=
+ass=3D"notion-selectable notion-sub_sub_header-block" style=3D"width: 100%;=
+ max-width: 775px; margin-top: 1em; margin-bottom: 1px;"><div style=3D"disp=
+lay: flex; width: 100%; color: inherit; fill: inherit;"><div spellcheck=3D"=
+true" placeholder=3D"Heading 3" data-content-editable-leaf=3D"true" content=
+editable=3D"false" style=3D"max-width: 100%; width: 100%; white-space: pre-=
+wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2p=
+x; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Seg=
+oe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &=
+quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; f=
+ont-size: 1.25em; line-height: 1.3; min-height: 1em; color: rgb(55, 53, 47)=
+; -webkit-text-fill-color: rgba(55, 53, 47, 0.2);"></div></div></div><div d=
+ata-block-id=3D"5b6535fd-dc0c-4f1b-b452-4b6e7193a06d" class=3D"notion-selec=
+table notion-code-block" style=3D"width: 100%; max-width: 775px; margin-top=
+: 4px; margin-bottom: 4px;"><div style=3D"display: flex;"><div contentedita=
+ble=3D"false" data-content-editable-void=3D"true" style=3D"flex-grow: 1; bo=
+rder-radius: 3px; text-align: left; position: relative; background: rgb(247=
+, 246, 243); min-width: 0px; width: 100%;"><div><div class=3D"line-numbers =
+notion-code-block" style=3D"display: flex; overflow-x: auto;"><div spellche=
+ck=3D"false" autocorrect=3D"off" autocapitalize=3D"off" placeholder=3D" " d=
+ata-content-editable-leaf=3D"true" contenteditable=3D"false" style=3D"flex-=
+grow: 1; flex-shrink: 1; text-align: left; font-family: SFMono-Regular, Men=
+lo, Consolas, &quot;PT Mono&quot;, &quot;Liberation Mono&quot;, Courier, mo=
+nospace; font-size: 85%; tab-size: 2; padding: 34px 16px 32px 32px; min-hei=
+ght: 1em; color: rgb(55, 53, 47); white-space: pre;"><span class=3D"token k=
+eyword" data-token-index=3D"0">const</span><span class=3D"" data-token-inde=
+x=3D"0"> userData </span><span class=3D"token operator" data-token-index=3D=
+"0">=3D</span><span class=3D"" data-token-index=3D"0"> </span><span class=
+=3D"token punctuation" data-token-index=3D"0">{</span><span class=3D"" data=
+-token-index=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">username</span><span class=3D"token operator" data-token-index=3D"0"=
+>:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"tok=
+en string" data-token-index=3D"0">'smith'</span><span class=3D"token punctu=
+ation" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"=
+0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">id</span><span class=3D"token operator" data-token-index=3D"0">:</sp=
+an><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token num=
+ber" data-token-index=3D"0">12345</span><span class=3D"token punctuation" d=
+ata-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">password</span><span class=3D"token operator" data-token-index=3D"0"=
+>:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"tok=
+en string" data-token-index=3D"0">'fiddlesticks'</span><span class=3D"token=
+ punctuation" data-token-index=3D"0">,</span><span class=3D"" data-token-in=
+dex=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">firstName</span><span class=3D"token operator" data-token-index=3D"0=
+">:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"to=
+ken string" data-token-index=3D"0">'Angela'</span><span class=3D"token punc=
+tuation" data-token-index=3D"0">,</span><span class=3D"" data-token-index=
+=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">lastName</span><span class=3D"token operator" data-token-index=3D"0"=
+>:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"tok=
+en string" data-token-index=3D"0">'Smith'</span><span class=3D"token punctu=
+ation" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"=
+0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">age</span><span class=3D"token operator" data-token-index=3D"0">:</s=
+pan><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token st=
+ring" data-token-index=3D"0">'guess'</span><span class=3D"token punctuation=
+" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">isLegit</span><span class=3D"token operator" data-token-index=3D"0">=
+:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"toke=
+n keyword" data-token-index=3D"0">undefined</span><span class=3D"" data-tok=
+en-index=3D"0">
+</span><span class=3D"token punctuation" data-token-index=3D"0">}</span><sp=
+an class=3D"token punctuation" data-token-index=3D"0">;</span><span class=
+=3D"" data-token-index=3D"0">
+
+</span><span class=3D"token comment" data-token-index=3D"0">// extract the =
+password key; collect the rest in 'user'</span><span class=3D"" data-token-=
+index=3D"0">
+</span><span class=3D"token keyword" data-token-index=3D"0">const</span><sp=
+an class=3D"" data-token-index=3D"0"> </span><span class=3D"token punctuati=
+on" data-token-index=3D"0">{</span><span class=3D"" data-token-index=3D"0">=
+ password</span><span class=3D"token punctuation" data-token-index=3D"0">,<=
+/span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token =
+operator" data-token-index=3D"0">...</span><span class=3D"" data-token-inde=
+x=3D"0">user </span><span class=3D"token punctuation" data-token-index=3D"0=
+">}</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"to=
+ken operator" data-token-index=3D"0">=3D</span><span class=3D"" data-token-=
+index=3D"0"> userData</span><span class=3D"token punctuation" data-token-in=
+dex=3D"0">;</span><span class=3D"" data-token-index=3D"0">
+
+console</span><span class=3D"token punctuation" data-token-index=3D"0">.</s=
+pan><span class=3D"token function" data-token-index=3D"0">log</span><span c=
+lass=3D"token punctuation" data-token-index=3D"0">(</span><span class=3D"" =
+data-token-index=3D"0">user</span><span class=3D"token punctuation" data-to=
+ken-index=3D"0">)</span><span class=3D"token punctuation" data-token-index=
+=3D"0">;</span><span class=3D"" data-token-index=3D"0">
+</span><span class=3D"token comment" data-token-index=3D"0">/*
+{
+  username: 'smith',
+  id: 12345,
+  firstName: 'Angela',
+  lastName: 'Smith',
+  age: 'guess',
+  isLegit: undefined
+}
+*/</span><span>
+</span></div></div></div><div style=3D"position: absolute; top: 3px; right:=
+ 1px; color: rgba(55, 53, 47, 0.65); display: flex; align-items: center; ju=
+stify-content: flex-end; height: 25px; font-size: 11.5px; opacity: 0; trans=
+ition: opacity 300ms ease-in 0s;"></div><div style=3D"position: absolute; t=
+op: 8px; left: 8px; color: rgba(55, 53, 47, 0.65); display: flex; align-ite=
+ms: center; justify-content: flex-end; opacity: 0; transition: opacity 300m=
+s ease-in 0s;"><div aria-disabled=3D"true" role=3D"button" tabindex=3D"-1" =
+style=3D"user-select: none; transition: background 20ms ease-in 0s; cursor:=
+ default; display: inline-flex; align-items: center; white-space: nowrap; h=
+eight: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding=
+-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.65); margin-right=
+: 5px;">JavaScript<svg viewBox=3D"0 0 30 30" class=3D"chevronDown" style=3D=
+"width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.35); f=
+lex-shrink: 0; backface-visibility: hidden; margin-left: 4px;"><polygon poi=
+nts=3D"15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon></svg></div></di=
+v><div style=3D"background: white; padding-right: 105px;"></div></div></div=
+></div><div data-block-id=3D"0f1e3686-0b04-4343-b0df-27ca0fab40af" class=3D=
+"notion-selectable notion-sub_sub_header-block" style=3D"width: 100%; max-w=
+idth: 775px; margin-top: 1em; margin-bottom: 1px;"><div style=3D"display: f=
+lex; width: 100%; color: inherit; fill: inherit;"><div spellcheck=3D"true" =
+placeholder=3D"Heading 3" data-content-editable-leaf=3D"true" contenteditab=
+le=3D"false" style=3D"max-width: 100%; width: 100%; white-space: pre-wrap; =
+word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; fon=
+t-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&=
+quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;S=
+egoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-si=
+ze: 1.25em; line-height: 1.3;"><span style=3D"font-weight:600" data-token-i=
+ndex=3D"0" class=3D"notion-enable-hover">Renaming with destructuring</span>=
+</div></div></div><div data-block-id=3D"cb5ded3b-c756-4823-a53b-5395e18814a=
+e" class=3D"notion-selectable notion-code-block" style=3D"width: 100%; max-=
+width: 775px; margin-top: 4px; margin-bottom: 4px;"><div style=3D"display: =
+flex;"><div contenteditable=3D"false" data-content-editable-void=3D"true" s=
+tyle=3D"flex-grow: 1; border-radius: 3px; text-align: left; position: relat=
+ive; background: rgb(247, 246, 243); min-width: 0px; width: 100%;"><div><di=
+v class=3D"line-numbers notion-code-block" style=3D"display: flex; overflow=
+-x: auto;"><div spellcheck=3D"false" autocorrect=3D"off" autocapitalize=3D"=
+off" placeholder=3D" " data-content-editable-leaf=3D"true" contenteditable=
+=3D"false" style=3D"flex-grow: 1; flex-shrink: 1; text-align: left; font-fa=
+mily: SFMono-Regular, Menlo, Consolas, &quot;PT Mono&quot;, &quot;Liberatio=
+n Mono&quot;, Courier, monospace; font-size: 85%; tab-size: 2; padding: 34p=
+x 16px 32px 32px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre=
+;"><span class=3D"token keyword" data-token-index=3D"0">const</span><span c=
+lass=3D"" data-token-index=3D"0"> instructorData </span><span class=3D"toke=
+n operator" data-token-index=3D"0">=3D</span><span class=3D"" data-token-in=
+dex=3D"0"> </span><span class=3D"token punctuation" data-token-index=3D"0">=
+{</span><span class=3D"" data-token-index=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">name</span><span class=3D"token operator" data-token-index=3D"0">:</=
+span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token s=
+tring" data-token-index=3D"0">"Colt"</span><span class=3D"token punctuation=
+" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">job</span><span class=3D"token operator" data-token-index=3D"0">:</s=
+pan><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token st=
+ring" data-token-index=3D"0">"Instructor"</span><span class=3D"" data-token=
+-index=3D"0">
+</span><span class=3D"token punctuation" data-token-index=3D"0">}</span><sp=
+an class=3D"" data-token-index=3D"0">
+
+</span><span class=3D"token keyword" data-token-index=3D"0">const</span><sp=
+an class=3D"" data-token-index=3D"0"> </span><span class=3D"token punctuati=
+on" data-token-index=3D"0">{</span><span class=3D"" data-token-index=3D"0">=
+ </span><span class=3D"token literal-property property" data-token-index=3D=
+"0">name</span><span class=3D"token operator" data-token-index=3D"0">:</spa=
+n><span class=3D"" data-token-index=3D"0"> instructorName</span><span class=
+=3D"token punctuation" data-token-index=3D"0">,</span><span class=3D"" data=
+-token-index=3D"0"> </span><span class=3D"token literal-property property" =
+data-token-index=3D"0">job</span><span class=3D"token operator" data-token-=
+index=3D"0">:</span><span class=3D"" data-token-index=3D"0"> occupation </s=
+pan><span class=3D"token punctuation" data-token-index=3D"0">}</span><span =
+class=3D"" data-token-index=3D"0"> </span><span class=3D"token operator" da=
+ta-token-index=3D"0">=3D</span><span class=3D"" data-token-index=3D"0"> ins=
+tructorData</span><span class=3D"token punctuation" data-token-index=3D"0">=
+;</span><span class=3D"" data-token-index=3D"0">
+
+instructorName </span><span class=3D"token comment" data-token-index=3D"0">=
+// "Colt"</span><span class=3D"" data-token-index=3D"0">
+occupation </span><span class=3D"token comment" data-token-index=3D"0">// "=
+Instructor"</span><span>
+</span></div></div></div><div style=3D"position: absolute; top: 3px; right:=
+ 1px; color: rgba(55, 53, 47, 0.65); display: flex; align-items: center; ju=
+stify-content: flex-end; height: 25px; font-size: 11.5px; opacity: 0; trans=
+ition: opacity 300ms ease-in 0s;"></div><div style=3D"position: absolute; t=
+op: 8px; left: 8px; color: rgba(55, 53, 47, 0.65); display: flex; align-ite=
+ms: center; justify-content: flex-end; opacity: 0; transition: opacity 300m=
+s ease-in 0s;"><div aria-disabled=3D"true" role=3D"button" tabindex=3D"-1" =
+style=3D"user-select: none; transition: background 20ms ease-in 0s; cursor:=
+ default; display: inline-flex; align-items: center; white-space: nowrap; h=
+eight: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding=
+-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.65); margin-right=
+: 5px;">JavaScript<svg viewBox=3D"0 0 30 30" class=3D"chevronDown" style=3D=
+"width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.35); f=
+lex-shrink: 0; backface-visibility: hidden; margin-left: 4px;"><polygon poi=
+nts=3D"15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon></svg></div></di=
+v><div style=3D"background: white; padding-right: 105px;"></div></div></div=
+></div><div data-block-id=3D"4fc5d771-e3a4-4651-9a58-14bfd43a37ff" class=3D=
+"notion-selectable notion-sub_sub_header-block" style=3D"width: 100%; max-w=
+idth: 775px; margin-top: 1em; margin-bottom: 1px;"><div style=3D"display: f=
+lex; width: 100%; color: inherit; fill: inherit;"><div spellcheck=3D"true" =
+placeholder=3D"Heading 3" data-content-editable-leaf=3D"true" contenteditab=
+le=3D"false" style=3D"max-width: 100%; width: 100%; white-space: pre-wrap; =
+word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; fon=
+t-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&=
+quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;S=
+egoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-si=
+ze: 1.25em; line-height: 1.3;"><span style=3D"font-weight:600" data-token-i=
+ndex=3D"0" class=3D"notion-enable-hover">Defaults with destructuring</span>=
+</div></div></div><div data-block-id=3D"61ff12a0-eba7-450f-8379-86b2e3e6dc9=
+8" class=3D"notion-selectable notion-code-block" style=3D"width: 100%; max-=
+width: 775px; margin-top: 4px; margin-bottom: 4px;"><div style=3D"display: =
+flex;"><div contenteditable=3D"false" data-content-editable-void=3D"true" s=
+tyle=3D"flex-grow: 1; border-radius: 3px; text-align: left; position: relat=
+ive; background: rgb(247, 246, 243); min-width: 0px; width: 100%;"><div><di=
+v class=3D"line-numbers notion-code-block" style=3D"display: flex; overflow=
+-x: auto;"><div spellcheck=3D"false" autocorrect=3D"off" autocapitalize=3D"=
+off" placeholder=3D" " data-content-editable-leaf=3D"true" contenteditable=
+=3D"false" style=3D"flex-grow: 1; flex-shrink: 1; text-align: left; font-fa=
+mily: SFMono-Regular, Menlo, Consolas, &quot;PT Mono&quot;, &quot;Liberatio=
+n Mono&quot;, Courier, monospace; font-size: 85%; tab-size: 2; padding: 34p=
+x 16px 32px 32px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre=
+;"><span class=3D"token keyword" data-token-index=3D"0">const</span><span c=
+lass=3D"" data-token-index=3D"0"> options </span><span class=3D"token opera=
+tor" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=3D"=
+0"> </span><span class=3D"token punctuation" data-token-index=3D"0">{</span=
+><span class=3D"" data-token-index=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">refreshTime</span><span class=3D"token operator" data-token-index=3D=
+"0">:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"=
+token number" data-token-index=3D"0">200</span><span class=3D"" data-token-=
+index=3D"0">
+</span><span class=3D"token punctuation" data-token-index=3D"0">}</span><sp=
+an class=3D"" data-token-index=3D"0">
+</span><span class=3D"token keyword" data-token-index=3D"0">const</span><sp=
+an class=3D"" data-token-index=3D"0"> </span><span class=3D"token punctuati=
+on" data-token-index=3D"0">{</span><span class=3D"" data-token-index=3D"0">=
+ refreshTime </span><span class=3D"token operator" data-token-index=3D"0">=
+=3D</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"to=
+ken number" data-token-index=3D"0">750</span><span class=3D"token punctuati=
+on" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"0">=
+ waitTime </span><span class=3D"token operator" data-token-index=3D"0">=3D<=
+/span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token =
+number" data-token-index=3D"0">1000</span><span class=3D"" data-token-index=
+=3D"0"> </span><span class=3D"token punctuation" data-token-index=3D"0">}</=
+span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token o=
+perator" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=
+=3D"0"> options</span><span class=3D"token punctuation" data-token-index=3D=
+"0">;</span><span class=3D"" data-token-index=3D"0">
+console</span><span class=3D"token punctuation" data-token-index=3D"0">.</s=
+pan><span class=3D"token function" data-token-index=3D"0">log</span><span c=
+lass=3D"token punctuation" data-token-index=3D"0">(</span><span class=3D"" =
+data-token-index=3D"0">refreshTime</span><span class=3D"token punctuation" =
+data-token-index=3D"0">)</span><span class=3D"token punctuation" data-token=
+-index=3D"0">;</span><span class=3D"" data-token-index=3D"0"> </span><span =
+class=3D"token comment" data-token-index=3D"0">// 200 - initialized in opti=
+ons</span><span class=3D"" data-token-index=3D"0">
+console</span><span class=3D"token punctuation" data-token-index=3D"0">.</s=
+pan><span class=3D"token function" data-token-index=3D"0">log</span><span c=
+lass=3D"token punctuation" data-token-index=3D"0">(</span><span class=3D"" =
+data-token-index=3D"0">waitTime</span><span class=3D"token punctuation" dat=
+a-token-index=3D"0">)</span><span class=3D"token punctuation" data-token-in=
+dex=3D"0">;</span><span class=3D"" data-token-index=3D"0"> </span><span cla=
+ss=3D"token comment" data-token-index=3D"0">// 1000 - fallback to default</=
+span><span>
+</span></div></div></div><div style=3D"position: absolute; top: 3px; right:=
+ 1px; color: rgba(55, 53, 47, 0.65); display: flex; align-items: center; ju=
+stify-content: flex-end; height: 25px; font-size: 11.5px; opacity: 0; trans=
+ition: opacity 300ms ease-in 0s;"></div><div style=3D"position: absolute; t=
+op: 8px; left: 8px; color: rgba(55, 53, 47, 0.65); display: flex; align-ite=
+ms: center; justify-content: flex-end; opacity: 0; transition: opacity 300m=
+s ease-in 0s;"><div aria-disabled=3D"true" role=3D"button" tabindex=3D"-1" =
+style=3D"user-select: none; transition: background 20ms ease-in 0s; cursor:=
+ default; display: inline-flex; align-items: center; white-space: nowrap; h=
+eight: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding=
+-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.65); margin-right=
+: 5px;">JavaScript<svg viewBox=3D"0 0 30 30" class=3D"chevronDown" style=3D=
+"width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.35); f=
+lex-shrink: 0; backface-visibility: hidden; margin-left: 4px;"><polygon poi=
+nts=3D"15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon></svg></div></di=
+v><div style=3D"background: white; padding-right: 105px;"></div></div></div=
+></div><div data-block-id=3D"f881e0ec-0c04-4ebc-8664-c5a222684985" class=3D=
+"notion-selectable notion-sub_sub_header-block" style=3D"width: 100%; max-w=
+idth: 775px; margin-top: 1em; margin-bottom: 1px;"><div style=3D"display: f=
+lex; width: 100%; color: inherit; fill: inherit;"><div spellcheck=3D"true" =
+placeholder=3D"Heading 3" data-content-editable-leaf=3D"true" contenteditab=
+le=3D"false" style=3D"max-width: 100%; width: 100%; white-space: pre-wrap; =
+word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; fon=
+t-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&=
+quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;S=
+egoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-si=
+ze: 1.25em; line-height: 1.3;"><span style=3D"font-weight:600" data-token-i=
+ndex=3D"0" class=3D"notion-enable-hover">Destructuring nested objects</span=
+></div></div></div><div data-block-id=3D"aecd6cb6-3372-4c73-b9d9-5da998e3c5=
+ff" class=3D"notion-selectable notion-code-block" style=3D"width: 100%; max=
+-width: 775px; margin-top: 4px; margin-bottom: 4px;"><div style=3D"display:=
+ flex;"><div contenteditable=3D"false" data-content-editable-void=3D"true" =
+style=3D"flex-grow: 1; border-radius: 3px; text-align: left; position: rela=
+tive; background: rgb(247, 246, 243); min-width: 0px; width: 100%;"><div><d=
+iv class=3D"line-numbers notion-code-block" style=3D"display: flex; overflo=
+w-x: auto;"><div spellcheck=3D"false" autocorrect=3D"off" autocapitalize=3D=
+"off" placeholder=3D" " data-content-editable-leaf=3D"true" contenteditable=
+=3D"false" style=3D"flex-grow: 1; flex-shrink: 1; text-align: left; font-fa=
+mily: SFMono-Regular, Menlo, Consolas, &quot;PT Mono&quot;, &quot;Liberatio=
+n Mono&quot;, Courier, monospace; font-size: 85%; tab-size: 2; padding: 34p=
+x 16px 32px 32px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre=
+;"><span class=3D"token keyword" data-token-index=3D"0">const</span><span c=
+lass=3D"" data-token-index=3D"0"> instructor </span><span class=3D"token op=
+erator" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=
+=3D"0"> </span><span class=3D"token punctuation" data-token-index=3D"0">{</=
+span><span class=3D"" data-token-index=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">id</span><span class=3D"token operator" data-token-index=3D"0">:</sp=
+an><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token num=
+ber" data-token-index=3D"0">44</span><span class=3D"token punctuation" data=
+-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">name</span><span class=3D"token operator" data-token-index=3D"0">:</=
+span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token s=
+tring" data-token-index=3D"0">'Colt'</span><span class=3D"token punctuation=
+" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">isHilarious</span><span class=3D"token operator" data-token-index=3D=
+"0">:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"=
+token boolean" data-token-index=3D"0">true</span><span class=3D"token punct=
+uation" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D=
+"0">
+  </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">funFacts</span><span class=3D"token operator" data-token-index=3D"0"=
+>:</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"tok=
+en punctuation" data-token-index=3D"0">{</span><span class=3D"" data-token-=
+index=3D"0">
+    </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">favoriteFood</span><span class=3D"token operator" data-token-index=
+=3D"0">:</span><span class=3D"" data-token-index=3D"0"> </span><span class=
+=3D"token string" data-token-index=3D"0">'Burrito'</span><span class=3D"tok=
+en punctuation" data-token-index=3D"0">,</span><span class=3D"" data-token-=
+index=3D"0">
+    </span><span class=3D"token literal-property property" data-token-index=
+=3D"0">favoriteDrink</span><span class=3D"token operator" data-token-index=
+=3D"0">:</span><span class=3D"" data-token-index=3D"0"> </span><span class=
+=3D"token string" data-token-index=3D"0">'Old Fashioned'</span><span class=
+=3D"token punctuation" data-token-index=3D"0">,</span><span class=3D"" data=
+-token-index=3D"0">
+  </span><span class=3D"token punctuation" data-token-index=3D"0">}</span><=
+span class=3D"" data-token-index=3D"0">
+</span><span class=3D"token punctuation" data-token-index=3D"0">}</span><sp=
+an class=3D"token punctuation" data-token-index=3D"0">;</span><span class=
+=3D"" data-token-index=3D"0">
+</span><span class=3D"token keyword" data-token-index=3D"0">const</span><sp=
+an class=3D"" data-token-index=3D"0"> </span><span class=3D"token punctuati=
+on" data-token-index=3D"0">{</span><span class=3D"token literal-property pr=
+operty" data-token-index=3D"0">funFacts</span><span class=3D"token operator=
+" data-token-index=3D"0">:</span><span class=3D"" data-token-index=3D"0"> <=
+/span><span class=3D"token punctuation" data-token-index=3D"0">{</span><spa=
+n class=3D"" data-token-index=3D"0">favoriteFood</span><span class=3D"token=
+ punctuation" data-token-index=3D"0">,</span><span class=3D"" data-token-in=
+dex=3D"0"> favoriteDrink</span><span class=3D"token punctuation" data-token=
+-index=3D"0">}</span><span class=3D"token punctuation" data-token-index=3D"=
+0">}</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"t=
+oken operator" data-token-index=3D"0">=3D</span><span class=3D"" data-token=
+-index=3D"0"> instructor</span><span class=3D"token punctuation" data-token=
+-index=3D"0">;</span><span class=3D"" data-token-index=3D"0">
+console</span><span class=3D"token punctuation" data-token-index=3D"0">.</s=
+pan><span class=3D"token function" data-token-index=3D"0">log</span><span c=
+lass=3D"token punctuation" data-token-index=3D"0">(</span><span class=3D"" =
+data-token-index=3D"0">favoriteFood</span><span class=3D"token punctuation"=
+ data-token-index=3D"0">)</span><span class=3D"token punctuation" data-toke=
+n-index=3D"0">;</span><span class=3D"" data-token-index=3D"0"> </span><span=
+ class=3D"token comment" data-token-index=3D"0">// 'Burrito'</span><span>
+</span></div></div></div><div style=3D"position: absolute; top: 3px; right:=
+ 1px; color: rgba(55, 53, 47, 0.65); display: flex; align-items: center; ju=
+stify-content: flex-end; height: 25px; font-size: 11.5px; opacity: 0; trans=
+ition: opacity 300ms ease-in 0s;"></div><div style=3D"position: absolute; t=
+op: 8px; left: 8px; color: rgba(55, 53, 47, 0.65); display: flex; align-ite=
+ms: center; justify-content: flex-end; opacity: 0; transition: opacity 300m=
+s ease-in 0s;"><div aria-disabled=3D"true" role=3D"button" tabindex=3D"-1" =
+style=3D"user-select: none; transition: background 20ms ease-in 0s; cursor:=
+ default; display: inline-flex; align-items: center; white-space: nowrap; h=
+eight: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding=
+-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.65); margin-right=
+: 5px;">JavaScript<svg viewBox=3D"0 0 30 30" class=3D"chevronDown" style=3D=
+"width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.35); f=
+lex-shrink: 0; backface-visibility: hidden; margin-left: 4px;"><polygon poi=
+nts=3D"15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon></svg></div></di=
+v><div style=3D"background: white; padding-right: 105px;"></div></div></div=
+></div><div data-block-id=3D"28ba720a-813a-4bfb-9d02-d1abe6ba400c" class=3D=
+"notion-selectable notion-sub_sub_header-block" style=3D"width: 100%; max-w=
+idth: 775px; margin-top: 1em; margin-bottom: 1px;"><div style=3D"display: f=
+lex; width: 100%; color: inherit; fill: inherit;"><div spellcheck=3D"true" =
+placeholder=3D"Heading 3" data-content-editable-leaf=3D"true" contenteditab=
+le=3D"false" style=3D"max-width: 100%; width: 100%; white-space: pre-wrap; =
+word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; fon=
+t-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&=
+quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;S=
+egoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-si=
+ze: 1.25em; line-height: 1.3;"><span style=3D"font-weight:600" data-token-i=
+ndex=3D"0" class=3D"notion-enable-hover">Destructuring functions</span></di=
+v></div></div><div data-block-id=3D"a0468fa9-8a10-4b30-95d3-d90763d2bdb7" c=
+lass=3D"notion-selectable notion-text-block" style=3D"width: 100%; max-widt=
+h: 775px; margin-top: 1px; margin-bottom: 1px;"><div style=3D"color: inheri=
+t; fill: inherit;"><div style=3D"display: flex;"><div spellcheck=3D"true" p=
+laceholder=3D" " data-content-editable-leaf=3D"true" contenteditable=3D"fal=
+se" style=3D"max-width: 100%; width: 100%; white-space: pre-wrap; word-brea=
+k: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">We can use =
+destructuring to extract key/value pairs from an object into variables.</di=
+v></div></div></div><div data-block-id=3D"6a895247-5488-4ebd-880c-62b462ce9=
+057" class=3D"notion-selectable notion-code-block" style=3D"width: 100%; ma=
+x-width: 775px; margin-top: 4px; margin-bottom: 4px;"><div style=3D"display=
+: flex;"><div contenteditable=3D"false" data-content-editable-void=3D"true"=
+ style=3D"flex-grow: 1; border-radius: 3px; text-align: left; position: rel=
+ative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;"><div><=
+div class=3D"line-numbers notion-code-block" style=3D"display: flex; overfl=
+ow-x: auto;"><div spellcheck=3D"false" autocorrect=3D"off" autocapitalize=
+=3D"off" placeholder=3D" " data-content-editable-leaf=3D"true" contentedita=
+ble=3D"false" style=3D"flex-grow: 1; flex-shrink: 1; text-align: left; font=
+-family: SFMono-Regular, Menlo, Consolas, &quot;PT Mono&quot;, &quot;Libera=
+tion Mono&quot;, Courier, monospace; font-size: 85%; tab-size: 2; padding: =
+34px 16px 32px 32px; min-height: 1em; color: rgb(55, 53, 47); white-space: =
+pre;"><span class=3D"token keyword" data-token-index=3D"0">function</span><=
+span class=3D"" data-token-index=3D"0"> </span><span class=3D"token functio=
+n" data-token-index=3D"0">makeInstructor</span><span class=3D"token punctua=
+tion" data-token-index=3D"0">(</span><span class=3D"token parameter" data-t=
+oken-index=3D"0">settings</span><span class=3D"token punctuation" data-toke=
+n-index=3D"0">)</span><span class=3D"" data-token-index=3D"0"> </span><span=
+ class=3D"token punctuation" data-token-index=3D"0">{</span><span class=3D"=
+" data-token-index=3D"0">
+  </span><span class=3D"token keyword" data-token-index=3D"0">let</span><sp=
+an class=3D"" data-token-index=3D"0"> name </span><span class=3D"token oper=
+ator" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=3D=
+"0"> settings</span><span class=3D"token punctuation" data-token-index=3D"0=
+">.</span><span class=3D"" data-token-index=3D"0">name</span><span class=3D=
+"token punctuation" data-token-index=3D"0">;</span><span class=3D"" data-to=
+ken-index=3D"0">
+  </span><span class=3D"token keyword" data-token-index=3D"0">let</span><sp=
+an class=3D"" data-token-index=3D"0"> age </span><span class=3D"token opera=
+tor" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=3D"=
+0"> settings</span><span class=3D"token punctuation" data-token-index=3D"0"=
+>.</span><span class=3D"" data-token-index=3D"0">age</span><span class=3D"t=
+oken punctuation" data-token-index=3D"0">;</span><span class=3D"" data-toke=
+n-index=3D"0">
+</span><span class=3D"token punctuation" data-token-index=3D"0">}</span><sp=
+an>
+</span></div></div></div><div style=3D"position: absolute; top: 3px; right:=
+ 1px; color: rgba(55, 53, 47, 0.65); display: flex; align-items: center; ju=
+stify-content: flex-end; height: 25px; font-size: 11.5px; opacity: 0; trans=
+ition: opacity 300ms ease-in 0s;"></div><div style=3D"position: absolute; t=
+op: 8px; left: 8px; color: rgba(55, 53, 47, 0.65); display: flex; align-ite=
+ms: center; justify-content: flex-end; opacity: 0; transition: opacity 300m=
+s ease-in 0s;"><div aria-disabled=3D"true" role=3D"button" tabindex=3D"-1" =
+style=3D"user-select: none; transition: background 20ms ease-in 0s; cursor:=
+ default; display: inline-flex; align-items: center; white-space: nowrap; h=
+eight: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding=
+-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.65); margin-right=
+: 5px;">JavaScript<svg viewBox=3D"0 0 30 30" class=3D"chevronDown" style=3D=
+"width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.35); f=
+lex-shrink: 0; backface-visibility: hidden; margin-left: 4px;"><polygon poi=
+nts=3D"15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon></svg></div></di=
+v><div style=3D"background: white; padding-right: 105px;"></div></div></div=
+></div><div data-block-id=3D"4ea5666a-d883-45bf-b3d1-79b2ff9630fd" class=3D=
+"notion-selectable notion-text-block" style=3D"width: 100%; max-width: 775p=
+x; margin-top: 1px; margin-bottom: 1px;"><div style=3D"color: inherit; fill=
+: inherit;"><div style=3D"display: flex;"><div spellcheck=3D"true" placehol=
+der=3D" " data-content-editable-leaf=3D"true" contenteditable=3D"false" sty=
+le=3D"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: brea=
+k-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">We=E2=80=99re goin=
+g to assume the function is passed an object with a key of name and age</di=
+v></div></div></div><div data-block-id=3D"81a653c3-12e4-4986-a957-ee231e889=
+93e" class=3D"notion-selectable notion-code-block" style=3D"width: 100%; ma=
+x-width: 775px; margin-top: 4px; margin-bottom: 4px;"><div style=3D"display=
+: flex;"><div contenteditable=3D"false" data-content-editable-void=3D"true"=
+ style=3D"flex-grow: 1; border-radius: 3px; text-align: left; position: rel=
+ative; background: rgb(247, 246, 243); min-width: 0px; width: 100%;"><div><=
+div class=3D"line-numbers notion-code-block" style=3D"display: flex; overfl=
+ow-x: auto;"><div spellcheck=3D"false" autocorrect=3D"off" autocapitalize=
+=3D"off" placeholder=3D" " data-content-editable-leaf=3D"true" contentedita=
+ble=3D"false" style=3D"flex-grow: 1; flex-shrink: 1; text-align: left; font=
+-family: SFMono-Regular, Menlo, Consolas, &quot;PT Mono&quot;, &quot;Libera=
+tion Mono&quot;, Courier, monospace; font-size: 85%; tab-size: 2; padding: =
+34px 16px 32px 32px; min-height: 1em; color: rgb(55, 53, 47); white-space: =
+pre;"><span class=3D"token keyword" data-token-index=3D"0">function</span><=
+span class=3D"" data-token-index=3D"0"> </span><span class=3D"token functio=
+n" data-token-index=3D"0">myFunc</span><span class=3D"token punctuation" da=
+ta-token-index=3D"0">(</span><span class=3D"token punctuation" data-token-i=
+ndex=3D"0">{</span><span class=3D"token parameter" data-token-index=3D"0">n=
+ame</span><span class=3D"token punctuation" data-token-index=3D"0">,</span>=
+<span class=3D"token parameter" data-token-index=3D"0"> age</span><span cla=
+ss=3D"token punctuation" data-token-index=3D"0">}</span><span class=3D"toke=
+n punctuation" data-token-index=3D"0">)</span><span class=3D"" data-token-i=
+ndex=3D"0"> </span><span class=3D"token punctuation" data-token-index=3D"0"=
+>{</span><span class=3D"" data-token-index=3D"0">
+  </span><span class=3D"token keyword" data-token-index=3D"0">let</span><sp=
+an class=3D"" data-token-index=3D"0"> name </span><span class=3D"token oper=
+ator" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=3D=
+"0"> name</span><span class=3D"token punctuation" data-token-index=3D"0">;<=
+/span><span class=3D"" data-token-index=3D"0">
+  </span><span class=3D"token keyword" data-token-index=3D"0">let</span><sp=
+an class=3D"" data-token-index=3D"0"> age </span><span class=3D"token opera=
+tor" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=3D"=
+0"> age</span><span class=3D"token punctuation" data-token-index=3D"0">;</s=
+pan><span class=3D"" data-token-index=3D"0">
+</span><span class=3D"token punctuation" data-token-index=3D"0">}</span><sp=
+an>
+</span></div></div></div><div style=3D"position: absolute; top: 3px; right:=
+ 1px; color: rgba(55, 53, 47, 0.65); display: flex; align-items: center; ju=
+stify-content: flex-end; height: 25px; font-size: 11.5px; opacity: 0; trans=
+ition: opacity 300ms ease-in 0s;"></div><div style=3D"position: absolute; t=
+op: 8px; left: 8px; color: rgba(55, 53, 47, 0.65); display: flex; align-ite=
+ms: center; justify-content: flex-end; opacity: 0; transition: opacity 300m=
+s ease-in 0s;"><div aria-disabled=3D"true" role=3D"button" tabindex=3D"-1" =
+style=3D"user-select: none; transition: background 20ms ease-in 0s; cursor:=
+ default; display: inline-flex; align-items: center; white-space: nowrap; h=
+eight: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding=
+-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.65); margin-right=
+: 5px;">JavaScript<svg viewBox=3D"0 0 30 30" class=3D"chevronDown" style=3D=
+"width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.35); f=
+lex-shrink: 0; backface-visibility: hidden; margin-left: 4px;"><polygon poi=
+nts=3D"15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon></svg></div></di=
+v><div style=3D"background: white; padding-right: 105px;"></div></div></div=
+></div><div data-block-id=3D"e501ece9-855b-405b-847c-06741709e63e" class=3D=
+"notion-selectable notion-text-block" style=3D"width: 100%; max-width: 775p=
+x; margin-top: 1px; margin-bottom: 1px;"><div style=3D"color: inherit; fill=
+: inherit;"><div style=3D"display: flex;"><div spellcheck=3D"true" placehol=
+der=3D" " data-content-editable-leaf=3D"true" contenteditable=3D"false" sty=
+le=3D"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: brea=
+k-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;">But what happens i=
+f the object does not contain a key of name or age?</div></div></div></div>=
+<div data-block-id=3D"3f1f331c-4f6c-416d-847a-9348ad83079e" class=3D"notion=
+-selectable notion-text-block" style=3D"width: 100%; max-width: 775px; marg=
+in-top: 1px; margin-bottom: 1px;"><div style=3D"color: inherit; fill: inher=
+it;"><div style=3D"display: flex;"><div spellcheck=3D"true" placeholder=3D"=
+ " data-content-editable-leaf=3D"true" contenteditable=3D"false" style=3D"m=
+ax-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word;=
+ caret-color: rgb(55, 53, 47); padding: 3px 2px;">We can use default parame=
+ters!</div></div></div></div><div data-block-id=3D"35bdfb92-65c3-49a6-9501-=
+bf1510c9ef4f" class=3D"notion-selectable notion-code-block" style=3D"width:=
+ 100%; max-width: 775px; margin-top: 4px; margin-bottom: 4px;"><div style=
+=3D"display: flex;"><div contenteditable=3D"false" data-content-editable-vo=
+id=3D"true" style=3D"flex-grow: 1; border-radius: 3px; text-align: left; po=
+sition: relative; background: rgb(247, 246, 243); min-width: 0px; width: 10=
+0%;"><div><div class=3D"line-numbers notion-code-block" style=3D"display: f=
+lex; overflow-x: auto;"><div spellcheck=3D"false" autocorrect=3D"off" autoc=
+apitalize=3D"off" placeholder=3D" " data-content-editable-leaf=3D"true" con=
+tenteditable=3D"false" style=3D"flex-grow: 1; flex-shrink: 1; text-align: l=
+eft; font-family: SFMono-Regular, Menlo, Consolas, &quot;PT Mono&quot;, &qu=
+ot;Liberation Mono&quot;, Courier, monospace; font-size: 85%; tab-size: 2; =
+padding: 34px 16px 32px 32px; min-height: 1em; color: rgb(55, 53, 47); whit=
+e-space: pre;"><span class=3D"token keyword" data-token-index=3D"0">functio=
+n</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"toke=
+n function" data-token-index=3D"0">myFunc</span><span class=3D"token punctu=
+ation" data-token-index=3D"0">(</span><span class=3D"token punctuation" dat=
+a-token-index=3D"0">{</span><span class=3D"" data-token-index=3D"0">name </=
+span><span class=3D"token operator" data-token-index=3D"0">=3D</span><span =
+class=3D"" data-token-index=3D"0"> </span><span class=3D"token string" data=
+-token-index=3D"0">"Xie"</span><span class=3D"token punctuation" data-token=
+-index=3D"0">,</span><span class=3D"" data-token-index=3D"0"> age</span><sp=
+an class=3D"token operator" data-token-index=3D"0">=3D</span><span class=3D=
+"token number" data-token-index=3D"0">38</span><span class=3D"token punctua=
+tion" data-token-index=3D"0">}</span><span class=3D"token punctuation" data=
+-token-index=3D"0">)</span><span class=3D"" data-token-index=3D"0"> </span>=
+<span class=3D"token punctuation" data-token-index=3D"0">{</span><span clas=
+s=3D"" data-token-index=3D"0">
+  </span><span class=3D"token keyword" data-token-index=3D"0">let</span><sp=
+an class=3D"" data-token-index=3D"0"> name </span><span class=3D"token oper=
+ator" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=3D=
+"0"> name</span><span class=3D"token punctuation" data-token-index=3D"0">;<=
+/span><span class=3D"" data-token-index=3D"0">
+  </span><span class=3D"token keyword" data-token-index=3D"0">let</span><sp=
+an class=3D"" data-token-index=3D"0"> age </span><span class=3D"token opera=
+tor" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=3D"=
+0"> age</span><span class=3D"token punctuation" data-token-index=3D"0">;</s=
+pan><span class=3D"" data-token-index=3D"0">
+</span><span class=3D"token punctuation" data-token-index=3D"0">}</span><sp=
+an>
+</span></div></div></div><div style=3D"position: absolute; top: 3px; right:=
+ 1px; color: rgba(55, 53, 47, 0.65); display: flex; align-items: center; ju=
+stify-content: flex-end; height: 25px; font-size: 11.5px; opacity: 0; trans=
+ition: opacity 300ms ease-in 0s;"></div><div style=3D"position: absolute; t=
+op: 8px; left: 8px; color: rgba(55, 53, 47, 0.65); display: flex; align-ite=
+ms: center; justify-content: flex-end; opacity: 0; transition: opacity 300m=
+s ease-in 0s;"><div aria-disabled=3D"true" role=3D"button" tabindex=3D"-1" =
+style=3D"user-select: none; transition: background 20ms ease-in 0s; cursor:=
+ default; display: inline-flex; align-items: center; white-space: nowrap; h=
+eight: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding=
+-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.65); margin-right=
+: 5px;">JavaScript<svg viewBox=3D"0 0 30 30" class=3D"chevronDown" style=3D=
+"width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.35); f=
+lex-shrink: 0; backface-visibility: hidden; margin-left: 4px;"><polygon poi=
+nts=3D"15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon></svg></div></di=
+v><div style=3D"background: white; padding-right: 105px;"></div></div></div=
+></div><div data-block-id=3D"6249535b-e045-47eb-8e9a-b86a8af681f8" class=3D=
+"notion-selectable notion-sub_header-block" style=3D"width: 100%; max-width=
+: 775px; margin-top: 1.4em; margin-bottom: 1px;"><div style=3D"display: fle=
+x; width: 100%; color: inherit; fill: inherit;"><div spellcheck=3D"true" pl=
+aceholder=3D"Heading 2" data-content-editable-leaf=3D"true" contenteditable=
+=3D"false" style=3D"max-width: 100%; width: 100%; white-space: pre-wrap; wo=
+rd-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; font-=
+family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&qu=
+ot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Seg=
+oe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-size=
+: 1.5em; line-height: 1.3;"><span style=3D"font-weight:600" data-token-inde=
+x=3D"0" class=3D"notion-enable-hover">You Can Apply The Same Concept To Arr=
+ays!</span></div></div></div><div data-block-id=3D"7f6ed9c1-4f83-4010-9719-=
+7a2273657fb0" class=3D"notion-selectable notion-code-block" style=3D"width:=
+ 100%; max-width: 775px; margin-top: 4px; margin-bottom: 4px;"><div style=
+=3D"display: flex;"><div contenteditable=3D"false" data-content-editable-vo=
+id=3D"true" style=3D"flex-grow: 1; border-radius: 3px; text-align: left; po=
+sition: relative; background: rgb(247, 246, 243); min-width: 0px; width: 10=
+0%;"><div><div class=3D"line-numbers notion-code-block" style=3D"display: f=
+lex; overflow-x: auto;"><div spellcheck=3D"false" autocorrect=3D"off" autoc=
+apitalize=3D"off" placeholder=3D" " data-content-editable-leaf=3D"true" con=
+tenteditable=3D"false" style=3D"flex-grow: 1; flex-shrink: 1; text-align: l=
+eft; font-family: SFMono-Regular, Menlo, Consolas, &quot;PT Mono&quot;, &qu=
+ot;Liberation Mono&quot;, Courier, monospace; font-size: 85%; tab-size: 2; =
+padding: 34px 16px 32px 32px; min-height: 1em; color: rgb(55, 53, 47); whit=
+e-space: pre;"><span class=3D"token keyword" data-token-index=3D"0">const</=
+span><span class=3D"" data-token-index=3D"0"> myFavoriteThings </span><span=
+ class=3D"token operator" data-token-index=3D"0">=3D</span><span class=3D""=
+ data-token-index=3D"0"> </span><span class=3D"token punctuation" data-toke=
+n-index=3D"0">[</span><span class=3D"token string" data-token-index=3D"0">'=
+teaching'</span><span class=3D"token punctuation" data-token-index=3D"0">,<=
+/span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"token =
+string" data-token-index=3D"0">'music'</span><span class=3D"token punctuati=
+on" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"0">
+                          </span><span class=3D"token string" data-token-in=
+dex=3D"0">'hiking'</span><span class=3D"token punctuation" data-token-index=
+=3D"0">,</span><span class=3D"" data-token-index=3D"0"> </span><span class=
+=3D"token string" data-token-index=3D"0">'dank memes'</span><span class=3D"=
+token punctuation" data-token-index=3D"0">]</span><span class=3D"token punc=
+tuation" data-token-index=3D"0">;</span><span class=3D"" data-token-index=
+=3D"0">
+
+</span><span class=3D"token keyword" data-token-index=3D"0">const</span><sp=
+an class=3D"" data-token-index=3D"0"> </span><span class=3D"token punctuati=
+on" data-token-index=3D"0">[</span><span class=3D"" data-token-index=3D"0">=
+first</span><span class=3D"token punctuation" data-token-index=3D"0">,</spa=
+n><span class=3D"" data-token-index=3D"0"> second</span><span class=3D"toke=
+n punctuation" data-token-index=3D"0">,</span><span class=3D"" data-token-i=
+ndex=3D"0"> </span><span class=3D"token operator" data-token-index=3D"0">..=
+.</span><span class=3D"" data-token-index=3D"0">others</span><span class=3D=
+"token punctuation" data-token-index=3D"0">]</span><span class=3D"" data-to=
+ken-index=3D"0"> </span><span class=3D"token operator" data-token-index=3D"=
+0">=3D</span><span class=3D"" data-token-index=3D"0"> myFavoriteThings</spa=
+n><span class=3D"token punctuation" data-token-index=3D"0">;</span><span cl=
+ass=3D"" data-token-index=3D"0">
+
+console</span><span class=3D"token punctuation" data-token-index=3D"0">.</s=
+pan><span class=3D"token function" data-token-index=3D"0">log</span><span c=
+lass=3D"token punctuation" data-token-index=3D"0">(</span><span class=3D"" =
+data-token-index=3D"0">first</span><span class=3D"token punctuation" data-t=
+oken-index=3D"0">)</span><span class=3D"token punctuation" data-token-index=
+=3D"0">;</span><span class=3D"" data-token-index=3D"0">   </span><span clas=
+s=3D"token comment" data-token-index=3D"0">// 'teaching'</span><span class=
+=3D"" data-token-index=3D"0">
+console</span><span class=3D"token punctuation" data-token-index=3D"0">.</s=
+pan><span class=3D"token function" data-token-index=3D"0">log</span><span c=
+lass=3D"token punctuation" data-token-index=3D"0">(</span><span class=3D"" =
+data-token-index=3D"0">second</span><span class=3D"token punctuation" data-=
+token-index=3D"0">)</span><span class=3D"token punctuation" data-token-inde=
+x=3D"0">;</span><span class=3D"" data-token-index=3D"0">  </span><span clas=
+s=3D"token comment" data-token-index=3D"0">// 'music'</span><span class=3D"=
+" data-token-index=3D"0">
+console</span><span class=3D"token punctuation" data-token-index=3D"0">.</s=
+pan><span class=3D"token function" data-token-index=3D"0">log</span><span c=
+lass=3D"token punctuation" data-token-index=3D"0">(</span><span class=3D"" =
+data-token-index=3D"0">others</span><span class=3D"token punctuation" data-=
+token-index=3D"0">)</span><span class=3D"token punctuation" data-token-inde=
+x=3D"0">;</span><span class=3D"" data-token-index=3D"0">  </span><span clas=
+s=3D"token comment" data-token-index=3D"0">// ['hiking', 'dank memes']</spa=
+n><span>
+</span></div></div></div><div style=3D"position: absolute; top: 3px; right:=
+ 1px; color: rgba(55, 53, 47, 0.65); display: flex; align-items: center; ju=
+stify-content: flex-end; height: 25px; font-size: 11.5px; opacity: 0; trans=
+ition: opacity 300ms ease-in 0s;"></div><div style=3D"position: absolute; t=
+op: 8px; left: 8px; color: rgba(55, 53, 47, 0.65); display: flex; align-ite=
+ms: center; justify-content: flex-end; opacity: 0; transition: opacity 300m=
+s ease-in 0s;"><div aria-disabled=3D"true" role=3D"button" tabindex=3D"-1" =
+style=3D"user-select: none; transition: background 20ms ease-in 0s; cursor:=
+ default; display: inline-flex; align-items: center; white-space: nowrap; h=
+eight: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding=
+-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.65); margin-right=
+: 5px;">JavaScript<svg viewBox=3D"0 0 30 30" class=3D"chevronDown" style=3D=
+"width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.35); f=
+lex-shrink: 0; backface-visibility: hidden; margin-left: 4px;"><polygon poi=
+nts=3D"15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon></svg></div></di=
+v><div style=3D"background: white; padding-right: 105px;"></div></div></div=
+></div><div data-block-id=3D"9e18a08d-ca7c-4c36-85f3-fd2f8d5a54c6" class=3D=
+"notion-selectable notion-sub_header-block" style=3D"width: 100%; max-width=
+: 775px; margin-top: 1.4em; margin-bottom: 1px;"><div style=3D"display: fle=
+x; width: 100%; color: inherit; fill: inherit;"><div spellcheck=3D"true" pl=
+aceholder=3D"Heading 2" data-content-editable-leaf=3D"true" contenteditable=
+=3D"false" style=3D"max-width: 100%; width: 100%; white-space: pre-wrap; wo=
+rd-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; font-=
+family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&qu=
+ot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Seg=
+oe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-size=
+: 1.5em; line-height: 1.3;"><span style=3D"font-weight:600" data-token-inde=
+x=3D"0" class=3D"notion-enable-hover">Fancy 1-Line Array Value Swap</span><=
+/div></div></div><div data-block-id=3D"60fad482-7eb6-4821-9d60-8ed2704f1401=
+" class=3D"notion-selectable notion-code-block" style=3D"width: 100%; max-w=
+idth: 775px; margin-top: 4px; margin-bottom: 0px;"><div style=3D"display: f=
+lex;"><div contenteditable=3D"false" data-content-editable-void=3D"true" st=
+yle=3D"flex-grow: 1; border-radius: 3px; text-align: left; position: relati=
+ve; background: rgb(247, 246, 243); min-width: 0px; width: 100%;"><div><div=
+ class=3D"line-numbers notion-code-block" style=3D"display: flex; overflow-=
+x: auto;"><div spellcheck=3D"false" autocorrect=3D"off" autocapitalize=3D"o=
+ff" placeholder=3D" " data-content-editable-leaf=3D"true" contenteditable=
+=3D"false" style=3D"flex-grow: 1; flex-shrink: 1; text-align: left; font-fa=
+mily: SFMono-Regular, Menlo, Consolas, &quot;PT Mono&quot;, &quot;Liberatio=
+n Mono&quot;, Courier, monospace; font-size: 85%; tab-size: 2; padding: 34p=
+x 16px 32px 32px; min-height: 1em; color: rgb(55, 53, 47); white-space: pre=
+;"><span class=3D"token keyword" data-token-index=3D"0">let</span><span cla=
+ss=3D"" data-token-index=3D"0"> a </span><span class=3D"token operator" dat=
+a-token-index=3D"0">=3D</span><span class=3D"" data-token-index=3D"0"> </sp=
+an><span class=3D"token number" data-token-index=3D"0">1</span><span class=
+=3D"token punctuation" data-token-index=3D"0">;</span><span class=3D"" data=
+-token-index=3D"0">
+</span><span class=3D"token keyword" data-token-index=3D"0">let</span><span=
+ class=3D"" data-token-index=3D"0"> b </span><span class=3D"token operator"=
+ data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=3D"0"> =
+</span><span class=3D"token number" data-token-index=3D"0">3</span><span cl=
+ass=3D"token punctuation" data-token-index=3D"0">;</span><span class=3D"" d=
+ata-token-index=3D"0">
+
+</span><span class=3D"token punctuation" data-token-index=3D"0">[</span><sp=
+an class=3D"" data-token-index=3D"0">a</span><span class=3D"token punctuati=
+on" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"0">=
+ b</span><span class=3D"token punctuation" data-token-index=3D"0">]</span><=
+span class=3D"" data-token-index=3D"0"> </span><span class=3D"token operato=
+r" data-token-index=3D"0">=3D</span><span class=3D"" data-token-index=3D"0"=
+> </span><span class=3D"token punctuation" data-token-index=3D"0">[</span><=
+span class=3D"" data-token-index=3D"0">b</span><span class=3D"token punctua=
+tion" data-token-index=3D"0">,</span><span class=3D"" data-token-index=3D"0=
+"> a</span><span class=3D"token punctuation" data-token-index=3D"0">]</span=
+><span class=3D"token punctuation" data-token-index=3D"0">;</span><span cla=
+ss=3D"" data-token-index=3D"0">
+
+console</span><span class=3D"token punctuation" data-token-index=3D"0">.</s=
+pan><span class=3D"token function" data-token-index=3D"0">log</span><span c=
+lass=3D"token punctuation" data-token-index=3D"0">(</span><span class=3D"" =
+data-token-index=3D"0">a</span><span class=3D"token punctuation" data-token=
+-index=3D"0">)</span><span class=3D"token punctuation" data-token-index=3D"=
+0">;</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"t=
+oken comment" data-token-index=3D"0">// 3</span><span class=3D"" data-token=
+-index=3D"0">
+console</span><span class=3D"token punctuation" data-token-index=3D"0">.</s=
+pan><span class=3D"token function" data-token-index=3D"0">log</span><span c=
+lass=3D"token punctuation" data-token-index=3D"0">(</span><span class=3D"" =
+data-token-index=3D"0">b</span><span class=3D"token punctuation" data-token=
+-index=3D"0">)</span><span class=3D"token punctuation" data-token-index=3D"=
+0">;</span><span class=3D"" data-token-index=3D"0"> </span><span class=3D"t=
+oken comment" data-token-index=3D"0">// 1</span><span>
+</span></div></div></div><div style=3D"position: absolute; top: 3px; right:=
+ 1px; color: rgba(55, 53, 47, 0.65); display: flex; align-items: center; ju=
+stify-content: flex-end; height: 25px; font-size: 11.5px; opacity: 0; trans=
+ition: opacity 300ms ease-in 0s;"></div><div style=3D"position: absolute; t=
+op: 8px; left: 8px; color: rgba(55, 53, 47, 0.65); display: flex; align-ite=
+ms: center; justify-content: flex-end; opacity: 0; transition: opacity 300m=
+s ease-in 0s;"><div aria-disabled=3D"true" role=3D"button" tabindex=3D"-1" =
+style=3D"user-select: none; transition: background 20ms ease-in 0s; cursor:=
+ default; display: inline-flex; align-items: center; white-space: nowrap; h=
+eight: 20px; border-radius: 3px; font-size: 12px; line-height: 1.2; padding=
+-left: 5px; padding-right: 5px; color: rgba(55, 53, 47, 0.65); margin-right=
+: 5px;">JavaScript<svg viewBox=3D"0 0 30 30" class=3D"chevronDown" style=3D=
+"width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.35); f=
+lex-shrink: 0; backface-visibility: hidden; margin-left: 4px;"><polygon poi=
+nts=3D"15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon></svg></div></di=
+v><div style=3D"background: white; padding-right: 105px;"></div></div></div=
+></div></div></div><div contenteditable=3D"false" data-content-editable-voi=
+d=3D"true" style=3D"width: 0px;"><div style=3D"display: none; flex-shrink: =
+0; pointer-events: none; width: 0px; position: absolute; right: -18px; opac=
+ity: 0;"><div style=3D"display: flex; flex-direction: column; padding: 5px =
+16px; width: 340px; flex-shrink: 0; height: 100%; position: relative; point=
+er-events: none; z-index: 1;"><div style=3D"position: absolute; pointer-eve=
+nts: none; width: 100%; height: 100%; top: -5px; background: linear-gradien=
+t(white 0px, rgba(255, 255, 255, 0) 15px);"></div></div></div></div></main>=
+<span style=3D"height: 1px; width: 1px;"></span></div><div class=3D"notion-=
+presence-container" style=3D"position: absolute; top: 0px; left: 0px; z-ind=
+ex: 89;"><div></div></div></div></div></div><div class=3D"notion-peek-rende=
+rer" style=3D"position: fixed; top: 0px; right: 0px; bottom: 0px; width: 48=
+8.5px; z-index: 109; transform: translateX(488.5px) translateZ(0px);"></div=
+></div></div><div class=3D"notion-overlay-container notion-default-overlay-=
+container" style=3D"position: fixed; inset: 0px; z-index: 999; pointer-even=
+ts: none; overflow: hidden;"><div style=3D"position: relative; z-index: 0;"=
+></div></div><div class=3D"notion-overlay-container" style=3D"position: fix=
+ed; inset: 0px; z-index: 1001; pointer-events: none; overflow: hidden;"><di=
+v style=3D"position: relative; z-index: 0;"></div></div></div></div>
+         =20
+ =20
+ =20
+           =20
+
+<textarea aria-hidden=3D"true" tabindex=3D"-1" style=3D"opacity: 0; pointer=
+-events: none; position: fixed; left: 0px; top: 0px;"></textarea><div style=
+=3D"width: env(safe-area-inset-bottom);"></div><iframe sandbox=3D"allow-scr=
+ipts allow-same-origin" style=3D"position: absolute; opacity: 0; width: 1px=
+; height: 1px; top: 0; left: 0; border: none; display: block; z-index: -1;"=
+ aria-hidden=3D"true" tabindex=3D"-1" referrerpolicy=3D"no-referrer" src=3D=
+"cid:frame-1A87E51E6C0F91420EFCFECFEBF4B04D@mhtml.blink"></iframe><iframe i=
+d=3D"intercom-frame" style=3D"position: absolute !important; opacity: 0 !im=
+portant; width: 1px !important; height: 1px !important; top: 0 !important; =
+left: 0 !important; border: none !important; display: block !important; z-i=
+ndex: -1 !important; pointer-events: none;" aria-hidden=3D"true" tabindex=
+=3D"-1" title=3D"Intercom"></iframe><div class=3D"intercom-lightweight-app"=
+></div></body></html>
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-c057ef75-18e8-4afb-ae65-794fbc80fc29@mhtml.blink
+
+@charset "utf-8";
+
+div.notion-topbar > div > div:nth-child(3) { display: none !important; }
+
+div.notion-topbar > div > div:nth-child(4) { display: none !important; }
+
+div.notion-topbar > div > div:nth-child(5) { display: none !important; }
+
+div.notion-topbar > div > div:nth-child(6) { display: none !important; }
+
+div.notion-topbar > div > div:nth-child(7) { display: none !important; }
+
+div.notion-topbar-mobile > div:nth-child(3) { display: none !important; }
+
+div.notion-topbar-mobile > div:nth-child(4) { display: none !important; }
+
+div.notion-topbar > div > div:nth-child(n).toggle-mode { display: block !im=
+portant; }
+
+div.notion-topbar-mobile > div:nth-child(n).toggle-mode { display: block !i=
+mportant; }
+
+div.notion-topbar-mobile > div:nth-child(5) > svg { display: none !importan=
+t; }
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-e1db5fbb-c38b-44b7-bd32-f087bfcbf245@mhtml.blink
+
+@charset "utf-8";
+
+.springboard-logo-container { position: absolute; top: 10px; left: 10px; z-=
+index: 1000; }
+
+.springboard-logo { height: 20px; width: 120px; }
+
+.notion-topbar .notranslate { display: none !important; }
+
+.notion-topbar-mobile .notranslate { display: none !important; }
+
+.notion-topbar-mobile .springboard-logo { width: 144px; padding: 0px 16px; =
+}
+
+.notion-frame { flex-direction: row !important; }
+
+.notion-frame > .notion-table_of_contents-block { color: rgb(119, 116, 120)=
+; padding-bottom: 20px; }
+
+.notion-page-content > .notion-table_of_contents-block { display: none; }
+
+.notion-frame > .notion-table_of_contents-block { overflow: auto; min-width=
+: 0px; margin-left: 10px; width: 15% !important; margin-top: calc(96px + en=
+v(safe-area-inset-left))  !important; }
+
+.notion-table_of_contents-block .notranslate { font-size: 16px !important; =
+white-space: normal !important; }
+
+@media screen and (max-width: 1280px) {
+  .notion-frame { flex-direction: column !important; }
+  .notion-page-content > .notion-table_of_contents-block { display: block; =
+}
+  .notion-table_of_contents-block { min-width: 0px; width: 100% !important;=
+ }
+  .notion-topbar-mobile { justify-content: end !important; }
+  .notion-frame > .notion-table_of_contents-block { display: none !importan=
+t; }
+}
+
+@media screen and (min-width: 1280px) {
+}
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-80131808-c1c5-4bf1-90e1-30c376c516c9@mhtml.blink
+
+@charset "utf-8";
+
+body { background: rgb(255, 255, 255); }
+
+body.dark { background: rgb(25, 25, 25); }
+
+@keyframes startup-shimmer-animation {=20
+  0% { transform: translateX(-100%) translateZ(0px); }
+  100% { transform: translateX(100%) translateZ(0px); }
+}
+
+@keyframes startup-shimmer-fade-in {=20
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes startup-spinner-rotate {=20
+  0% { transform: rotate(0deg) translateZ(0px); }
+  100% { transform: rotate(360deg) translateZ(0px); }
+}
+
+#initial-loading-spinner { position: fixed; height: 100vh; width: 100vw; z-=
+index: -1; display: none; align-items: center; justify-content: center; opa=
+city: 0.5; }
+
+#initial-loading-spinner svg { height: 24px; width: 24px; animation: 1s lin=
+ear 0s infinite normal none running startup-spinner-rotate; transform-origi=
+n: center center; pointer-events: none; }
+
+#skeleton { background: rgb(255, 255, 255); position: fixed; height: 100vh;=
+ width: 100vw; z-index: -1; display: none; overflow: hidden; }
+
+#initial-loading-spinner.show, #skeleton.show { display: flex; }
+
+body.dark #skeleton { background: rgb(25, 25, 25); }
+
+.notion-front-page #skeleton, .notion-mobile #skeleton { display: none; }
+
+#skeleton-sidebar { background-color: rgb(251, 251, 250); box-shadow: rgba(=
+0, 0, 0, 0.024) -1px 0px 0px 0px inset; display: flex; width: 240px; flex-d=
+irection: column; padding: 12px 14px; overflow: hidden; }
+
+body.dark #skeleton-sidebar { background-color: rgb(32, 32, 32); box-shadow=
+: rgba(255, 255, 255, 0.05) -1px 0px 0px 0px inset; }
+
+#skeleton.isElectron #skeleton-sidebar { padding-top: 46px; }
+
+#skeleton .row { display: flex; margin-bottom: 8px; align-items: center; }
+
+#skeleton .row.fadein { animation: 1s ease-in 0s 1 normal both running star=
+tup-shimmer-fade-in; }
+
+#skeleton .chevron { width: 12px; height: 12px; display: block; margin-righ=
+t: 4px; fill: rgba(227, 226, 224, 0.5); }
+
+body.dark #skeleton .chevron { fill: rgb(47, 47, 47); }
+
+.startup-shimmer { background: rgba(227, 226, 224, 0.5); overflow: hidden; =
+position: relative; }
+
+body.dark .startup-shimmer { background: rgb(47, 47, 47); }
+
+.startup-shimmer::before { content: ""; position: absolute; height: 100%; w=
+idth: 100%; z-index: 1; animation: 1s linear 0s infinite normal none runnin=
+g startup-shimmer-animation; background: linear-gradient(90deg, transparent=
+ 0px, rgba(255, 255, 255, 0.4) 50%, transparent 100%); }
+
+body.dark .startup-shimmer::before { background: linear-gradient(90deg, tra=
+nsparent 0px, rgba(86, 86, 86, 0.4) 50%, transparent 100%); }
+
+#skeleton .icon { width: 20px; height: 20px; border-radius: 4px; }
+
+#skeleton .text { height: 10px; border-radius: 10px; }
+
+#skeleton .draggable { app-region: drag; position: absolute; top: 0px; left=
+: 0px; width: 100%; height: 36px; display: none; }
+
+#skeleton.isElectron .draggable { display: block; }
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-4110ebf5-6d6c-4aaf-9760-ced5f307a492@mhtml.blink
+
+@charset "utf-8";
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+
+::-webkit-scrollbar { background: transparent; }
+
+::-webkit-scrollbar-track { background: rgb(237, 236, 233); }
+
+::-webkit-scrollbar-thumb { background: rgb(211, 209, 203); }
+
+::-webkit-scrollbar-thumb:hover { background: rgb(174, 172, 166); }
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-f31e1706-3a69-4743-bded-80e9e2ea0c25@mhtml.blink
+
+@charset "utf-8";
+
+@keyframes intercom-lightweight-app-launcher {=20
+  0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes intercom-lightweight-app-gradient {=20
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes intercom-lightweight-app-messenger {=20
+  0% { opacity: 0; transform: scale(0); }
+  40% { opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.intercom-lightweight-app { position: fixed; z-index: 2147483001; width: 0p=
+x; height: 0px; font-family: intercom-font, "Helvetica Neue", "Apple Color =
+Emoji", Helvetica, Arial, sans-serif; }
+
+.intercom-lightweight-app-gradient { position: fixed; z-index: 2147483002; =
+width: 500px; height: 500px; bottom: 0px; right: 0px; pointer-events: none;=
+ background: radial-gradient(at right bottom, rgba(29, 39, 54, 0.16) 0%, rg=
+ba(29, 39, 54, 0) 72%); animation: 200ms ease-out 0s 1 normal none running =
+intercom-lightweight-app-gradient; }
+
+.intercom-lightweight-app-launcher { position: fixed; z-index: 2147483003; =
+border: none; bottom: 20px; right: 20px; max-width: 48px; width: 48px; max-=
+height: 48px; height: 48px; border-radius: 50%; background: rgb(84, 98, 112=
+); cursor: pointer; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px 0px, rgba(0=
+, 0, 0, 0.16) 0px 2px 32px 0px; transition: transform 167ms cubic-bezier(0.=
+33, 0, 0, 1) 0s; box-sizing: content-box; padding: 0px !important; margin: =
+0px !important; }
+
+.intercom-lightweight-app-launcher:hover { transition: transform 250ms cubi=
+c-bezier(0.33, 0, 0, 1) 0s; transform: scale(1.1); }
+
+.intercom-lightweight-app-launcher:active { transform: scale(0.85); transit=
+ion: transform 134ms cubic-bezier(0.45, 0, 0.2, 1) 0s; }
+
+.intercom-lightweight-app-launcher:focus { outline: none; }
+
+.intercom-lightweight-app-launcher-icon { display: flex; align-items: cente=
+r; justify-content: center; position: absolute; top: 0px; left: 0px; width:=
+ 48px; height: 48px; transition: transform 100ms linear 0s, opacity 80ms li=
+near 0s; }
+
+.intercom-lightweight-app-launcher-icon-open { opacity: 1; transform: rotat=
+e(0deg) scale(1); }
+
+.intercom-lightweight-app-launcher-icon-open svg { width: 24px; height: 24p=
+x; }
+
+.intercom-lightweight-app-launcher-icon-open svg path { fill: rgb(255, 255,=
+ 255); }
+
+.intercom-lightweight-app-launcher-icon-self-serve { opacity: 1; transform:=
+ rotate(0deg) scale(1); }
+
+.intercom-lightweight-app-launcher-icon-self-serve svg { height: 44px; }
+
+.intercom-lightweight-app-launcher-icon-self-serve svg path { fill: rgb(255=
+, 255, 255); }
+
+.intercom-lightweight-app-launcher-custom-icon-open { max-height: 24px; max=
+-width: 24px; opacity: 1; transform: rotate(0deg) scale(1); }
+
+.intercom-lightweight-app-launcher-icon-minimize { opacity: 0; transform: r=
+otate(-60deg) scale(0); }
+
+.intercom-lightweight-app-launcher-icon-minimize svg path { fill: rgb(255, =
+255, 255); }
+
+.intercom-lightweight-app-messenger { position: fixed; z-index: 2147483003;=
+ overflow: hidden; background-color: white; animation: 250ms cubic-bezier(0=
+, 1.2, 1, 1) 0s 1 normal none running intercom-lightweight-app-messenger; t=
+ransform-origin: right bottom; width: 400px; height: calc(100% - 40px); max=
+-height: 704px; min-height: 250px; right: 20px; bottom: 20px; box-shadow: r=
+gba(0, 0, 0, 0.16) 0px 5px 40px; border-radius: 15px; }
+
+.intercom-lightweight-app-messenger-header { height: 64px; border-bottom: n=
+one; background: rgb(0, 172, 193); }
+
+.intercom-lightweight-app-messenger-footer { position: absolute; bottom: 0p=
+x; width: 100%; min-height: 81px; background: rgb(255, 255, 255); font-size=
+: 14px; line-height: 21px; border-top: 1px solid rgba(0, 0, 0, 0.05); box-s=
+hadow: rgba(0, 0, 0, 0.05) 0px 0px 25px; }
+
+@media print {
+  .intercom-lightweight-app { display: none; }
+}
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://lessons.springboard.com/print.5c792172.css
+
+@charset "utf-8";
+
+html, body, #notion-app { -webkit-print-color-adjust: exact; height: auto !=
+important; overflow: auto !important; font-size: 14px !important; padding: =
+0px !important; margin: 0px !important; }
+
+.notion-help-button, .notion-print-ignore, .notion-overlay-container, .noti=
+on-sidebar-container, .notion-presence-container, .notion-topbar, .notion-t=
+opbar-export-popup, .notion-selectable-halo, .notion-help-button, .notion-p=
+age-controls { display: none !important; }
+
+.notion-frame { -webkit-print-color-adjust: exact; width: 100% !important; =
+height: auto !important; border: none !important; padding: 0px !important; =
+margin: 0px !important; }
+
+.notion-scroller { height: auto !important; width: 100% !important; max-hei=
+ght: none !important; max-width: none !important; overflow: visible !import=
+ant; padding: 0px !important; margin: 0px !important; display: block !impor=
+tant; }
+
+html { height: auto !important; overflow: auto !important; font-size: 14px =
+!important; }
+
+.notion-invoice { height: auto !important; }
+
+.notion-code-block > div { white-space: normal !important; }
+
+.notion-selectable { break-inside: avoid; position: relative; overflow: ini=
+tial; min-height: 0px; max-width: none !important; }
+
+.notion-page-content { position: relative; overflow: initial; min-height: 0=
+px; display: block !important; width: 100% !important; }
+
+@page { size: auto; margin: 20mm 0px; }
+
+.notion-table-content { padding: 0px !important; }
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://lessons.springboard.com/app-56ad3358fe048b60e541.css
+
+@charset "utf-8";
+
+@font-face { font-family: Lyon-Text; src: url("/lyon-text-regular-3be84b20b=
+1d9ff1e3456b0a220ae449b.woff") format("woff"); font-style: normal; font-wei=
+ght: 400; }
+
+@font-face { font-family: Lyon-Text; src: url("/lyon-text-regular-italic-43=
+7d32a42fc5b8268bb4a1e0cc8b363f.woff") format("woff"); font-style: italic; f=
+ont-weight: 400; }
+
+@font-face { font-family: Lyon-Text; src: url("/lyon-text-semibold-acb7f110=
+189034ff6a1afa4b730be0ed.woff") format("woff"); font-style: normal; font-we=
+ight: 600; }
+
+@font-face { font-family: Lyon-Text; src: url("/lyon-text-semibold-italic-1=
+f81a2f93060f05edd7f078ac91f25e6.woff") format("woff"); font-style: italic; =
+font-weight: 600; }
+
+@font-face { font-family: iawriter-mono; src: url("/iawriter-mono-regular-4=
+b73d071988a4f1cd2283524716ad970.woff") format("woff"); font-style: normal; =
+font-weight: 400; }
+
+@font-face { font-family: iawriter-mono; src: url("/iawriter-mono-italic-d5=
+d3224c1377168e261efc6aa0ce89c6.woff") format("woff"); font-style: italic; f=
+ont-weight: 400; }
+
+@font-face { font-family: iawriter-mono; src: url("/iawriter-mono-bold-eb96=
+a5e539892d26cf8b0cb2367e3580.woff") format("woff"); font-style: normal; fon=
+t-weight: 600; }
+
+@font-face { font-family: iawriter-mono; src: url("/iawriter-mono-bold-ital=
+ic-743b231fa82483406c79a00fa1f12fe8.woff") format("woff"); font-style: ital=
+ic; font-weight: 600; }
+
+@font-face { font-family: inter; src: url("/inter-ui-regular-3ae6a7d3890c33=
+d857fc00bd2e4c4820.woff") format("woff"); font-style: normal; font-weight: =
+400; }
+
+@font-face { font-family: inter; src: url("/inter-ui-medium-95b8a98959d1af9=
+ab432d7ffe295ef94.woff") format("woff"); font-style: normal; font-weight: 5=
+00; }
+
+@font-face { font-family: inter; src: url("/inter-ui-semibold-19b57197b8196=
+95d334b9961ee41910e.woff") format("woff"); font-style: normal; font-weight:=
+ 600; }
+
+@font-face { font-family: inter; src: url("/inter-ui-bold-001893789f7f342b5=
+20f29ac8af7d6ca.woff") format("woff"); font-style: normal; font-weight: 700=
+; }
+
+@font-face { font-family: permanent-marker; src: url("/permanent-marker-a6d=
+62939e7c920a184ddddcf4149e62c.woff") format("woff"); font-style: normal; fo=
+nt-weight: 400; }
+
+.notion-frame .katex-display .katex { padding-right: 32px; }
+
+.notion-frame .katex > .katex-html { white-space: normal; }
+
+.notion-frame .katex-display .base { margin-top: 2px; margin-bottom: 2px; }
+
+.notion-frame .notion-text-equation-token .katex { line-height: 1; }
+
+html { font-family: sans-serif; text-size-adjust: 100%; }
+
+body { margin: 0px; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, =
+menu, nav, section, summary { display: block; }
+
+audio, canvas, progress, video { display: inline-block; vertical-align: bas=
+eline; }
+
+audio:not([controls]) { display: none; height: 0px; }
+
+[hidden], template { display: none; }
+
+a { background-color: transparent; }
+
+a:active, a:hover { outline: 0px; }
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+h1 { font-size: 2em; margin: 0.67em 0px; }
+
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+
+small { font-size: 80%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-ali=
+gn: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+img { border: 0px; }
+
+figure { margin: 1em 40px; }
+
+hr { box-sizing: content-box; height: 0px; }
+
+code, kbd, pre, samp { font-family: inherit; }
+
+button, input, optgroup, select, textarea { color: inherit; font: inherit; =
+margin: 0px; }
+
+button { overflow: visible; }
+
+button, select { text-transform: none; }
+
+button, html input[type=3D"button"], input[type=3D"reset"], input[type=3D"s=
+ubmit"] { appearance: button; cursor: pointer; }
+
+button[disabled], html input[disabled] { cursor: default; }
+
+input[type=3D"checkbox"], input[type=3D"radio"] { box-sizing: border-box; p=
+adding: 0px; }
+
+input[type=3D"number"]::-webkit-inner-spin-button, input[type=3D"number"]::=
+-webkit-outer-spin-button { height: auto; }
+
+input[type=3D"search"] { appearance: textfield; box-sizing: content-box; }
+
+input[type=3D"search"]::-webkit-search-cancel-button, input[type=3D"search"=
+]::-webkit-search-decoration { appearance: none; }
+
+fieldset { border: 1px solid rgb(192, 192, 192); margin: 0px 2px; padding: =
+0.35em 0.625em 0.75em; }
+
+legend { border: 0px; padding: 0px; }
+
+textarea { overflow: auto; }
+
+optgroup { font-weight: bold; }
+
+table { border-collapse: collapse; border-spacing: 0px; }
+
+td, th { padding: 0px; }
+
+.notion-link { transition: all 100ms ease-in 0s; }
+
+.notion-link:hover { color: rgb(235, 87, 87) !important; }
+
+.notion-link-ai-version { transition: all 100ms ease-in 0s; }
+
+.notion-link-ai-version:hover { color: rgb(202, 89, 255) !important; }
+
+.notion-ai-icon { transition: all 100ms ease-in 0s; }
+
+.notion-ai-icon:hover { filter: brightness(1.3); }
+
+.notion-mobile-tapping { opacity: 0.6; }
+
+.notion-reminder.notion-enable-hover:hover { text-decoration: underline; }
+
+.notion-token-remove-button:hover { opacity: 0.8; }
+
+.notion-notion-external-object, .notion-page-mention-token { box-shadow: rg=
+ba(148, 148, 148, 0) 0px 0px 0px 3px; }
+
+.notion-page-mention-token.notion-enable-hover:hover, .notion-external-obje=
+ct-token.notion-enable-hover:hover { background: rgba(148, 148, 148, 0.15);=
+ box-shadow: rgba(148, 148, 148, 0.15) 0px 0px 0px 3px; border-radius: 1px;=
+ cursor: pointer !important; }
+
+.notion-page-mention-token::selection, .notion-external-object-token::selec=
+tion { background: rgba(35, 131, 226, 0.14); }
+
+.notion-focusable-within:focus-within { box-shadow: rgba(35, 131, 226, 0.57=
+) 0px 0px 0px 1px inset, rgba(35, 131, 226, 0.35) 0px 0px 0px 2px !importan=
+t; }
+
+.notion-cursor-default { cursor: default; }
+
+.notion-cursor-pointer { cursor: pointer; }
+
+.notion-sidebar-container, .notion-topbar { cursor: default; }
+
+.notion-disable-local-cursor .notion-sidebar-container, .notion-disable-loc=
+al-cursor .notion-topbar, .notion-disable-local-cursor .notion-cursor-defau=
+lt, .notion-disable-local-cursor .notion-cursor-pointer { cursor: inherit; =
+}
+
+.notion-disable-webkit-user-select, .notion-disable-webkit-user-select * { =
+user-select: none; }
+
+#notion-app a { cursor: inherit; }
+
+.notion-fadein { animation: 330ms ease-in 0s 1 normal none running fadein; =
+}
+
+.notion-fadein-fast { animation: 230ms ease-in 0s 1 normal none running fad=
+ein; }
+
+.notion-fadein-slow { animation: 600ms ease-in 0s 1 normal none running fad=
+ein; }
+
+@keyframes fadein {=20
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.line-numbers .line-numbers-rows { border-right: none !important; }
+
+.line-numbers-rows > span::before { color: rgb(204, 204, 204) !important; }
+
+.notion-mobile * { -webkit-tap-highlight-color: transparent; }
+
+html.notion-html, body.notion-body, #notion-app { height: 100vh; overflow: =
+hidden; position: relative; background-color: transparent; }
+
+.notion-app-inner { height: 100%; }
+
+html.notion-mobile:not(.notion-front-page) div:not([contenteditable]) { use=
+r-select: none; }
+
+html.notion-mobile:not(.notion-front-page) body:not(.notion-disable-webkit-=
+user-select) [contenteditable] { user-select: text; }
+
+html.notion-front-page, html.notion-front-page body, html.notion-front-page=
+ #notion-app { height: initial; overflow: initial; background: rgb(255, 254=
+, 252); }
+
+html.notion-front-page body.disable-scroll { overflow: hidden; }
+
+html.notion-front-page .notion-app-inner { height: initial; }
+
+[contenteditable]:empty::after { content: attr(placeholder); }
+
+#intercom-container { z-index: 1000 !important; }
+
+.token.operator.operator { background: transparent; }
+
+#box-app-container > div { position: absolute; background: rgba(255, 255, 2=
+55, 0.5); height: 100vh; width: 100vw; z-index: 1000; top: 0px; display: fl=
+ex; align-items: center; justify-content: center; }
+
+#box-app-container .be-app-element { width: calc(100% - 150px); height: cal=
+c(100% - 150px); background: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 1px=
+ 4px; max-width: 1150px; max-height: 620px; }
+
+.loading-spinner { animation: 1000ms linear 0s infinite normal none running=
+ rotate; transform-origin: center center; width: 1em; height: 1em; opacity:=
+ 0.5; display: block; pointer-events: none; }
+
+@-webkit-keyframes rotate {=20
+  0% { transform: rotate(0deg) translateZ(0px); }
+  100% { transform: rotate(360deg) translateZ(0px); }
+}
+
+@keyframes rotate {=20
+  0% { transform: rotate(0deg) translateZ(0px); }
+  100% { transform: rotate(360deg) translateZ(0px); }
+}
+
+.loading-dots { display: flex; align-items: center; justify-content: center=
+; gap: 2px; width: 16px; height: 16px; }
+
+.loading-dot { width: 4px; height: 4px; opacity: 0.4; background-color: rgb=
+(167, 130, 195); border-radius: 100%; animation-duration: 0.5s; animation-n=
+ame: dotdance; animation-iteration-count: infinite; animation-direction: al=
+ternate; animation-timing-function: cubic-bezier(0.11, 0, 0.5, 0); }
+
+.loading-dots .loading-dot:nth-child(1) { animation-delay: 0.2s; }
+
+.loading-dots .loading-dot:nth-child(2) { animation-delay: 0.4s; }
+
+.loading-dots .loading-dot:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes dotdance {=20
+  0% { transform: translateY(0px); opacity: 0.4; }
+  100% { transform: translateY(2px); opacity: 0.9; }
+}
+
+.sync-spinner { animation: 2500ms linear 0s infinite normal none running ro=
+tate; transform-origin: center center; display: block; pointer-events: none=
+; }
+
+.notion-shimmer { overflow: hidden; position: relative; z-index: 0; }
+
+.notion-shimmer::before { content: ""; position: absolute; height: 100%; wi=
+dth: 100%; z-index: 1; animation: 1s linear 0s infinite normal none running=
+ shimmer; }
+
+.notion-light-theme .notion-shimmer::before { background: linear-gradient(9=
+0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 25=
+5, 255, 0) 100%); }
+
+.notion-dark-theme .notion-shimmer::before { background: linear-gradient(90=
+deg, rgba(86, 86, 86, 0) 0%, rgba(86, 86, 86, 0.4) 50%, rgba(86, 86, 86, 0)=
+ 100%); }
+
+@keyframes shimmer {=20
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+input[type=3D"range"] { appearance: none; background: transparent; }
+
+input[type=3D"range"]::-webkit-slider-thumb { box-shadow: rgba(0, 0, 0, 0.2=
+5) 0px 1px 4px; border: 0.5px solid var(--inputRangeThumb--borderColor); he=
+ight: 14px; width: 14px; border-radius: 50%; background: var(--inputRangeTh=
+umb--background); cursor: pointer; appearance: none; margin-top: -4px; }
+
+input[type=3D"range"]::-webkit-slider-runnable-track { appearance: none; wi=
+dth: 100%; height: 6px; background: var(--inputRangeTrack--color); border-r=
+adius: 10px; cursor: pointer; }
+
+.notion-quote { position: relative; }
+
+.notion-quote::before { content: "=E2=80=9C"; position: absolute; left: -0.=
+5em; opacity: 0.6; }
+
+.notion-quote::after { content: "=E2=80=9D"; margin-left: 0.1em; opacity: 0=
+.6; }
+
+@media only screen and (max-width: 1020px) {
+  .br-desktop { display: none; }
+}
+
+.pretty-json-container .variable-value > * > * { cursor: pointer !important=
+; }
+
+.editor-force-select { user-select: auto !important; }
+
+.width-max-content { width: -webkit-max-content; }
+
+.hidden { display: none !important; }
+
+input.input-hide-arrows::-webkit-outer-spin-button, input.input-hide-arrows=
+::-webkit-inner-spin-button { appearance: none; margin: 0px; }
+
+input[type=3D"number"].input-hide-arrows { }
+
+@keyframes leftOrRight {=20
+  0% { left: -50%; }
+  100% { left: 250%; }
+}
+
+.pseudoAfter::after { color: var(--pseudoAfter--color); content: var(--pseu=
+doAfter--content); border: var(--pseudoAfter--border); width: var(--pseudoA=
+fter--width); height: var(--pseudoAfter--height); display: var(--pseudoAfte=
+r--display); background: var(--pseudoAfter--background); }
+
+.pseudoBefore::before { color: var(--pseudoBefore--color); content: var(--p=
+seudoBefore--content); border: var(--pseudoBefore--border); width: var(--ps=
+eudoBefore--width); height: var(--pseudoBefore--height); background: var(--=
+pseudoBefore--background); font-family: var(--pseudoBefore--fontFamily); di=
+splay: var(--pseudoBefore--display)  !important; }
+
+.pseudoHover:hover { background: var(--pseudoHover--background); }
+
+.pseudoActive:active { background: var(--pseudoActive--background); }
+
+.pseudoSelection ::selection, .pseudoSelection::selection { color: var(--ps=
+eudoSelection--color); -webkit-text-fill-color: var(--pseudoSelection--Webk=
+itTextFillColor); background: var(--pseudoSelection--background); text-shad=
+ow: var(--pseudoSelection--textShadow); }
+
+.whenContentEditable[contenteditable=3D"true"] { caret-color: var(--whenCon=
+tentEditable--caretColor); -webkit-user-modify: var(--whenContentEditable--=
+WebkitUserModify); }
+
+[data-content-editable-selecting=3D"true"] .whenRootSelecting { display: va=
+r(--whenRootSelecting--display)  !important; }
+
+.whenFocusedEditable[contenteditable=3D"true"]:focus, [contenteditable=3D"t=
+rue"]:focus-within .whenFocusedEditable { -webkit-user-modify: var(--whenFo=
+cusedEditable--WebkitUserModify)  !important; user-select: var(--whenFocuse=
+dEditable--userSelect)  !important; }
+
+[data-content-editable-composing=3D"true"] .pseudoAfterWhenComposing::after=
+ { display: var(--pseudoAfterWhenComposing--display)  !important; }
+
+.rdt { position: relative; user-select: none; }
+
+.rdtPicker { display: none; position: absolute; width: 100%; margin-top: 1p=
+x; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3=
+px; }
+
+.rdtOpen .rdtPicker { display: block; }
+
+.rdtStatic .rdtPicker { box-shadow: none; position: static; }
+
+.rdtPicker .rdtTimeToggle { text-align: center; }
+
+.rdtPicker table { width: 100%; margin: 0px; }
+
+.rdtPicker td, .rdtPicker th { text-align: center; height: 28px; }
+
+.rdtPicker td.rdtDay:hover, .rdtPicker td.rdtToday:hover, .rdtPicker td.rdt=
+Hour:hover, .rdtPicker td.rdtMinute:hover, .rdtPicker td.rdtSecond:hover, .=
+rdtPicker .rdtTimeToggle:hover { background: rgb(238, 238, 238); cursor: po=
+inter; }
+
+.rdtPicker td.rdtOld, .rdtPicker td.rdtNew { color: rgb(153, 153, 153); }
+
+.rdtPicker td.rdtToday { position: relative; }
+
+.rdtPicker td.rdtToday::before { content: ""; display: inline-block; border=
+-left: 7px solid transparent; border-bottom: 7px solid rgb(66, 139, 202); b=
+order-top-color: rgba(0, 0, 0, 0.2); position: absolute; bottom: 4px; right=
+: 4px; }
+
+.rdtPicker td.rdtActive, .rdtPicker td.rdtActive:hover { background-color: =
+rgb(66, 139, 202); color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.=
+25) 0px -1px 0px; }
+
+.rdtPicker td.rdtActive.rdtToday::before { border-bottom-color: rgb(255, 25=
+5, 255); }
+
+.rdtPicker td.rdtDisabled, .rdtPicker td.rdtDisabled:hover { background: no=
+ne; color: rgb(153, 153, 153); cursor: not-allowed; }
+
+.rdtPicker td span.rdtOld { color: rgb(153, 153, 153); }
+
+.rdtPicker td span.rdtDisabled, .rdtPicker td span.rdtDisabled:hover { back=
+ground: none; color: rgb(153, 153, 153); cursor: not-allowed; }
+
+.rdtPicker .dow { width: 14.2857%; border-bottom: none; }
+
+.rdtPicker th.rdtSwitch { width: 100px; }
+
+.rdtPicker th.rdtNext, .rdtPicker th.rdtPrev { font-size: 21px; vertical-al=
+ign: top; }
+
+.rdtPicker th.rdtDisabled, .rdtPicker th.rdtDisabled:hover { background: no=
+ne; color: rgb(153, 153, 153); cursor: not-allowed; }
+
+.rdtPicker thead tr:first-child th { cursor: pointer; }
+
+.rdtPicker thead tr:first-child th:hover { background: rgb(238, 238, 238); =
+}
+
+.rdtPicker tfoot { border-top: 1px solid rgb(249, 249, 249); }
+
+.rdtPicker button { border: none; background: none; cursor: pointer; }
+
+.rdtPicker button:hover { background-color: rgb(238, 238, 238); }
+
+.rdtPicker thead button { width: 100%; height: 100%; }
+
+td.rdtMonth, td.rdtYear { height: 50px; width: 25%; cursor: pointer; }
+
+td.rdtMonth:hover, td.rdtYear:hover { background: rgb(238, 238, 238); }
+
+.rdtCounters { display: inline-block; }
+
+.rdtCounters > div { float: left; }
+
+.rdtCounter { height: 100px; }
+
+.rdtCounter { width: 40px; }
+
+.rdtCounterSeparator { line-height: 100px; }
+
+.rdtCounter .rdtBtn { height: 40%; line-height: 40px; cursor: pointer; }
+
+.rdtCounter .rdtBtn:hover { background: rgb(238, 238, 238); }
+
+.rdtCounter .rdtCount { height: 20%; font-size: 1.2em; }
+
+.rdtMilli { vertical-align: middle; padding-left: 8px; width: 48px; }
+
+.rdtMilli input { width: 100%; font-size: 1.2em; margin-top: 37px; }
+
+*, :focus { outline: 0px; }
+
+* { box-sizing: border-box; }
+
+table > tr { vertical-align: top; }
+
+::-webkit-input-placeholder { color: inherit; opacity: 0.375; }
+
+::-webkit-contacts-auto-fill-button { visibility: hidden; pointer-events: n=
+one; position: absolute; right: 0px; display: none !important; }
+
+::selection { background: rgba(35, 131, 226, 0.28); }
+
+#notion-app b { font-weight: 600; }
+
+[contenteditable] { -webkit-tap-highlight-color: transparent; }
+
+@keyframes pulse-ring {=20
+  0% { transform: scale(0.33); }
+  80%, 100% { opacity: 0; }
+}
+
+@keyframes pulse-dot {=20
+  0% { transform: scale(0.8); }
+  50% { transform: scale(1); }
+  100% { transform: scale(0.8); }
+}
+
+@keyframes bounce-left {=20
+  0% { transform: translateX(-200%); }
+  25% { transform: translateX(-199%); }
+  100% { transform: translateX(0%); }
+}
+
+@keyframes pulsing-button-border {=20
+  0% { border-color: rgb(35, 131, 226); }
+  50% { border-color: rgba(35, 131, 226, 0); }
+  100% { border-color: rgb(35, 131, 226); }
+}
+
+@keyframes pulsing-button {=20
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.15); }
+  100% { filter: brightness(1); }
+}
+
+@keyframes shake {=20
+  0% { margin-left: 0rem; }
+  25% { margin-left: 0.2rem; }
+  75% { margin-left: -0.2rem; }
+  100% { margin-left: 0rem; }
+}
+
+@keyframes fadeIn {=20
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.front-fadein-slow { animation: 500ms ease-in 0s 1 normal none running fade=
+in; }
+
+.front-fadein-fast { animation: 150ms ease-in 0s 1 normal none running fade=
+in; }
+
+.hide-scrollbar { }
+
+.hide-scrollbar::-webkit-scrollbar { width: 0px !important; height: 0px !im=
+portant; }
+
+.notion-light-theme code[class*=3D"language-"], .notion-light-theme pre[cla=
+ss*=3D"language-"] { color: black; background: none; text-shadow: white 0px=
+ 1px; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospac=
+e; font-size: 1em; text-align: left; white-space: pre; word-spacing: normal=
+; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4;=
+ hyphens: none; }
+
+.notion-light-theme pre[class*=3D"language-"]::selection, .notion-light-the=
+me pre[class*=3D"language-"] ::selection, .notion-light-theme code[class*=
+=3D"language-"]::selection, .notion-light-theme code[class*=3D"language-"] =
+::selection { text-shadow: none; background: rgb(179, 212, 252); }
+
+@media print {
+  .notion-light-theme code[class*=3D"language-"], .notion-light-theme pre[c=
+lass*=3D"language-"] { text-shadow: none; }
+}
+
+.notion-light-theme pre[class*=3D"language-"] { padding: 1em; margin: 0.5em=
+ 0px; overflow: auto; }
+
+.notion-light-theme :not(pre) > code[class*=3D"language-"], .notion-light-t=
+heme pre[class*=3D"language-"] { background: rgb(245, 242, 240); }
+
+.notion-light-theme :not(pre) > code[class*=3D"language-"] { padding: 0.1em=
+; border-radius: 0.3em; white-space: normal; }
+
+.notion-light-theme .token.comment, .notion-light-theme .token.prolog, .not=
+ion-light-theme .token.doctype, .notion-light-theme .token.cdata { color: s=
+lategray; }
+
+.notion-light-theme .token.punctuation { color: rgb(153, 153, 153); }
+
+.notion-light-theme .token.namespace { opacity: 0.7; }
+
+.notion-light-theme .token.property, .notion-light-theme .token.tag, .notio=
+n-light-theme .token.boolean, .notion-light-theme .token.number, .notion-li=
+ght-theme .token.constant, .notion-light-theme .token.symbol, .notion-light=
+-theme .token.deleted, .notion-light-theme .token.deleted + .token.line { c=
+olor: rgb(153, 0, 85); }
+
+.notion-light-theme .token.selector, .notion-light-theme .token.attr-name, =
+.notion-light-theme .token.string, .notion-light-theme .token.char, .notion=
+-light-theme .token.builtin, .notion-light-theme .token.inserted, .notion-l=
+ight-theme .token.inserted + .token.line { color: rgb(102, 153, 0); }
+
+.notion-light-theme .token.operator, .notion-light-theme .token.entity, .no=
+tion-light-theme .token.url, .notion-light-theme .language-css .token.strin=
+g, .notion-light-theme .style .token.string { color: rgb(154, 110, 58); bac=
+kground: rgba(255, 255, 255, 0.5); }
+
+.notion-light-theme .token.atrule, .notion-light-theme .token.attr-value, .=
+notion-light-theme .token.keyword { color: rgb(0, 119, 170); }
+
+.notion-light-theme .token.function, .notion-light-theme .token.class-name =
+{ color: rgb(221, 74, 104); }
+
+.notion-light-theme .token.regex, .notion-light-theme .token.important, .no=
+tion-light-theme .token.variable { color: rgb(238, 153, 0); }
+
+.notion-light-theme .token.important, .notion-light-theme .token.bold { fon=
+t-weight: bold; }
+
+.notion-light-theme .token.italic { font-style: italic; }
+
+.notion-light-theme .token.entity { cursor: help; }
+
+.notion-dark-theme code[class*=3D"language-"], .notion-dark-theme pre[class=
+*=3D"language-"] { color: white; background: none; text-shadow: black 0px -=
+0.1em 0.2em; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", m=
+onospace; font-size: 1em; text-align: left; white-space: pre; word-spacing:=
+ normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-s=
+ize: 4; hyphens: none; }
+
+@media print {
+  .notion-dark-theme code[class*=3D"language-"], .notion-dark-theme pre[cla=
+ss*=3D"language-"] { text-shadow: none; }
+}
+
+.notion-dark-theme pre[class*=3D"language-"], .notion-dark-theme :not(pre) =
+> code[class*=3D"language-"] { background: rgb(77, 64, 51); }
+
+.notion-dark-theme pre[class*=3D"language-"] { padding: 1em; margin: 0.5em =
+0px; overflow: auto; border: 0.3em solid rgb(122, 102, 82); border-radius: =
+0.5em; box-shadow: black 1px 1px 0.5em inset; }
+
+.notion-dark-theme :not(pre) > code[class*=3D"language-"] { padding: 0.15em=
+ 0.2em 0.05em; border-radius: 0.3em; border: 0.13em solid rgb(122, 102, 82)=
+; box-shadow: black 1px 1px 0.3em -0.1em inset; white-space: normal; }
+
+.notion-dark-theme .token.comment, .notion-dark-theme .token.prolog, .notio=
+n-dark-theme .token.doctype, .notion-dark-theme .token.cdata { color: rgb(1=
+53, 128, 102); }
+
+.notion-dark-theme .token.punctuation { opacity: 0.7; }
+
+.notion-dark-theme .token.namespace { opacity: 0.7; }
+
+.notion-dark-theme .token.property, .notion-dark-theme .token.tag, .notion-=
+dark-theme .token.boolean, .notion-dark-theme .token.number, .notion-dark-t=
+heme .token.constant, .notion-dark-theme .token.symbol { color: rgb(209, 14=
+8, 158); }
+
+.notion-dark-theme .token.selector, .notion-dark-theme .token.attr-name, .n=
+otion-dark-theme .token.string, .notion-dark-theme .token.char, .notion-dar=
+k-theme .token.builtin, .notion-dark-theme .token.inserted, .notion-dark-th=
+eme .token.inserted + .token.line { color: rgb(189, 224, 82); }
+
+.notion-dark-theme .token.operator, .notion-dark-theme .token.entity, .noti=
+on-dark-theme .token.url, .notion-dark-theme .language-css .token.string, .=
+notion-dark-theme .style .token.string, .notion-dark-theme .token.variable =
+{ color: rgb(245, 184, 61); }
+
+.notion-dark-theme .token.atrule, .notion-dark-theme .token.attr-value, .no=
+tion-dark-theme .token.keyword { color: rgb(209, 148, 158); }
+
+.notion-dark-theme .token.regex, .notion-dark-theme .token.important { colo=
+r: rgb(238, 153, 0); }
+
+.notion-dark-theme .token.important, .notion-dark-theme .token.bold { font-=
+weight: bold; }
+
+.notion-dark-theme .token.italic { font-style: italic; }
+
+.notion-dark-theme .token.entity { cursor: help; }
+
+.notion-dark-theme .token.deleted, .notion-dark-theme .token.deleted + .tok=
+en.line { color: red; }
+
+.react-pdf__Page { padding-bottom: 8px; }
+
+.react-pdf__Page__textContent { position: absolute; cursor: text; top: 0px =
+!important; left: 0px !important; transform: none !important; }
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://www.springboard.com/assets/images/new-springboard-logo-dark@2x.png
+
+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
+RK5CYII=
+
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://lessons.springboard.com/icons/snippet_gray.svg?mode=light
+
+<svg xmlns=3D"http://www.w3.org/2000/svg"  viewBox=3D"0 0 64 64"><defs fill=
+=3D"#55534E" /><path  d=3D"m16,48h4v6h-4c-4.94,0-8-3.06-8-8v-7c0-2.47-1.53-=
+4-4-4h-2v-6h2c2.47,0,4-1.53,4-4v-7c0-4.94,3.06-8,8-8h4v6h-4c-1.23,0-2,.77-2=
+,2v7c0,3.28-1.36,5.72-3.71,7,2.35,1.28,3.71,3.72,3.71,7v7c0,1.23.77,2,2,2Zm=
+44-19c-2.47,0-4-1.53-4-4v-7c0-4.94-3.06-8-8-8h-4v6h4c1.23,0,2,.77,2,2v7c0,3=
+.28,1.36,5.72,3.71,7-2.35,1.28-3.71,3.72-3.71,7v7c0,1.23-.77,2-2,2h-4v6h4c4=
+.94,0,8-3.06,8-8v-7c0-2.47,1.53-4,4-4h2v-6h-2Zm-40-1c-2.21,0-4,1.79-4,4s1.7=
+9,4,4,4,4-1.79,4-4-1.79-4-4-4Zm28,4c0-2.21-1.79-4-4-4s-4,1.79-4,4,1.79,4,4,=
+4,4-1.79,4-4Zm-16-4c-2.21,0-4,1.79-4,4s1.79,4,4,4,4-1.79,4-4-1.79-4-4-4Z" f=
+ill=3D"#55534E" /></svg>
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://cloakist.s3.amazonaws.com/toggle_moon.svg
+
+<svg width=3D"24" height=3D"24" viewBox=3D"0 0 24 24" fill=3D"none" xmlns=
+=3D"http://www.w3.org/2000/svg">
+<path d=3D"M21.5 12.5C21.3427 14.2022 20.2038 16.1144 19.1581 17.4668C18.11=
+25 18.8192 16.7034 19.8458 15.0956 20.4265C13.4878 21.0073 11.7479 21.1181 =
+10.0794 20.7461C8.41092 20.3741 6.8829 19.5345 5.67413 18.3258C4.46536 17.1=
+17 3.62584 15.589 3.25381 13.9205C2.88178 12.252 2.99262 10.5121 3.57336 8.=
+9043C4.15411 7.29651 5.18073 5.88737 6.53311 4.84175C7.8855 3.79614 9.5077 =
+3.15731 11.2099 3C10.2133 4.34827 9.73375 6.00945 9.85843 7.68141C9.98312 9=
+.35338 10.7038 10.9251 11.8893 12.1106C13.0748 13.2961 14.6465 14.0168 16.3=
+185 14.1415C17.9905 14.2662 19.6516 13.7866 20.9999 12.79L21.5 12.5Z" strok=
+e=3D"#37352F" stroke-opacity=3D"0.73" stroke-width=3D"2" stroke-linecap=3D"=
+round" stroke-linejoin=3D"round"/>
+</svg>=0A
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/html
+Content-ID: <frame-1A87E51E6C0F91420EFCFECFEBF4B04D@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://aif.notion.so/aif-production.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><meta http-equiv=3D"origin-trial" cont=
+ent=3D"A727AcAeLCei/ZogJHBlJUS63SxP6AeIROo7qXrkjrxkoxBu0eSSmypAHmGYwk4HjBMQ=
+p5nxCFODzfVnUIe31AQAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2V=
+yLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNj=
+g4MDgzMTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head><body>
+<img width=3D"0" height=3D"0" src=3D"https://segment.prod.bidr.io/associate=
+-segment?buzz_key=3Dtatari&amp;segment_key=3Dtatari-2533&amp;value=3D&amp;u=
+ncacheplz=3D8779939714" alt=3D"" style=3D"display: none;"></body><iframe id=
+=3D"__JSBridgeIframe_1.0__" title=3D"jsbridge___JSBridgeIframe_1.0__" style=
+=3D"display: none;"></iframe><iframe id=3D"__JSBridgeIframe_SetResult_1.0__=
+" title=3D"jsbridge___JSBridgeIframe_SetResult_1.0__" style=3D"display: non=
+e;"></iframe><iframe id=3D"__JSBridgeIframe__" title=3D"jsbridge___JSBridge=
+Iframe__" style=3D"display: none;"></iframe><iframe id=3D"__JSBridgeIframe_=
+SetResult__" title=3D"jsbridge___JSBridgeIframe_SetResult__" style=3D"displ=
+ay: none;"></iframe></html>
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://segment.prod.bidr.io/associate-segment?buzz_key=tatari&segment_key=tatari-2533&value=&uncacheplz=8779939714
+
+R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/html
+Content-ID: <frame-006FF299FCA9548DB3C1574A60663F49@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D"en"><head><meta http-equiv=3D"Content-Type" content=3D"text/h=
+tml; charset=3DUTF-8">
+       =20
+      </head>
+      <body>
+     =20
+    </body></html>
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/html
+Content-ID: <frame-5458FCDC10A95CD2A8C9D3F5065919ED@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/html
+Content-ID: <frame-D705B83C7CFEE88E8824D3066039A981@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/html
+Content-ID: <frame-40AF09D1C166405EDE639E7CA5958AC6@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4----
+Content-Type: text/html
+Content-ID: <frame-FD3270CB4F0631C72A2271CB4C3524A5@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--EEtIkwBQvh9n8s9zI3Rx7hY2R89eOTVmmlLL7osCY4------
