@@ -1,0 +1,45 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+/* format overall table */
+table {
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+}
+
+/* format table header row */
+table th {
+  background-color: darkslategray;
+  color: white;
+}
+
+/* format all cells */
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+/* iterate color of rows */
+tr:nth-child(even) {
+  background-color:  rgb(168, 231, 162);
+}
+
+/* iterate color of rows */
+tr:nth-child(odd) {
+  background-color:  lightblue;
+}
