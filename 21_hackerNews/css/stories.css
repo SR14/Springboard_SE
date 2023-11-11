@@ -1,0 +1,65 @@
+/* Lists of stories */
+
+.stories-list {
+  margin: 20px 5px;
+}
+
+.stories-list > li {
+  color: gray;
+  font-size: 0.8rem;
+  margin: 10px 0;
+}
+
+#stories-loading-msg {
+  font-weight: bold;
+  font-size: 150%;
+  margin: 20px 30px;
+}
+
+
+/* Individual stories */
+
+.story-link {
+  color: black;
+  font-size: 0.85rem;
+  font-weight: normal;
+  margin: 18px 0;
+}
+
+.story-link:hover {
+  text-decoration: none;
+}
+
+.story-author {
+  margin-left: 2em;
+}
+
+.story-user {
+  display: block;
+}
+
+/* .favorite-checkbox {
+  visibility:hidden;
+  font-size:20px;
+  cursor:pointer;
+}
+.favorite-checkbox:before {
+ content: "\2605";
+ position: absolute;
+ visibility:visible;
+}
+
+.favorite-checkbox:checked:before {
+ content: "\2606";
+ position: absolute;
+ color: grey;
+}
+*/
+
+.story-author {
+  color: green;
+}
+
+.story-user {
+  color: orangered;
+}
