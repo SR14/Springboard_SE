@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs</title>
+</head>
+<body>
+    <h1>Mad Libs</h1>
+    <form action="/story">
+        {% for prompt in prompts %}
+            <div> {{prompt}} : <input type="text" name="{{prompt}}" class="form-control-inline"></div>
+        {% endfor %}
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
