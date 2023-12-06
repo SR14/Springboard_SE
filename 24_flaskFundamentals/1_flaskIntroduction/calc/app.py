@@ -47,9 +47,11 @@ def app_div():
 @app.route('/math/<operation>')
 # get all operations in one route
 def app_all(operation):
+    
     a = int(request.args['a'])
     b = int(request.args['b'])
     total = None
+    
     if operation == 'add':
         total = add(a, b)
     elif operation == 'sub':
